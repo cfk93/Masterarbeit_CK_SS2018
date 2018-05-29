@@ -1,0 +1,48 @@
+\chapter{Grundlagen} \label{cha:grundlagen}
+
+\lipsum[1]
+
+\section{Autonomes Fahren} \label{sec:AutonomesFahren}
+\subsection{Überblick Fahrerassistenzsysteme} \label{subsec:FAS}
+\lipsum[1-1]
+\subsection{Autonomiestufen} \label{Autonomiestufen}% 5-Stufen des autonomen Fahrens
+\lipsum[1-1]
+
+
+\section{Bussysteme} \label{sec:Bussysteme}
+Die rasante Zunahme an elektronischen Systemen und \emph{Steuergeräten} \acs{SG} (englisch \emph{\acl{ECU}} \acs{ECU}) in den letzten Jahrzehnten machten einen geregelten Datenaustausch in der Fahrzeugtechnik unerlässlich. Stetig steigende Anforderungen an Fahrsicherheit, Motorsteuerung und Komfortsysteme erforderten zwingend einen sicheren und schnellen Informationsfluss zwischen den kommunizierenden Steuergeräten, sodass ein verteiltes und vernetztes Gesamtsystem entstand. Alle für eine jeweilige Funktion benötigten Daten konnten systemweit zur Verfügung gestellt werden. Aus dem zunehmenden Elektrifizierungsgrad ergaben sich heutige moderne Elektronikarchitekturen im Kfz in Form von seriellen Bussystemen. Das Akronym \acs{Bus} stammt \textbf{[12]} nach von \emph{\acl{Bus}}, was auf ein drahtgebundenes Übertragungsmedium mit Anschluss an alle Systemkomponenten hinweist. Es werden komplexe Datenmengen über einzelne Leitungen bitweise übertragen, wodurch sich eine Vielzahl an Vorteilen ergibt: Der Verkabelungsaufwand sämtlicher elektrischer Leitungen wird minimiert, wodurch sich die Kosten, das Gewicht und die Fehleranfälligkeit reduzieren. Zudem wird eine Mehrfachnutzung von Informationen möglich, was die Anzahl der verbauten Sensoren senkt. Eine Diagnosefunktion wird umsetzbar und das Gesamtsystem ist flexibel für Änderungen und Erweiterungen. Die Kommunikation innerhalb eines Gesamtsystems, welches aus mehreren miteinander verknüpften Bussystemen bestehen kann, wird als \emph{On-Board-Kommunikation} bezeichnet. Heute standardisierte und gängige Datenkommunikationssysteme sind in \textbf{Tabelle 2-1} aufgeführt \textbf{[13]}. Auf die zur Anwendung wichtigste Form der Buskommunikation \acs{CAN} wird an späterer Stelle näher eingegangen.\\
+Um eine übergeordnete Datenkommunikation einzelner Vernetzungsbereiche und Netzwerke zu erhalten, müssen die einzelnen Bussysteme mit unterschiedlichen Protokollen physikalisch und logisch miteinander verbunden werden. Diese Funktion wird von einem \emph{Gateway} übernommen. Ein Gateway stellt sämtliche Daten netzwerkübergreifend zur Verfügung. Dabei kann die Funktion entweder in bereits vorhandene Steuergeräte integriert werden oder es kommen eigene zentrale oder dezentrale Gateway-Steuergeräte zum Einsatz. Bei einer \emph{Off-Board-Kommunikation} stellt ein Gateway die Verbindung zwischen dem geschlossenen Gesamtnetz im Fahrzeug zu einem externen Gerät her.
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Klassifikation serieller Bussysteme}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{p{2.5cm} p{3cm} p{2cm} p{3cm} p{2cm}}
+		\toprule
+		Bussystem                 & Typische \newline Anwendung                   & Maximale \newline Datenrate & Übertragungs-\newline medium         & Sicherheits- \newline anforderung \\ \midrule
+		LIN                       & Komfort, \newline Karosserie                  & 20 kbit/s                   & Eindrahtleitung                      & gering                            \\
+		CAN \newline (Low Speed)  & Komfort, \newline Karosserie                  & 125 kbit/s                  & Verdrillte \newline Zweidrahtleitung & hoch                              \\
+		CAN \newline (High Speed) & Antrieb, \newline Fahrwerk, \newline Diagnose & 1 Mbit/s                    & Verdrillte \newline Zweidrahtleitung & hoch                              \\
+		FlexRay                   & Fahrwerk, \newline X by Wire                  & 10 Mbit/s                   & Verdrillte \newline Zweidrahtleitung & sehr hoch                         \\
+		MOST                      & Infotainment                                  & 150 Mbit/s                  & Lichtwellenleiter                    & gering                            \\ \bottomrule
+	\end{tabular}
+	
+	\label{tab:KlassifikationSerielleBussysteme}
+\end{table}
+
+
+
+
+
+\subsection{Kommunikationsmodell} \label{subsec:Kommunikationsmodell}
+\lipsum[1-1]
+\subsection{Controller Area Network CAN} \label{subsec:CAN}
+\lipsum[1-1]
+\subsection{CAN-Protokoll: Physical Layer} \label{subsec:PhysicalLayer}
+\lipsum[1-1]
+\subsection{CAN-Protokoll: Data Link Layer} \label{subsec:DataLinkLayer}
+\lipsum[1-1]
+
+\section{Hilfsmittel} \label{sec:Hilfsmittel} %Vector CAnoe, CANcaseXL, ...
+
+

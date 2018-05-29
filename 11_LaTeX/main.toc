@@ -1,0 +1,46 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\nonumberline Kurzfassung}{I}{chapter*.4}
+\contentsline {chapter}{\nonumberline Abstract}{III}{chapter*.5}
+\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{V}{chapter*.6}
+\contentsline {chapter}{\nonumberline Nomenklatur}{VII}{chapter*.7}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Zielsetzung der Arbeit}{2}{section.1.2}
+\contentsline {chapter}{\numberline {2}Grundlagen}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Autonomes Fahren}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}\IeC {\"U}berblick Fahrerassistenzsysteme}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Autonomiestufen}{3}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Bussysteme}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Kommunikationsmodell}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Controller Area Network CAN}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}CAN-Protokoll: Physical Layer}{6}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}CAN-Protokoll: Data Link Layer}{6}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Hilfsmittel}{6}{section.2.3}
+\contentsline {chapter}{\numberline {3}Ausgangssituation}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hardware}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Software}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Sensorik}{7}{section.3.3}
+\contentsline {chapter}{\numberline {4}Diagnosesystem}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Konzept zur Fehlerdiagnose}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}Aufbau einer Diagnosekommunikation}{9}{section.4.2}
+\contentsline {section}{\numberline {4.3}Implementierung der Diagnosefunktion}{9}{section.4.3}
+\contentsline {section}{\numberline {4.4}Ergebnisbetrachtung}{9}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Test und Validierung}{9}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Mehrwert der Diagnosefunktion}{9}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Dynamische L\IeC {\"a}ngs- und Querregelung}{11}{chapter.5}
+\contentsline {section}{\numberline {5.1}Umsetzung des Fahralgorithmus}{11}{section.5.1}
+\contentsline {section}{\numberline {5.2}Kritische Analyse der implementierten Algorithmen}{11}{section.5.2}
+\contentsline {section}{\numberline {5.3}Optimierung der Regelung}{11}{section.5.3}
+\contentsline {section}{\numberline {5.4}Implementierung der optimierten Spurregelung}{11}{section.5.4}
+\contentsline {section}{\numberline {5.5}Ergebnisbetrachtung}{11}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Test und Validierung}{11}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Mehrwert der optimierten Spurregelung}{11}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{13}{chapter.6}
+\contentsline {section}{\numberline {6.1}Zusammenfassung}{13}{section.6.1}
+\contentsline {section}{\numberline {6.2}Ausblick}{14}{section.6.2}
+\contentsline {chapter}{Tabellenverzeichnis}{17}{chapter*.9}
+\contentsline {chapter}{Abbildungsverzeichnis}{19}{chapter*.10}
+\contentsline {chapter}{Literaturverzeichnis}{21}{chapter*.11}
+\contentsline {chapter}{\numberline {A}Anhang}{23}{appendix.A}
+\contentsline {section}{\numberline {A.1}Anhang 1}{23}{section.A.1}
+\contentsline {section}{\numberline {A.2}Anhang 2}{23}{section.A.2}
