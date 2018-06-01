@@ -10,38 +10,109 @@
 
 
 \section{Bussysteme} \label{sec:Bussysteme}
-Die rasante Zunahme an elektronischen Systemen und \emph{Steuergeräten} \acs{SG} (englisch \emph{\acl{ECU}} \acs{ECU}) in den letzten Jahrzehnten machten einen geregelten Datenaustausch in der Fahrzeugtechnik unerlässlich. Stetig steigende Anforderungen an Fahrsicherheit, Motorsteuerung und Komfortsysteme erforderten zwingend einen sicheren und schnellen Informationsfluss zwischen den kommunizierenden Steuergeräten, sodass ein verteiltes und vernetztes Gesamtsystem entstand. Alle für eine jeweilige Funktion benötigten Daten konnten systemweit zur Verfügung gestellt werden. Aus dem zunehmenden Elektrifizierungsgrad ergaben sich heutige moderne Elektronikarchitekturen im Kfz in Form von seriellen Bussystemen. Das Akronym \acs{Bus} stammt \textbf{[12]} nach von \emph{\acl{Bus}}, was auf ein drahtgebundenes Übertragungsmedium mit Anschluss an alle Systemkomponenten hinweist. Es werden komplexe Datenmengen über einzelne Leitungen bitweise übertragen, wodurch sich eine Vielzahl an Vorteilen ergibt: Der Verkabelungsaufwand sämtlicher elektrischer Leitungen wird minimiert, wodurch sich die Kosten, das Gewicht und die Fehleranfälligkeit reduzieren. Zudem wird eine Mehrfachnutzung von Informationen möglich, was die Anzahl der verbauten Sensoren senkt. Eine Diagnosefunktion wird umsetzbar und das Gesamtsystem ist flexibel für Änderungen und Erweiterungen. Die Kommunikation innerhalb eines Gesamtsystems, welches aus mehreren miteinander verknüpften Bussystemen bestehen kann, wird als \emph{On-Board-Kommunikation} bezeichnet. Heute standardisierte und gängige Datenkommunikationssysteme sind in \textbf{Tabelle 2-1} aufgeführt \textbf{[13]}. Auf die zur Anwendung wichtigste Form der Buskommunikation \acs{CAN} wird an späterer Stelle näher eingegangen.\\
-Um eine übergeordnete Datenkommunikation einzelner Vernetzungsbereiche und Netzwerke zu erhalten, müssen die einzelnen Bussysteme mit unterschiedlichen Protokollen physikalisch und logisch miteinander verbunden werden. Diese Funktion wird von einem \emph{Gateway} übernommen. Ein Gateway stellt sämtliche Daten netzwerkübergreifend zur Verfügung. Dabei kann die Funktion entweder in bereits vorhandene Steuergeräte integriert werden oder es kommen eigene zentrale oder dezentrale Gateway-Steuergeräte zum Einsatz. Bei einer \emph{Off-Board-Kommunikation} stellt ein Gateway die Verbindung zwischen dem geschlossenen Gesamtnetz im Fahrzeug zu einem externen Gerät her.
+Die rasante Zunahme an elektronischen Systemen und \emph{Steuergeräten} \acs{SG} (englisch \emph{\acl{ECU}} \acs{ECU}) in den letzten Jahrzehnten machten einen geregelten Datenaustausch in der Fahrzeugtechnik unerlässlich. Stetig steigende Anforderungen an Fahrsicherheit, Motorsteuerung und Komfortsysteme erforderten zwingend einen sicheren und schnellen Informationsfluss zwischen den kommunizierenden Steuergeräten, sodass ein verteiltes und vernetztes Gesamtsystem entstand. Alle für eine jeweilige Funktion benötigten Daten konnten systemweit zur Verfügung gestellt werden. Aus dem zunehmenden Elektrifizierungsgrad ergaben sich heutige moderne Elektronikarchitekturen im Kfz in Form von seriellen Bussystemen. Das Akronym \acs{Bus} stammt \textbf{[12]} nach von \emph{\acl{Bus}}, was auf ein drahtgebundenes Übertragungsmedium mit Anschluss an alle Systemkomponenten hinweist. Es werden komplexe Datenmengen über einzelne Leitungen bitweise übertragen, wodurch sich eine Vielzahl an Vorteilen ergibt: Der Verkabelungsaufwand sämtlicher elektrischer Leitungen wird minimiert, wodurch sich die Kosten, das Gewicht und die Fehleranfälligkeit reduzieren. Zudem wird eine Mehrfachnutzung von Informationen möglich, was die Anzahl der verbauten Sensoren senkt. Eine Diagnosefunktion wird umsetzbar und das Gesamtsystem ist flexibel für Änderungen und Erweiterungen. Die Kommunikation innerhalb eines Gesamtsystems, welches aus mehreren miteinander verknüpften Bussystemen bestehen kann, wird als \emph{On-Board-Kommunikation} bezeichnet. Um eine übergeordnete Datenkommunikation einzelner Vernetzungsbereiche und Netzwerke zu erhalten, müssen die einzelnen Bussysteme mit unterschiedlichen Protokollen physikalisch und logisch miteinander verbunden werden. Diese Funktion wird von einem \emph{Gateway} übernommen. Ein Gateway stellt sämtliche Daten netzwerkübergreifend zur Verfügung. Dabei kann die Funktion entweder in bereits vorhandene Steuergeräte integriert werden oder es kommen eigene zentrale oder dezentrale Gateway-Steuergeräte zum Einsatz. Bei einer \emph{Off-Board-Kommunikation} stellt ein Gateway die Verbindung zwischen dem geschlossenen Gesamtnetz im Fahrzeug zu einem externen Gerät her. \\
+
+Heute standardisierte und gängige Datenkommunikationssysteme sind in Tabelle \ref{tab:KlassifikationSerielleBussysteme} aufgeführt \textbf{[13]}. Auf die zur Anwendung wichtigste Form der Buskommunikation, dem \emph{\acs{CAN}-Bus}, wird an späterer Stelle näher eingegangen. \\
+Neben dem heutzutage am häufigsten eingesetzten Bussystem (vgl. Unterabschnitt \ref{subsec:CAN}) haben sich aufgrund der speziellen Anwendungsfälle und der Eigenentwicklung unterschiedlichster Hersteller, vor allem aber zur Kostenreduzierung, weitere Systeme etabliert. Die kostengünstige Variante zur seriellen Datenübertragung \emph{Local Interconnect Network} \acs{LIN} weist eine vergleichsweise geringe Datenrate auf und wird daher mittlerweile lediglich in der Komfortelektronik als Kommunikationsschnittstelle zwischen Sensorik und Aktorik verbaut.Da als physikalisches Übertragungsmedium nur eine Eindrahtleitung zum Einsatz kommt, ist das Netzwerk relativ störanfällig, was eine Verwendung in sicherheitsrelevanten Bereichen ausschließt. Eine deutlich höhere Ausfallsicherheit, aber zugleich signifikant teurere Datenübertragung liefert der sog. \emph{FlexRay}. Aufgrund der hohen Datenraten von bis zu 10\,Mbit/s bietet dieses deterministische Feldbussystem ein hohes Potential für zeit- und sicherheitskritische Anwendungsfälle \textbf{[Vector Homepage]}. Für Multimediaanwendungen im Automobilbereich hat sich der \emph{Media Oriented Systems Transport} \acs{MOST}-Bus etabliert, der als Übertragungsmedium Lichtwellenleiter verwendet und damit sehr hohe Bitraten von bis zu 150\,Mbit/s ermöglicht Ein MOST-Netzwerk ist in der Regel als Ringtopologie aufgebaut und liefert daher eine lediglich geringe Ausfallsicherheit \textbf{[8]}.\\
+
 
 \begin{table}[!htbp]
 	\centering
 	\caption{Klassifikation serieller Bussysteme}
 	\renewcommand{\arraystretch}{1.3}
-	\begin{tabular}{p{2.5cm} p{3cm} p{2cm} p{3cm} p{2cm}}
+	\begin{tabulary}{\columnwidth}{L L L L L}
 		\toprule
-		Bussystem                 & Typische \newline Anwendung                   & Maximale \newline Datenrate & Übertragungs-\newline medium         & Sicherheits- \newline anforderung \\ \midrule
-		LIN                       & Komfort, \newline Karosserie                  & 20 kbit/s                   & Eindrahtleitung                      & gering                            \\
-		CAN \newline (Low Speed)  & Komfort, \newline Karosserie                  & 125 kbit/s                  & Verdrillte \newline Zweidrahtleitung & hoch                              \\
-		CAN \newline (High Speed) & Antrieb, \newline Fahrwerk, \newline Diagnose & 1 Mbit/s                    & Verdrillte \newline Zweidrahtleitung & hoch                              \\
-		FlexRay                   & Fahrwerk, \newline X by Wire                  & 10 Mbit/s                   & Verdrillte \newline Zweidrahtleitung & sehr hoch                         \\
-		MOST                      & Infotainment                                  & 150 Mbit/s                  & Lichtwellenleiter                    & gering                            \\ \bottomrule
-	\end{tabular}
-	
+		Bussystem        & Typische Anwendung           & Maximale Datenrate & Übertragungsmedium          & Sicherheits-anforderung \\ \midrule
+		LIN              & Komfort, Karosserie          & 20 kbit/s          & Eindrahtleitung             & gering                  \\
+		CAN (Low Speed)  & Komfort, Karosserie          & 125 kbit/s         & Verdrillte Zweidrahtleitung & hoch                    \\
+		CAN (High Speed) & Antrieb, Fahrwerk, Diagnose  & 1 Mbit/s           & Verdrillte Zweidrahtleitung & hoch                    \\
+		FlexRay          & Fahrwerk, \newline X by Wire & 10 Mbit/s          & Verdrillte Zweidrahtleitung & sehr hoch               \\
+		MOST             & Infotainment                 & 150 Mbit/s         & Lichtwellenleiter           & gering                  \\ \bottomrule
+	\end{tabulary}
+
 	\label{tab:KlassifikationSerielleBussysteme}
 \end{table}
 
 
 
-
-
 \subsection{Kommunikationsmodell} \label{subsec:Kommunikationsmodell}
-\lipsum[1-1]
+Um einen reibungslosen und nachvollziehbaren Datenaustausch zu gewährleisten, mussten mit dem Einzug der Bussysteme in der Automobilentwicklung auch einheitliche, herstellerübergreifende Kommunikationsstrukturen eingeführt werden. 1983 wurde der gesamte Datentransfer in einem Datennetz von der \emph{International Organization for Standardization} \acs{ISO} in sieben einzelne \emph{Layer} (Schichten) unterteilt und die komplexe Kommunikationshierarchie beschrieben. Durch das in \emph{ISO/IEC 7498-1} festgehaltene \emph{Open System Interconnection} \acs{OSI}-Schichtenmodell kann eine standardisierte und herstellerübergreifende Kommunikation im gesamten Busnetzwerk erzielt werden \textbf{[14]}. Das OSI-Schichtenmodell wird in Tabelle \ref{tab:OSI-Schichtenmodell} beschrieben. Für die Automobilindustrie und für Kfz-Anwendungen sind die grau hinterlegten Schichten noch nicht relevant. Wichtig sind vor allem die beiden untersten Layer \emph{Physical} und \emph{Data Link}. Diese Schichten werden an späterer Stelle genauer beschrieben. 
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Zusammenfassung des OSI-Schichtenmodells aufgeteilt in Layer,
+		Schicht und Funktionen}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{l l l p{7.5cm}}
+														  	   \toprule
+		  &  Layer        & Schicht           & Funktion	\\ \midrule
+		7 & Application  & Anwendung         & Zugriff auf das Kommunikationssystem, Entkopplung Anwendung von Kommunikation    		\\
+		\rowcolor[gray]{.9} 6 & Presentation & Darstellung       & Semantik, Datenkompression, Verschlüsselung,
+		Übersetzer verschiedener Datenformate 			\\
+		\rowcolor[gray]{.9} 5 & Session      & Sitzungssteuerung & Unterhalten längerer Sitzungen, Definition von
+		Synchronisationspunkten            				\\
+		4 & Transport    & Datentransport    & Verbindungsauf- und -abbau, Segmentierung,
+		Sequenzierung, Assemblierung            		\\
+		\rowcolor[gray]{.9} 3 & Network      & Vermittlung       & Routing, Adressvergabe, Teilnehmererkennung
+		und -überwachung                       			\\
+		2 & Data Link    & Datensicherung    & Botschaftsaufbau, Buszugriff, Flusskontrolle
+		Fehlersicherung                       			\\
+		1 & Physical     & Bitübertragung    & Physikalische Busankopplung, Stecker,
+		Übertragungsmedium, Leitungscodierung        	\\ \bottomrule
+	\end{tabular}
+	
+	\label{tab:OSI-Schichtenmodell}
+\end{table}
+
+
 \subsection{Controller Area Network CAN} \label{subsec:CAN}
-\lipsum[1-1]
+Das Bussystem \emph{Controller Area Network} \acs{CAN} wurde erstmals in den 1980er Jahren von der \emph{Robert Bosch GmbH} präsentiert und gilt seit 1994 als offener Industriestandard. Mit der \acs{ISO}-Norm \emph{ISO 11898} wurde die \acs{CAN}-Spezifikation international vereinheitlicht. Heute stellt \acs{CAN} durch seine hohe Datenübertragungsrate und der geringen Fehleranfälligkeit die am weitesten verbreitete Kommunikationsspezifikation in der Automobilindustrie dar, kommt jedoch auch häufig in industriellen Anwendungen zum Einsatz. Aufgrund der daraus resultierenden hohen Stückzahlen an \acs{CAN}-Controllern ergibt sich ein stetig sinkender Stückpreis für die zugehörigen Steuergeräte, was als weitere Stärke dieses Bussystems zu zählen ist. 
+Die Steuergeräte, oder auch \emph{Bus-Knoten} bezeichnet, sind in einem \acs{CAN}-Netzwerk üblicherweise in Form einer Linientopologie nach der \emph{Multi-Master}-Architektur miteinander verbunden. Jeder Knoten ist berechtigt, den Datentransfer auf dem Bus ereignisgesteuert anzustoßen \textbf{[15] [16]}.
+
 \subsection{CAN-Protokoll: Physical Layer} \label{subsec:PhysicalLayer}
-\lipsum[1-1]
+Die unterste Schicht im \acs{OSI}-Modell beschreibt die physikalische Busankopplung. Das Übertragungsmedium des \acs{CAN}-Busses wird in den häufigsten Fällen als verdrillte Zweidrahtleitung, als sog. \emph{Twisted-Pair-Leitung}, ausgeführt, wodurch sich die magnetischen Felder der beiden Leitungen weitestgehend gegenseitig neutralisieren. Eine hohe Datenrate und Busauslastung können zu Reflexionen im Bussystem führen. Um diesen unerwünschten Effekt zu minimieren, müssen die Enden der Busleitung mit einem Abschlusswiderstand versehen werden. Neben der physikalischen Busleitung kommen hardwareseitig weitere Bauteile wie der \emph{Mikrocontroller} (\acs{muc}), der \acs{CAN}-Controller und der \acs{CAN}-Transceiver zum Einsatz. Der Mikrocontroller verarbeitet die Kommunikationsdienste der höheren \acs{OSI}-Schichten in der Kommunikationssoftware. Die grundlegenden Funktionen sind hingegen in den restlichen Bauteilen implementiert. Der \acs{CAN}-Controller wickelt das Protokoll ab, während der Transceiver die physikalische Verbindung zum Übertragungsmedium herstellt. Der prinzipielle Aufbau eines \acs{CAN}-Netzwerks wird in Abbildung \ref{abb:CANNetzwerk} verdeutlicht.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./2_2_3_CAN-Netzwerk}
+	\caption[CAN-Netzwerk]{CAN-Netzwerk: Ein einzelner \acs{CAN}-Knoten besteht aus einem Mikrocontroller, einem \acs{CAN}-Controller und einem \acs{CAN}-Transceiver. Der Abschlusswiderstand unterdrückt	Busreflexionen \textbf{[10]}.}
+	\label{abb:CANNetzwerk}
+\end{figure}
+
+Die physikalische Signalübertragung in einem \acs{CAN}-Netzwerk basiert auf der Übertragung von Spannungsdifferenzen zwischen der \emph{\acs{CAN}-High}-Leitung (CANH) und der \emph{\acs{CAN}-Low}-Leitung (CANL). Wie in Tabelle 2-1 dargestellt, unterscheidet die \acs{ISO}-Norm zwischen dem \emph{Low-Speed-\acs{CAN}} (Class B) und dem \emph{High-Speed-\acs{CAN}} (Class C). Der Low-Speed-\acs{CAN} zeichnet sich durch seine auf 125\,kbit/s begrenzte Datenrate aus. Dadurch findet er häufig in Komfortsystemen wie Klimasteuergeräten Anwendung. Die Signale werden über nominelle Potentiale auf dem Bus übertragen. Beim High-Speed-\acs{CAN} hingegen werden differentielle Potentiale verwendet. Dieser besitzt eine maximale Datenrate von bis zu 1\,Mbit/s und eignet sich daher für zeitkritische Anwendungen wie Antriebs- und Fahrdynamikregelung. Die unterschiedlichen Signalpegel werden in Abbildung \ref{abb:CANSignalpegel} erläutert. Aufgrund der Busankopplung ermöglicht der Low-Speed-\acs{CAN} zusätzliche Mechanismen zur Fehlererkennung. Bei Ausfall einer Leitung bleibt er betriebsfähig und gilt daher gegenüber dem High-Speed-\acs{CAN} als fehlertoleranter \textbf{[16] [17]}.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./2_2_3_Signalpegel-CAN}
+	\caption[CAN-Signalpegel]{Signalpegel Low-Speed-\acs{CAN} (links) und High-Speed-\acs{CAN} (rechts) \textbf{[17]}.}
+	\label{abb:CANSignalpegel}
+\end{figure}
+
 \subsection{CAN-Protokoll: Data Link Layer} \label{subsec:DataLinkLayer}
-\lipsum[1-1]
+Der \emph{Data Link Layer} beschreibt das Zugriffsverfahren und den strukturellen Aufbau eines \acs{CAN}-\emph{Frames}. Unter einem Frame versteht man den gesamten Datenrahmen, der in einer einzelnen Botschaft über den \acs{CAN}-Bus übermittelt wird. Zwischen den Begriffen Frame, Botschaft und Nachricht wird nachfolgend keine Unterscheidung getroffen. Das Botschaftenformat eines Frames ist in Abbildung \ref{abb:CANDataFrame} dargestellt \textbf{[17]}. Die einzelnen Komponenten eines Frames und deren Aufgaben werden nachstehend näher erklärt.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./2_2_4_CAN-Standard_Data_Frame}
+	\caption[CAN-Signalpegel]{Aufbau des Standard \acs{CAN} Data-Frames \textbf{[17]}.}
+	\label{abb:CANDataFrame}
+\end{figure}
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Funktionen der einzelnen Felder im Data-Frame \textbf{[15, 16]}.}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{l l l p{7.5cm}}
+		\toprule
+		Feld              & Name       & Länge   & Funktion                                                                                                                                                  \\ \midrule
+		kein Feld         & SOF        & 1 Bit   & Der \emph{Start of Frame} kennzeichnet den Beginn einer Botschaft. Außerdem dient er der Netzwerksynchronisation, indem er immer dominant übertragen wird \\
+		Arbitration Field & Identifier & 11 Bits & Er legt die Priorität der Botschaft fest und kennzeichnet für welche Knoten die Botschaft wichtig ist                                                    \\ \bottomrule
+	\end{tabular}
+	
+	\label{tab:CAN-Data-Frame}
+\end{table}
+
+
 
 \section{Hilfsmittel} \label{sec:Hilfsmittel} %Vector CAnoe, CANcaseXL, ...
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.4)  28 MAY 2018 20:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.4)  1 JUN 2018 17:54
 entering extended mode
 **./main.tex
 (main.tex
@@ -908,6 +908,196 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count128
 \@thisrulewidth=\dimen140
 )
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tabulary\tabulary
+.sty"
+Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen141
+\extrarowheight=\dimen142
+\NC@list=\toks25
+\extratabsurround=\skip68
+\backup@length=\skip69
+)
+\TY@count=\count129
+\TY@linewidth=\dimen143
+\tymin=\dimen144
+\tymax=\dimen145
+\TY@tablewidth=\dimen146
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl
+.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.st
+y"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+\everycr=\toks26
+\minrowclearance=\skip70
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
+"
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+ ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
 \@indexfile=\write4
 \openout4 = `main.idx'.
 
@@ -930,6 +1120,13 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
 
 ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
@@ -938,17 +1135,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
-\scratchdimen=\dimen141
+\scratchcounter=\count130
+\scratchdimen=\dimen147
 \scratchbox=\box34
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count132
-\MPscratchDim=\dimen142
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks26
+\nofMPsegments=\count131
+\nofMParguments=\count132
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen148
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
+\everyMPtoPDFconversion=\toks28
 )
 \AtBeginShipoutBox=\box35
 Package hyperref Info: Link coloring OFF on input line 23.
@@ -961,7 +1158,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 lestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count135
+\c@section@level=\count136
 )
 LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
@@ -1038,34 +1235,32 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 52.
 ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[1
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 52.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 52.
+ [1
 
 
 
 {C:/Users/c.kary/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./006_img/
 01_deckblatt/hska_cmyk_claim_II-goem-eps-converted-to.pdf> <./006_img/01_deckbl
-att/Evomotiv_logo.png>]) (001_vorspann/aufgabenblatt.tex
+att/Evomotiv_logo.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [2
-
-
-])
+(babel)             in language  on input line 52.
+ [2]) (001_vorspann/aufgabenblatt.tex)
 (001_vorspann/erklaerung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1075,7 +1270,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [3]
+ [3
+
+
+]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1293,13 +1491,13 @@ Package babel Info: Redefining ngerman shorthand "~
 
 ] (main.toc
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 30.
  [9])
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1345,21 +1543,51 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
-) (002_einleitung/grundlagen.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 7.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
+l.7 \lipsum[1-3]
+                 [2]) (002_einleitung/grundlagen.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
 l.1 \chapter
-            {Grundlagen} \label{cha:grundlagen} [2]
+            {Grundlagen} \label{cha:grundlagen} [3]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Grundlagen} \label{cha:grundlagen} [4
+
+
+]
 chapter 2.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1385,75 +1613,148 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9 \lipsum[1-1]
-                 [3
-
-
-]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 12.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 12.
-
-Overfull \hbox (0.64246pt too wide) in paragraph at lines 22--22
-\T1/lmr/m/n/10.95 anforderung| 
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 37.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 38.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 38.
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38 \lipsum[1-1]
-                  [4]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 41.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 41.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 \lipsum[1-1]
-                  [5]
+l.9 \lipsum[1-1]
+                 [5]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 15.
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 H
+      eute standardisierte und gÃ¤ngige Datenkommunikationssysteme sind in T...
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 40.
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 
+      [7]
+Underfull \hbox (badness 2237) in paragraph at lines 50--52
+[]|\T1/lmr/m/n/10.95 Semantik, Da-ten-kom-pres-si-on, Ver-schlüs-se-
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 56--58
+[]|\T1/lmr/m/n/10.95 Routing, Adress-ver-ga-be, Teil-neh-me-rer-ken-
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 68.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 71.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 71.
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 
+      [8]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 72.
+<006_img/./2_2_3_CAN-Netzwerk.png, id=388, 505.13719pt x 222.07968pt>
+File: 006_img/./2_2_3_CAN-Netzwerk.png Graphic file (type png)
+<use 006_img/./2_2_3_CAN-Netzwerk.png>
+Package pdftex.def Info: 006_img/./2_2_3_CAN-Netzwerk.png  used on input line 7
+7.
+(pdftex.def)             Requested size: 334.60422pt x 147.10844pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 83.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 83.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 83.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 83.
+ [9]
+<006_img/./2_2_3_Signalpegel-CAN.png, id=411, 538.26094pt x 175.40532pt>
+File: 006_img/./2_2_3_Signalpegel-CAN.png Graphic file (type png)
+<use 006_img/./2_2_3_Signalpegel-CAN.png>
+Package pdftex.def Info: 006_img/./2_2_3_Signalpegel-CAN.png  used on input lin
+e 86.
+(pdftex.def)             Requested size: 418.25368pt x 136.29903pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 93.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 93.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 93.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 93.
+ [10 <./006_img/./2_2_3_CAN-Netzwerk.png> <./006_img/./2_2_3_Signalpegel-CAN.pn
+g>]
+<006_img/./2_2_4_CAN-Standard_Data_Frame.png, id=426, 658.71094pt x 133.24782pt
+>
+File: 006_img/./2_2_4_CAN-Standard_Data_Frame.png Graphic file (type png)
+<use 006_img/./2_2_4_CAN-Standard_Data_Frame.png>
+Package pdftex.def Info: 006_img/./2_2_4_CAN-Standard_Data_Frame.png  used on i
+nput line 96.
+(pdftex.def)             Requested size: 418.25368pt x 84.60938pt.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 109.
+
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (2.6771pt too wide) in paragraph at lines 105--112
+ [][] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 118.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 118.
 ) (003_hauptteil/ausgangssituation.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1463,12 +1764,19 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Ausgangssituation} 	\label{cha:Ausgangssituation} [6]
+ [11 <./006_img/./2_2_4_CAN-Standard_Data_Frame.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [12
+
+
+]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1486,23 +1794,19 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.7 \lipsum[1-1]
-                 [7
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]) (003_hauptteil/diagnosesystem.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+ [13])
+(003_hauptteil/diagnosesystem.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1511,12 +1815,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Diagnosesystem} \label{cha:Diagnosesystem} [8]
+ [14]
 chapter 4.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1555,7 +1854,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [9
+ [15
 
 
 ]
@@ -1567,7 +1866,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [10
+ [16
 
 
 ]
@@ -1613,7 +1912,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [11]
+ [17]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1622,7 +1921,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [12
+ [18
 
 
 ]
@@ -1643,7 +1942,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
-[13]
+[19]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1656,7 +1955,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
- [14])
+ [20])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1665,7 +1964,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
- [15]
+ [21]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1674,7 +1973,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
- [16
+ [22
 
 
 ] (main.lot)
@@ -1693,7 +1992,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
- [17]
+ [23]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1702,7 +2001,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
- [18
+ [24
 
 
 ] (main.lof)
@@ -1722,7 +2021,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [19]
+ [25]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1731,7 +2030,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [20
+ [26
 
 
 ]
@@ -1752,7 +2051,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [21]
+ [27]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1761,7 +2060,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [22
+ [28
 
 
 ]
@@ -1788,7 +2087,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 95.
- [23]
+ [29]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
@@ -1798,29 +2097,30 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 11423 strings out of 493305
- 183816 string characters out of 3129368
- 473189 words of memory out of 3000000
- 14609 multiletter control sequences out of 15000+200000
- 58434 words of font info for 46 fonts, out of 3000000 for 9000
+ 12230 strings out of 493305
+ 196477 string characters out of 3129368
+ 479991 words of memory out of 3000000
+ 15367 multiletter control sequences out of 15000+200000
+ 58799 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,66p,9085b,551s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
-nc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.
-enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
-thit.enc}<C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmbx10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmbx12.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmmi10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmr12.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/c.kary/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/c.kary/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (41 pages, 345723 bytes).
+ 57i,11n,66p,9085b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.
+enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
+.enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
+m.enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
+mathit.enc}<C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmbx10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmbx12.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmmi10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmr10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmr12.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/c.kary/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/c.kary/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/c.kary/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on main.pdf (47 pages, 447210 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 371 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 579 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
 
