@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.4)  1 JUN 2018 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.4)  8 JUN 2018 18:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -1214,53 +1214,55 @@ em-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=006_img/01_deckblatt/hska_c
 myk_claim_II-goem-eps-converted-to.pdf 006_img/01_deckblatt/hska_cmyk_claim_II-
 goem.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
-<006_img/01_deckblatt/hska_cmyk_claim_II-goem-eps-converted-to.pdf, id=183, 427
+<006_img/01_deckblatt/hska_cmyk_claim_II-goem-eps-converted-to.pdf, id=191, 427
 .5975pt x 148.555pt>
 File: 006_img/01_deckblatt/hska_cmyk_claim_II-goem-eps-converted-to.pdf Graphic
  file (type pdf)
 <use 006_img/01_deckblatt/hska_cmyk_claim_II-goem-eps-converted-to.pdf>
 Package pdftex.def Info: 006_img/01_deckblatt/hska_cmyk_claim_II-goem-eps-conve
-rted-to.pdf  used on input line 52.
+rted-to.pdf  used on input line 51.
 (pdftex.def)             Requested size: 163.79366pt x 56.9055pt.
-<006_img/01_deckblatt/Evomotiv_logo.png, id=184, 219.82124pt x 137.51375pt>
+<006_img/01_deckblatt/Evomotiv_logo.png, id=192, 219.82124pt x 137.51375pt>
 File: 006_img/01_deckblatt/Evomotiv_logo.png Graphic file (type png)
 <use 006_img/01_deckblatt/Evomotiv_logo.png>
 Package pdftex.def Info: 006_img/01_deckblatt/Evomotiv_logo.png  used on input 
-line 52.
+line 51.
 (pdftex.def)             Requested size: 90.96584pt x 56.9055pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 52.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 51.
 
 ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 51.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
- [1
+[1
 
 
 
 {C:/Users/c.kary/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./006_img/
 01_deckblatt/hska_cmyk_claim_II-goem-eps-converted-to.pdf> <./006_img/01_deckbl
-att/Evomotiv_logo.png>]
+att/Evomotiv_logo.png>]) (001_vorspann/aufgabenblatt.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
- [2]) (001_vorspann/aufgabenblatt.tex)
+(babel)             in language  on input line 1.
+ [2
+
+
+])
 (001_vorspann/erklaerung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1270,10 +1272,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [3
-
-
-]
+ [3]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1491,13 +1490,13 @@ Package babel Info: Redefining ngerman shorthand "~
 
 ] (main.toc
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 31.
  [9])
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1699,7 +1698,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 72.
-<006_img/./2_2_3_CAN-Netzwerk.png, id=388, 505.13719pt x 222.07968pt>
+<006_img/./2_2_3_CAN-Netzwerk.png, id=403, 505.13719pt x 222.07968pt>
 File: 006_img/./2_2_3_CAN-Netzwerk.png Graphic file (type png)
 <use 006_img/./2_2_3_CAN-Netzwerk.png>
 Package pdftex.def Info: 006_img/./2_2_3_CAN-Netzwerk.png  used on input line 7
@@ -1714,7 +1713,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
  [9]
-<006_img/./2_2_3_Signalpegel-CAN.png, id=411, 538.26094pt x 175.40532pt>
+<006_img/./2_2_3_Signalpegel-CAN.png, id=426, 538.26094pt x 175.40532pt>
 File: 006_img/./2_2_3_Signalpegel-CAN.png Graphic file (type png)
 <use 006_img/./2_2_3_Signalpegel-CAN.png>
 Package pdftex.def Info: 006_img/./2_2_3_Signalpegel-CAN.png  used on input lin
@@ -1734,28 +1733,64 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 93.
  [10 <./006_img/./2_2_3_CAN-Netzwerk.png> <./006_img/./2_2_3_Signalpegel-CAN.pn
 g>]
-<006_img/./2_2_4_CAN-Standard_Data_Frame.png, id=426, 658.71094pt x 133.24782pt
->
-File: 006_img/./2_2_4_CAN-Standard_Data_Frame.png Graphic file (type png)
-<use 006_img/./2_2_4_CAN-Standard_Data_Frame.png>
-Package pdftex.def Info: 006_img/./2_2_4_CAN-Standard_Data_Frame.png  used on i
-nput line 96.
-(pdftex.def)             Requested size: 418.25368pt x 84.60938pt.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 109.
-
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 95.
 
 ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (2.6771pt too wide) in paragraph at lines 105--112
- [][] 
- []
+<006_img/./2_2_4_CAN-Standard_Data_Frame.png, id=442, 658.71094pt x 133.24782pt
+>
+File: 006_img/./2_2_4_CAN-Standard_Data_Frame.png Graphic file (type png)
+<use 006_img/./2_2_4_CAN-Standard_Data_Frame.png>
+Package pdftex.def Info: 006_img/./2_2_4_CAN-Standard_Data_Frame.png  used on i
+nput line 104.
+(pdftex.def)             Requested size: 418.25368pt x 84.60938pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 114.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 114.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 145.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 145.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 145.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 145.
 
+[11 <./006_img/./2_2_4_CAN-Standard_Data_Frame.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 118.
-) (003_hauptteil/ausgangssituation.tex
+(babel)             in language  on input line 145.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 145.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 145.
+ [12]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 147.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 149.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 149.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 149.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 149.
+ [13]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 150.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 150.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 154.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 154.
+)
+(003_hauptteil/ausgangssituation.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1764,19 +1799,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [11 <./006_img/./2_2_4_CAN-Standard_Data_Frame.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [12
-
-
-]
+ [14]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1805,7 +1828,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 7.
- [13])
+ [15
+
+
+])
 (003_hauptteil/diagnosesystem.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1815,7 +1841,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [14]
+ [16]
 chapter 4.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1854,7 +1880,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [15
+ [17
 
 
 ]
@@ -1866,7 +1892,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [16
+ [18
 
 
 ]
@@ -1912,7 +1938,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [17]
+ [19]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1921,7 +1947,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [18
+ [20
 
 
 ]
@@ -1942,7 +1968,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
-[19]
+[21]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1955,7 +1981,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
- [20])
+ [22])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1964,7 +1990,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
- [21]
+ [23]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1973,7 +1999,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
- [22
+ [24
 
 
 ] (main.lot)
@@ -1992,7 +2018,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
- [23]
+ [25]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2001,7 +2027,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
- [24
+ [26
 
 
 ] (main.lof)
@@ -2021,7 +2047,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [25]
+ [27]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2030,7 +2056,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [26
+ [28
 
 
 ]
@@ -2051,7 +2077,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [27]
+ [29]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2060,7 +2086,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [28
+ [30
 
 
 ]
@@ -2087,40 +2113,43 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 95.
- [29]
+ [31]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0D20BD96847C660BF768AF294CE45571;2989.
+(rerunfilecheck)             Checksum: E7C1917BB9D4EA94DB0337C130606E7F;3127.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 12230 strings out of 493305
- 196477 string characters out of 3129368
- 479991 words of memory out of 3000000
- 15367 multiletter control sequences out of 15000+200000
- 58799 words of font info for 47 fonts, out of 3000000 for 9000
+ 12285 strings out of 493305
+ 197020 string characters out of 3129368
+ 486328 words of memory out of 3000000
+ 15400 multiletter control sequences out of 15000+200000
+ 80052 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,11n,66p,9085b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.
-enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
-.enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
-m.enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
+{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
+nc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.
+enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts
+1.enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
 mathit.enc}<C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmbx10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/lm/lmbx12.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmmi10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/lm/lmr10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/lm/lmr12.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/c.kary/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/c.kary/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/c.kary/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (47 pages, 447210 bytes).
+X 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/c.kary/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/c.kary/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/c.kary/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/c.kary/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Users/c.kary/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/c.kary/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on main.pdf (49 pages, 533089 bytes).
 PDF statistics:
- 579 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

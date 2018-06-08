@@ -75,7 +75,7 @@ Die unterste Schicht im \acs{OSI}-Modell beschreibt die physikalische Busankoppl
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{./2_2_3_CAN-Netzwerk}
-	\caption[CAN-Netzwerk]{CAN-Netzwerk: Ein einzelner \acs{CAN}-Knoten besteht aus einem Mikrocontroller, einem \acs{CAN}-Controller und einem \acs{CAN}-Transceiver. Der Abschlusswiderstand unterdrückt	Busreflexionen \textbf{[10]}.}
+	\caption[CAN-Netzwerk]{CAN-Netzwerk: Ein einzelner \acs{CAN}-Knoten besteht aus einem Mikrocontroller, einem \acs{CAN}-Controller und einem \acs{CAN}-Transceiver. Der Abschlusswiderstand unterdrückt	Busreflexionen \textbf{[16]}.}
 	\label{abb:CANNetzwerk}
 \end{figure}
 
@@ -89,7 +89,15 @@ Die physikalische Signalübertragung in einem \acs{CAN}-Netzwerk basiert auf der
 \end{figure}
 
 \subsection{CAN-Protokoll: Data Link Layer} \label{subsec:DataLinkLayer}
-Der \emph{Data Link Layer} beschreibt das Zugriffsverfahren und den strukturellen Aufbau eines \acs{CAN}-\emph{Frames}. Unter einem Frame versteht man den gesamten Datenrahmen, der in einer einzelnen Botschaft über den \acs{CAN}-Bus übermittelt wird. Zwischen den Begriffen Frame, Botschaft und Nachricht wird nachfolgend keine Unterscheidung getroffen. Das Botschaftenformat eines Frames ist in Abbildung \ref{abb:CANDataFrame} dargestellt \textbf{[17]}. Die einzelnen Komponenten eines Frames und deren Aufgaben werden nachstehend näher erklärt.
+Der \emph{Data Link Layer} beschreibt das Zugriffsverfahren und den strukturellen Aufbau eines \acs{CAN}-\emph{Frames}. Unter einem Frame versteht man den gesamten Datenrahmen, der in einer einzelnen Botschaft über den \acs{CAN}-Bus übermittelt wird. Zwischen den Begriffen Frame, Botschaft und Nachricht wird nachfolgend keine Unterscheidung getroffen. Typischerweise gibt es mehrere Arten von CAN-Frames, die in verschiedene Kategorien unterteilt werden:
+
+\begin{itemize}
+	\item \emph{Data Frame} zur Übertragung von Nutzdaten.
+	\item \emph{Remote Frame} zur Anforderung von Nutzdaten (also Data Frames) von beliebigen CAN-Knoten. Setzt sich bis auf das fehlende Data Field wie ein Data Frame zusammen.
+	\item \emph{Error Frame} zur Signalisierung entdeckter Fehler während des Kommunikationsbetriebs. Mit dem Übertragen eines Error Frames geht der Abbruch der laufenden Botschaftsübertragung einher.
+\end{itemize} 
+
+Das Botschaftenformat eines Data Frames ist in Abbildung \ref{abb:CANDataFrame} dargestellt \textbf{[17]}. Die einzelnen Komponenten und deren Aufgaben werden nachstehend in der zugehörigen Tabelle \ref{tab:CAN-Data-Frame} näher erklärt.
 
 \begin{figure}[!htbp]
 	\centering
@@ -101,19 +109,51 @@ Der \emph{Data Link Layer} beschreibt das Zugriffsverfahren und den strukturelle
 \begin{table}[!htbp]
 	\centering
 	\caption{Funktionen der einzelnen Felder im Data-Frame \textbf{[15, 16]}.}
+	\footnotesize
 	\renewcommand{\arraystretch}{1.3}
-	\begin{tabular}{l l l p{7.5cm}}
+	\begin{tabular}{l | l l p{7.5cm}}
 		\toprule
-		Feld              & Name       & Länge   & Funktion                                                                                                                                                  \\ \midrule
-		kein Feld         & SOF        & 1 Bit   & Der \emph{Start of Frame} kennzeichnet den Beginn einer Botschaft. Außerdem dient er der Netzwerksynchronisation, indem er immer dominant übertragen wird \\
-		Arbitration Field & Identifier & 11 Bits & Er legt die Priorität der Botschaft fest und kennzeichnet für welche Knoten die Botschaft wichtig ist                                                    \\ \bottomrule
+		Feld              & Name       & Länge       & Funktion                                                                                                                                                                                                          \\ \midrule
+		kein Feld         & SOF        & 1 Bit       & Der dominante \emph{Start of Frame} signalisiert den Start eines Frames. Durch den Wechsel von einem rezessiven (Buspegel im Ruhezustand) auf ein dominantes Bit findet eine netzwerkweite Synchronisation statt. \\
+		\midrule
+		Arbitration Field & Identifier & 11 Bits     & Der Identifier dient der bitweisen Arbitrierung und beschreibt die logische Adressierung der Botschaft.                                                                                                           \\
+		                  & RTR        & 1 Bit       & Der \emph{Remote Transmission Request} kennzeichnet	den Frametyp. Im Fall des Data Frames wird das Bit dominant übertragen.                                                                                       \\
+		\midrule
+		Control Field & IDE        & 1 Bit       & Die \emph{Identifier Extension} legt fest, ob der Identifier im Standard-Format (11 Bit) oder im Extended-Format (29 Bit) vorliegt.                                                                               \\
+		                  & r          & 1 Bit       & Dieses Bit ist für künftige Erweiterungen reserviert.                                                                                                                                                             \\
+		                  & DLC        & 4 Bits      & Der \emph{Data Length Code} übermittelt die Anzahl der nachfolgenden Nutzbytes.                                                                                                                                   \\
+		\midrule
+		Data Field        & Data Field & 0...64 Bits & Im Datenfeld werden bis zu acht Bytes an Nutzdaten übertragen. Es beinhaltet die zu übermittelnden Signalwerte und Nutzinformationen.                                                                             \\
+		\midrule
+		CRC-Field         & CRC        & 15 Bits     & Der \emph{Cyclic Redundancy Check} bildet eine Prüfsumme der Nutzdaten und dient der Fehlererkennung bei der Botschaftsübertragung.                                                                               \\
+		                  & DEL        & 1 Bit       & Auf das CRC-Feld folgt ein rezessives \emph{Delimiter}-Bit.                                      \\
+		\midrule
+		ACK-Field         & ACK        & 1 Bit       & Der Sender einer Botschaft setzt das \emph{Acknowledgement}-Bit auf rezessiv, der Empfänger quittiert das korrekte Ergebnis des CRC-Feldes mit einem dominanten Bit.                                              \\
+		                  & DEL        & 1 Bit       & Das ACK-Feld wird ebenfalls durch ein \emph{Delimiter}-Bit begrenzt.                                                                                                                                              \\
+		\midrule
+		kein Feld         & EOF        & 7 Bit       & Der \emph{End of Frame} markiert das Ende einer Botschaft mit sieben rezessiven Bits.                                                                                                                             \\ \bottomrule
 	\end{tabular}
 	
 	\label{tab:CAN-Data-Frame}
 \end{table}
 
+Während der gesamten Laufzeit der Netzwerkverbindung senden die Busknoten ihre Botschaften nach dem \emph{Broadcast}-Verfahren unaufgefordert und ereignisgesteuert auf den Bus. Jeder Empfänger einer Botschaft entscheidet, ob der Inhalt relevant ist und er damit die Nachricht auswertet oder ignoriert. Diese \emph{Akzeptanzfilterung} findet auf Basis der inhaltsbasierten Adressierung eines Frames statt. Hierzu kennzeichnet der \emph{Identifier} \acs{ID} den spezifischen Inhalt einer Botschaft. Der Identifier ist in einem herkömmlichen \acs{CAN}-Protokoll 11 Bit lang. Somit lassen sich bis zu $2^{11} = 2.048$ Botschaften eindeutig unterscheiden. Aufgrund der stetig wachsenden Komplexität moderner Busarchitekturen besteht zudem die Möglichkeit, einen Identifier im Extended-Format aufzubauen. Der \acs{ID} umfasst dann 29 Bit, wodurch $2^{29} = 536.870.912$ unterschiedliche Botschaften differenziert werden können.\\
+Durch den ereignisgesteuerten Kommunikationsaufbau kann es häufig vorkommen, dass mehrere Busteilnehmer eine Botschaftsübertragung zum gleichen Zeitpunkt beginnen möchten. Da eine Übertragung aber nicht unterbrochen werden kann und oftmals essentielle sicherheitsrelevante Nachrichten unmittelbar mit vergleichsweise marginalen Botschaften versendet werden, ist es von hoher Bedeutung, sämtliche Botschaften mit Prioritäten zu versehen. Es wird das \emph{Carrier Sense Multiple Access with Collision Avoidance} \acs{CSMA/CA}-Verfahren angewendet. Durch eine \emph{bitweise Arbitrierung} wird dafür gesorgt, dass bei einer Kollision auf dem Bus die Botschaft mit der höchsten Priorität weiterhin übertragen wird. Die höchst priorisierte Botschaft weist immer den niedrigsten nominellen \acs{ID} auf. Durch den Vergleich der dominanten und rezessiven Buspegel ist jeder Knoten darüber informiert, welche Botschaft gerade auf dem Bus übertragen wird. Stellt ein Knoten der aktuell sendet fest, dass der Pegel auf dem Bus nicht seiner gesendeten Botschaft entspricht, stellt dieser umgehend den Sendevorgang ein. Die Echtzeitfähigkeit des Gesamtsystems wird somit nicht gefährdet und Botschaften mit hoher Priorität bleiben deterministisch. \\
+Neben einer korrekten Zugriffsfolge sind besonders die Datensicherung und eine zuverlässige Fehlererkennung von großem Stellenwert. Hierzu kommen Mechanismen wie der \emph{Cyclic Redundancy Check} \acs{CRC}, \emph{Acknowledgement} \acs{ACK} oder \emph{Bitstuffing} zum Einsatz. In der \acs{CRC}-Sequenz wird aus dem Frame ein Polynom gebildet, welches durch Division mit einem Modulo-Operator eine Prüfsumme ergibt. Der Empfänger berechnet bei Erhalt einer Botschaft ebenfalls eine \acs{CRC}-Prüfsumme. Stimmen die erhaltenen und berechneten Sequenzen überein, war der strukturelle Aufbau der Botschaftsübertragung korrekt. Mindestens ein Empfänger bestätigt den positiven Erhalt, indem er das \acs{ACK}-Bit auf einen dominanten Pegel setzt. Liegt ein \acs{ACK}-Fehler vor, wurde also entweder vom Sender ein Fehler verursacht oder es befinden sich keine weiteren Teilnehmer am Bus.\\
+Die Bitstuffing-Methodik dient der zeitlichen Nachsynchronisation während der Übertragungslaufzeit. Die Synchronisation der Busteilnehmer erfolgt eigentlich über den Flankenwechsel zwischen unterschiedlichen Bits. Liegen jedoch mehrere homogene Bits hintereinander vor, kann diese Synchronisation nicht stattfinden. Um eine korrekte Übertragung zu gewährleisten, fügt der Sender bis zum Ende der \acs{CRC}-Sequenz nach fünf homogenen Bits immer ein komplementäres Bit ein. Der Empfänger entfernt seinerseits diese Stuff-Bits, bevor das empfangene Datenpaket ausgewertet wird. Wird von einem Empfänger eine Folge von mehr als fünf homogenen Bits erkannt, liegt ein Bitstuffing-Fehler vor. Bei der Übertragung eines Data Frames mit 11 Bit Identifier kann der gesamte Botschaftsrahmen also um 29 Bit\footnote{im Worst Case bei acht Datenbytes} auf bis zu 132 Bit anwachsen. \\
+Wurde einer der genannten Fehler erkannt, wird ein Fehlersignal gesetzt, welches aus sechs dominanten Bits besteht und damit bewusst gegen die Bitstuffing-Regel verstößt. In diesem Fall wird ein aktives \emph{Error Flag} in einem Error Frame von dem Knoten versendet, welcher den Sendefehler zuerst detektiert hat. Die beteiligten \acs{CAN}-Knoten stellen den Sendevorgang umgehend ein. Wird ein Fehler eines Knoten mehrfach detektiert, kann diesem das Senden verweigert werden. Zur Sicherstellung der systemweiten Datenkonsistenz und zur Reduzierung der Busauslastung kann ein fehlerhafter Knoten vollständig von der Buskommunikation ausgeschlossen werden \textbf{[15] [16] [17]}.
 
 
 \section{Hilfsmittel} \label{sec:Hilfsmittel} %Vector CAnoe, CANcaseXL, ...
+In diesem Abschnitt werden die wichtigsten Hilfsmittel vorgestellt, die während der Erstellung der vorliegenden Arbeit und den nachfolgend beschriebenen Abschnitten genutzt wurden.
+
+\subsection{Vector CANoe} \label{subsec:CANoe}
+\emph{CANoe} ist ein vielseitiges Software-Werkzeug der Firma \emph{Vector Informatik GmbH}. Es bedient Anwendungsgebiete wie Analyse, Diagnose, Simulation, Stimulation und Test während dem gesamten Entwicklungsprozess von Steuergeräten und Netzwerken. CANoe unterstützt dabei sämtliche gängigen Bussysteme sowie die normierten Transport- und Diagnoseprotokolle. Neben der Überwachung des realen Busverkehrs bietet die Software die Möglichkeit, einfache Teilsysteme bis hin zu komplexen Restbussystemen zu simulieren. Dabei kann die Buskommunikation jederzeit textuell dargestellt und die Signale visuell veranschaulicht werden \textbf{[25]}.\\
+Das Softwaretool liefert zusätzlich die integrierte und firmeneigene Programmiersprache \emph{Communication Access Programming Language} \acs{CAPL}.Die auf \emph{C} basierte Sprache wurde speziell für die Anforderungen zur Entwicklung von Bussystemen angepasst. \acs{CAPL} bietet als eventorientierte Skriptsprache die Möglichkeit, bequem auf Signale zuzugreifen und die Signalwerte zu verändern. Es steht eine Vielzahl an vordefinierter Funktionen zur Verfügung. Ebenso können eigene grafische Benutzeroberflächen erstellt werden, wodurch komplexe Simulationsumgebungen erleichtert werden \textbf{[26]}.
+
+\subsection{Vector CANcaseXL} \label{subsec.CANcaseXL}
+Das \emph{CANcaseXL} der Firma \emph{Vector Informatik GmbH} ist ein USB-Interface, das eine physikalische Ankopplung eines Computers mit der Software CANoe an ein reales Bussystem erlaubt. Mithilfe dieser Ankopplung ist es möglich, sowohl Busbotschaften zu generieren und diese auf den Bus zu senden, als auch reale Botschaften von angekoppelten Systemen zu auszulesen und auszuwerten. Über die beiden D-Sub Anschlüsse ist eine Verbindung zu \acs{CAN}- oder LIN-Netzwerken realisierbar. Zwar wurde das CANcaseXL inzwischen von neueren Modulen abgelöst und bietet lediglich einen eingeschränkten Funktionsumfang gegenüber der weiteren Produktpalette der \emph{Vector Informatik GmbH}, jedoch eignet es sich aufgrund der vergleichsweise kompakten Bauform besonders für die in dieser Arbeit beschriebenen Anwendung. Zudem ist der integrierte Funktionsumfang für den Einsatz als \acs{CAN}-Interface völlig ausreichend \textbf{[27]}.
+
+
 
 
