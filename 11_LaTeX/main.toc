@@ -15,32 +15,34 @@
 \contentsline {subsection}{\numberline {2.2.2}Controller Area Network CAN}{9}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}CAN-Protokoll: Physical Layer}{9}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}CAN-Protokoll: Data Link Layer}{10}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Hilfsmittel}{11}{section.2.3}
-\contentsline {chapter}{\numberline {3}Ausgangssituation}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Hardware}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Software}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Sensorik}{14}{section.3.3}
-\contentsline {chapter}{\numberline {4}Diagnosesystem}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Konzept zur Fehlerdiagnose}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Aufbau einer Diagnosekommunikation}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Implementierung der Diagnosefunktion}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Ergebnisbetrachtung}{15}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Test und Validierung}{15}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Mehrwert der Diagnosefunktion}{15}{subsection.4.4.2}
-\contentsline {chapter}{\numberline {5}Dynamische L\IeC {\"a}ngs- und Querregelung}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Umsetzung des Fahralgorithmus}{17}{section.5.1}
-\contentsline {section}{\numberline {5.2}Kritische Analyse der implementierten Algorithmen}{17}{section.5.2}
-\contentsline {section}{\numberline {5.3}Optimierung der Regelung}{17}{section.5.3}
-\contentsline {section}{\numberline {5.4}Implementierung der optimierten Spurregelung}{17}{section.5.4}
-\contentsline {section}{\numberline {5.5}Ergebnisbetrachtung}{17}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Test und Validierung}{17}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Mehrwert der optimierten Spurregelung}{17}{subsection.5.5.2}
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{19}{chapter.6}
-\contentsline {section}{\numberline {6.1}Zusammenfassung}{19}{section.6.1}
-\contentsline {section}{\numberline {6.2}Ausblick}{20}{section.6.2}
-\contentsline {chapter}{Tabellenverzeichnis}{23}{chapter*.9}
-\contentsline {chapter}{Abbildungsverzeichnis}{25}{chapter*.10}
-\contentsline {chapter}{Literaturverzeichnis}{27}{chapter*.11}
-\contentsline {chapter}{\numberline {A}Anhang}{29}{appendix.A}
-\contentsline {section}{\numberline {A.1}Anhang 1}{29}{section.A.1}
-\contentsline {section}{\numberline {A.2}Anhang 2}{29}{section.A.2}
+\contentsline {section}{\numberline {2.3}Hilfsmittel}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Vector CANoe}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Vector CANcaseXL}{14}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}Ausgangssituation}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hardware}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Software}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}Sensorik}{16}{section.3.3}
+\contentsline {chapter}{\numberline {4}Diagnosesystem}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Konzept zur Fehlerdiagnose}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Aufbau einer Diagnosekommunikation}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Implementierung der Diagnosefunktion}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Ergebnisbetrachtung}{17}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Test und Validierung}{17}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Mehrwert der Diagnosefunktion}{17}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Dynamische L\IeC {\"a}ngs- und Querregelung}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Umsetzung des Fahralgorithmus}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Kritische Analyse der implementierten Algorithmen}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}Optimierung der Regelung}{19}{section.5.3}
+\contentsline {section}{\numberline {5.4}Implementierung der optimierten Spurregelung}{19}{section.5.4}
+\contentsline {section}{\numberline {5.5}Ergebnisbetrachtung}{19}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Test und Validierung}{19}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Mehrwert der optimierten Spurregelung}{19}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Zusammenfassung}{21}{section.6.1}
+\contentsline {section}{\numberline {6.2}Ausblick}{22}{section.6.2}
+\contentsline {chapter}{Tabellenverzeichnis}{25}{chapter*.9}
+\contentsline {chapter}{Abbildungsverzeichnis}{27}{chapter*.10}
+\contentsline {chapter}{Literaturverzeichnis}{29}{chapter*.11}
+\contentsline {chapter}{\numberline {A}Anhang}{31}{appendix.A}
+\contentsline {section}{\numberline {A.1}Anhang 1}{31}{section.A.1}
+\contentsline {section}{\numberline {A.2}Anhang 2}{31}{section.A.2}
