@@ -1,0 +1,67 @@
+<launch>
+
+	<include
+		file="$(find autonomous)/launch/camera.launch"
+	/>
+
+	
+	<node
+		pkg="autonomous"
+		name="image_preprocessinggray_node"
+		type="image_preprocessinggray_node.py"
+		respawn="true"
+	/>
+
+	
+
+	
+	<node
+		pkg="autonomous"
+		name="image_stopsign_node"
+		type="image_stopsign_node.py"
+		respawn="true"
+	/>
+
+	
+	<node
+		pkg="autonomous"
+		name="esc_control_node"
+		type="esc_control_node.py"
+		respawn="true"
+	/>
+
+	
+	<node
+		pkg="autonomous"
+		name="car_control_node"
+		type="car_control_node.py"
+		respawn="true"
+	/>
+
+
+
+
+	<node
+		pkg="rosserial_python"
+		name="serial_node"
+		type="serial_node.py"
+		args="/dev/ttyACM0"
+		respawn="true"
+	/>
+
+	
+	<node name="steering_pid" pkg="pid" type="controller" >
+		<param name="Kp" value="3.0" />
+		<param name="Ki" value="1.0" />
+		<param name="Kd" value="0.1" />
+		<param name="upper_limit" value="20" />
+		<param name="lower_limit" value="-20" />
+		<param name="topic_from_controller" value="control_steering" />
+		<param name="topic_from_plant" value="abw_steering" />
+		<param name="setpoint_topic" value="set_steering" />
+		<param name="max_loop_frequency" value="25.0" />
+		<param name="windup_limit" value="10" />
+	</node>
+
+
+</launch>
