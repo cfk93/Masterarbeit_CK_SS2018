@@ -1,0 +1,83 @@
+%-------------------------------------------------------------------
+%  Laden sämtlicher Packages	
+%-------------------------------------------------------------------
+%
+
+\usepackage[utf8]{inputenc} % Eingabecoidierung der Umlaute nach UTF-8
+
+\usepackage[T1]{fontenc}	% Schriftcodierung der Umlaute in westeuropäischer Form
+
+\usepackage[ngerman]{babel}	% Neue deutsche Rechtschreibung
+
+\usepackage{lmodern}		% Standard-Schriftfamilie Latin Modern
+
+\usepackage{parskip}		% Absatztrennung nach europäischer Norm
+
+\usepackage{makeidx}		% Indexerstellung
+
+\usepackage{lipsum}			% Lorem Ipsum
+
+\usepackage{graphicx}		% Einbetten von Grafiken
+\usepackage{epstopdf} 
+
+%\usepackage[hidelinks]{hyperref}		% Hyperlinks innerhalb des Dokumentes
+
+\usepackage{longtable}		% Für Tabellen, die sich über mehrere Seiten erstrecken
+
+%\usepackage{natbib}
+%\bibliographystyle{unsrt}
+
+\usepackage{url}
+\usepackage[isbn=false, doi=false, backend=bibtex, sorting=none]{biblatex}
+\setlength\bibitemsep{0.5\baselineskip}
+\DefineBibliographyStrings{german}{% 
+	urlseen = {geprüft am}, 
+}
+%\nocite{*}
+\addbibresource{005_bib/literatur2.bib}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[printonlyused]{acronym}
+
+\usepackage{geometry}
+
+\usepackage{booktabs}
+
+\usepackage{tabulary}		% Für schönere Tabellen mit bestimmter Breite
+\usepackage{colortbl}		% Für farbig hilterlegte Zellen in einer Tabelle
+
+\usepackage{textcomp}
+
+\usepackage{pdfpages}		%zum Einbinden von pdf-Dokumenten
+
+\usepackage[colorlinks=true, linkcolor=black, pdfdisplaydoctitle=true,citecolor=black]{hyperref} %für pdf-Metadaten
+\hypersetup{
+	pdftitle    = {Weiterentwicklung eines autonom fahrenden Demonstrators für Fahrerassistenzsysteme},
+	pdfsubject  = {Masterthesis},
+	pdfauthor   = {Christof Kary},
+	pdfpagemode  = UseOutlines, % Anzeige Bookmarks
+	bookmarksopen = true,     % Anzeige Ebenen
+	bookmarksnumbered = false, % Anzeige Abschnittsnummern  
+	pdfstartpage = {1},        % Startseite, hilfreich mit pdf
+	urlcolor=black
+}
+
+\usepackage{tikz}
+\usepackage{tikz-uml} % Für UML-Diagramme
+
+%-------------------------------------------------------------------
+%  Pfade der Dateien setzen
+%-------------------------------------------------------------------
+%
+\graphicspath{{006_img/}}
+
+%-------------------------------------------------------------------
+%  Sonstige Befehle	
+%-------------------------------------------------------------------
+%
+\makeindex
+
+\linespread{1.1} % Zeilenabstand für Dokument

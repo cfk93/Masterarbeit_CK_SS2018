@@ -1,0 +1,96 @@
+%===================================================================
+%% H A U P T D A T E I
+%%
+%%
+%%  Projekt: Masterarbeit 
+%%  Autor:   Christof Kary
+%%  Status:  
+%%  Datum:   2018-04-03
+%% 
+%===================================================================
+%% P R Ä A M B E L
+%-------------------------------------------------------------------
+%
+
+\documentclass[a4paper,twoside,11pt,BCOR14mm]{scrbook}
+
+\input{header} % Einfügen der Präambel aus der Header-Datei
+
+%===================================================================
+% B E G I N N  D E S  D O K U M E N T S
+%-------------------------------------------------------------------
+
+\begin{document}
+
+%-------------------------------------------------------------------
+%  VORSPANN	
+%-------------------------------------------------------------------
+%
+	% Die folgenden Seiten besitzen keine Seitennummerierung
+	\input{001_vorspann/deckblatt}		% Deckblatt an erster Seite einfügen
+	
+	\input{001_vorspann/aufgabenblatt}	% Aufgabenbeschreibung
+	
+	\input{001_vorspann/erklaerung} 	% Eidesstattliche Erklärung
+	
+	\input{001_vorspann/vorwort}		% Vorwort mit Danksagung
+	
+	
+	\frontmatter	% Hier beginnt Seitennummerierung in römisch groß
+	\pagenumbering{Roman}  
+	\input{001_vorspann/kurzfassung}
+	
+	\input{001_vorspann/abstract}
+	
+	\input{001_vorspann/abkuerzungsverzeichnis}
+	
+	\input{001_vorspann/nomenklatur}
+	
+	\tableofcontents
+	
+%-------------------------------------------------------------------
+%  EINLEITUNG
+%-------------------------------------------------------------------
+%
+	\mainmatter
+	
+	\input{002_einleitung/einleitung}
+	
+	\input{002_einleitung/grundlagen}
+	
+%-------------------------------------------------------------------
+%  HAUPTTEIL
+%-------------------------------------------------------------------
+%
+	\input{003_hauptteil/ausgangssituation}
+	
+	\input{003_hauptteil/diagnosesystem}
+	
+	\input{003_hauptteil/dynamische_regelung}
+	
+	
+%-------------------------------------------------------------------
+%  SCHLUSS
+%-------------------------------------------------------------------
+%
+	\input{004_schluss/zusammenfassung}
+	
+	\listoftables
+	\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+	
+	\listoffigures
+	\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+	
+%	\bibliography{005_bib/literatur_2}
+	\printbibliography
+	\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+	
+	
+%-------------------------------------------------------------------
+%  ANHANG
+%-------------------------------------------------------------------
+%
+	\appendix
+	\input{004_schluss/anhang}
+	
+\end{document}

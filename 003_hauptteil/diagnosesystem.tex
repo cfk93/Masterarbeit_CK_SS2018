@@ -1,0 +1,113 @@
+\chapter{Diagnosesystem} \label{cha:Diagnosesystem}
+
+Dieser Kapitel soll detailliert die zentrale Aufgabe der Arbeit beschreiben. Es solle Verfahren zu Diagnose des EVObots entwickelt und erstellt werden, um im Fahrbetrieb die internen Zustands- und Sensordaten echtzeitnah darzustellen und somit die Applikation des Fahralgorithmus zu erleichtern. 
+Zunächst wird die Bedeutung der Diagnose eines komplexen Fahrzeugsystems mit vernetzten Systemen aufgezeigt und ein Konzept zur Fehlerdiagnose am Modellfahrzeug aufgebaut. Nachfolgend wird das Vorgehen und der Aufbau eines Diagnosesystems ausführlich beschrieben. Abschließend wird die Diagnosefunktion validiert und die gewonnen Ergebnisse betrachtet. 
+
+\section{Konzept der Fehlerdiagnose} \label{sec.KonzeptDiagnose} % Allgemeines zur Diagnose im Fzg usw., Methodenauswahl: Warum CAN, Alternativen beschreiben (kabellos?), Use-Case-Diagramm
+
+Aktuelle Fahrzeugsystemen sollten selbstredend stets fehlerfrei und ohne Probleme agieren und die vom Fahrer gewünschten Funktionen vollständig umsetzten. Trotzdem kann es unter gewissen Umständen und äußeren Voraussetzung zu einem Fehlverhalten kommen. Ein Fehler kann im Betrieb eines mechatronischen Systemverbund sowohl mechanisch, elektronisch, als auch softwareseitig auftreten. Durch den stetigen Anstieg des Softwareanteils und der sicherheitskritischen Prozesse im automotiven Bereich steigt die Gefahr eines Softwarefehlers oder einer Software-Anomalie. Ein Fehler wird dabei allgemein nach \emph{EN ISO 9000:2005} \cite{DINDeutschesInstitutfurNormunge.V..201511} als \glqq Nichterfüllung einer Anforderung\grqq{} oder nach \emph{DIN 55350} \cite{DINDeutschesInstitutfurNormunge.V..200805} genauer als \glqq eine unzulässige Abweichung eines Merkmals von einer vorgegebenen Forderung\grqq{} beschrieben. \\
+Ein Softwarefehler lässt sich allgemeingültig entweder durch physikalische beziehungsweise chemische Effekte oder durch menschliche Fehlermechanismen wie Denkfehler, Verständnisfehler, Interpretationsfehler oder simple Tippfehler beschreiben. Dabei kann man diese Beschreibung eines Fehlers grundsätzlich in zwei Kategorien einordnen: Man spricht von einem physikalischen Fehler, wenn einzelne Komponenten oder Teilsysteme ausfallen, oder von einem funktionalen Fehler, wenn ein System ausführbar ist, seine Funktion aber nicht korrekt umgesetzt wird \cite{Borcsok.2007}. Ein funktionaler Fehler ist offenbar in den meisten Fällen das Ergebnis von Design-Mängeln und demnach auf eine menschliche Ursache zurückzuführen. Eine Fehlhandlung in der Umsetzung einer Softwareanwendung führt in aller Regel zu einem Fehlerzustand bei der Programmausführung. Dieser Fehlerzustand kann unter Umständen auch unerkannt bleiben. Tritt der Fehlerzustand jedoch aus Programmsicht nach Außen auf, spricht man von der Fehlerwirkung, die für den Anwender wahrnehmbar ist. Diese Fehlerwirkung kann sich je nach Schwere des Fehlers als ein abweichender Rückgabewert einer Berechnung oder bis hin zum Totalausfall des Systems äußern \cite{ISTQBAISBLGermanTestingBoarde.V.2017}. \\
+Im Sinne der Zuverlässigkeit gilt es also, das Auftreten eines Fehlerzustandes in einem sicherheitskritischen System zu vermeiden oder besser einen sicheren Zustand im Fehlerfall einzunehmen. Ein übergeordnetes Beispiel eines \emph{Fail-Safe}-Zustandes kann aus der Technologie des hochautomatisierten Fahrens gegeben werden: Fällt das Kamerasystem zur Fahrspurerkennung unerwartet aus, soll ein automatisiert fahrendes Fahrzeug nicht unkontrolliert weiterfahren, sondern die Fahrgeschwindigkeit reduzieren und auf Basis der verfügbaren Streckendaten am rechten Fahrbahnrand zum Stehen kommen, um einen potentiellen Schaden zu minimieren. 
+
+Die Komplexität der vernetzten Funktionen und Systeme erfordert eine umfassende Kommunikation der Softwarekomponenten und ebenso ausgereifte Methoden zur Diagnose möglicher Fehler. Kommt es zu einem Fehlerfall oder Systemausfall, ist die Ursache in einem komplexen und verteilten Systemnetzwerk meist schwer auszumachen. Aufgrund dessen wurden bereits früh in der Entwicklung elektronischer Datenkommunikation Diagnosesysteme als Analysewerkzeug eingeführt. Mit einem aus Hard- und Software bestehenden Diagnosesystem kann die Datenbuskommunikation aufgezeichnet und diagnoserelevante Informationen über den Zustand der Teilkomponenten zu einem externen Testgerät übertragen und ausgewertet werden. Ein Diagnosesystem gilt damit als umfangreiches Werkzeug zur schnellen Fehlererkennung und Fehleranalyse. Während dem Entwicklungsprozess lässt sich ein Diagnosesystem auch nutzen, um über die Diagnosekommunikation die Steuergeräte-Applikation durchzuführen. Dabei ist es nicht nur nötig die reine Datenübertragung einheitlich zu standardisieren, sondern ebenfalls die Applikationsschicht der Protokolle (Vgl. Tabelle \ref{tab:OSI-Schichtenmodell}) zu normieren. Dies bietet die Möglichkeit, den Aufwand und die Pflege der Diagnoseschnittstellen und den Diagnosetestern zu begrenzen. \\
+Um eine einheitliche Diagnosekommunikation zu schaffen, wurden seit den 1990er Jahren diverse \emph{Diagnoseprotokolle} entwickelt, die zunächst teils proprietär und inkompatibel zueinander umgesetzt waren, inzwischen jedoch meist herstellerübergreifend genormt sind. Als heute gängige Diagnoseprotokolle sind das \emph{Keyword 2000 Protokoll} \acs{KWP} 2000, die \emph{Unified Diagnostic Services} \acs{UDS} oder die \emph{On-Board-Diagnose} \acs{OBD} zu nennen. Für weiterführende Informationen der genannten Standards sei auf \cite{Zimmermann.2014} und \cite{Schaffer.2012} verwiesen.
+
+\subsection{Anforderungen an die Fehlerdiagnose}
+\label{subsec:AnforderungenDiagnose}
+
+Um ein Diagnosesystem für das Demonstratorfahrzeug mit angemessenen Mitteln und Werkzeugen umzusetzen, wird zunächst der gewünschte Funktionsumfang beschrieben und darauf aufbauend sämtliche Anforderungen an das System definiert.
+Dazu ist in Abbildung \ref{abb:UseCaseDiagnose} ein Use-Case-Diagramm in der grafischen Modellierungssprache \acs{UML} für den konkreten Anwendungsfall der Diagnosefunktion dargestellt. Hieraus lassen sich leicht die Spezifikationen und geforderte Funktionalitäten an die spätere Diagnose ableiten.
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tikzpicture}
+	\begin{umlsystem}[x=4, fill=red!10]{Diagnosefunktion} 
+	
+	\umlusecase [x=0.5, y=0,    width=2.5cm] {Diagnose starten/stoppen}
+	\umlusecase [x=0,   y=-2,   width=2.5cm] {Diagnosedaten aufzeichnen}
+	\umlusecase [x=0.5, y=-4,   width=2.5cm] {Diagnosedaten ausgeben}
+	\umlusecase [x=0,   y=-6,   width=2.5cm] {in Klartext darstellen}
+	\umlusecase [x=4,   y=-7.5, width=2.5cm] {Signalverlauf darstellen}
+	\umlusecase [x=5,   y=-3,   width=2.5cm] {Daten einlesen}
+	\umlusecase [x=5.5, y=-1,   width=2.5cm] {Sensordaten einlesen}
+	\umlusecase [x=5.5, y=-5,   width=2.5cm] {statische Daten einlesen}
+	% \umsusecase Datenanalyse
+
+	\end{umlsystem}
+	\umlactor [y=-2] {Anwender}
+	\umlactor [x=13, y=-3] {EVObot}
+	
+	\umlassoc{Anwender}{usecase-1}
+	\umlassoc{Anwender}{usecase-2}
+	\umlassoc{Anwender}{usecase-3}
+	\umlassoc{EVObot}{usecase-6}
+	\umlinherit{usecase-4}{usecase-3}
+	\umlinherit{usecase-5}{usecase-3}
+	\umlinherit{usecase-7}{usecase-6}
+	\umlinherit{usecase-8}{usecase-6}
+	\umlextend{usecase-6}{usecase-1} 
+	
+	\end{tikzpicture}
+	\caption{Use-Case-Diagramm einer Diagnosefunktion für den Fahrdemonstrator}
+	\label{abb:UseCaseDiagnose}
+\end{figure}
+	
+Das Gesamtsystem besteht aus Fahrzeug, Diagnosewerkzeug und Anwender. Aus dem Use-Case-Diagramm ergeben sich die funktionalen Anforderungen wie folgt:
+
+\begin{itemize}
+	\item Das Diagnosesystem muss die Diagnosedaten innerhalb der Programmlaufzeit an ein Ausgabegerät übermitteln.
+	\item Das Diagnosesystem muss die Diagnosedaten auf einem externen Ausgabegerät darstellen.
+	\item Das Diagnosesystem muss die Daten sowohl in Klartext ausgeben, als auch die einzelnen Signalverläufe grafisch darstellen. 
+	\item Die Diagnosefunktion muss vom Anwender gestartet und gestoppt werden können.
+	\item Das Diagnosesystem darf im inaktiven Zustand keine Daten vom Fahrzeug übertragen, um die Systemauslastung gering zu halten.\\
+\end{itemize}
+
+
+Zudem lassen sich weiterhin folgende, nichtfunktionale Anforderungen stellen:
+\begin{itemize}
+	\item Die Umsetzung der Datenkommunikation soll dem Vorbild eines realen und aktuellen Kraftfahrzeuges entsprechen.
+	\item Die Datenkommunikation darf kabelgebunden oder kabellos stattfinden.
+	\item Das Diagnosesystem muss ein echtzeitnahes Daten-Monitoring ermöglichen.
+	\item Das Diagnosesystem soll eine übersichtliche Visualisierung für den Anwender bieten. 
+	\item Die Einbindung in das bestehende System soll ohne grundlegende Modifikationen in den implementierten Algorithmen möglich sein.
+	\item Die Datenkonsistenz und Datensicherung bei der externen Kommunikation muss gewährleistet sein.
+	\item Die Diagnosefunktion muss für spätere Ergänzungen erweiterbar sein.
+	\item Die Programmierschnittstelle muss offen und modular sein. 
+\end{itemize}
+
+
+\newpage
+
+
+Echtzeitnah, Livebeurteilung und Aufzeichnung möglich, visuell gut umsetzbar, Aufwand überschaubar, Einbindung in bestehendes System nur durch Erweiterung, vergleichbare Umsetzung wie im Kfz, Datenkonsistenz und Zuverlässigkeit (Sicherheitsaspekte von CAN), kabellos oder kabelgebunden (keine langen Fahrwege), leichte Erweiterung 
+
+
+
+--> Anforderungen definieren
+--> Möglichkeiten zur Umsetzung (großer Vorteil CANoe vorhanden und kann Inhaus genutzt werden)
+--> 
+
+Off-Board-Kommunikation als Diagnose in ISO Schicht 7 geregelt 
+ 
+Generierung von Diagnosedaten ist von Beginn der Entwicklung an essentiell, um spätere Komplexität zu beherrschen. 
+
+
+
+
+
+Fehler sind üblich in komplexen Systemen. Sollten vermieden werden, kommen aber unter bestimmten Bedingungen und Voraussetzungen vor. Abhängig von Implementierung, Fehlervermeidung usw. Fale-Safe-Zustand. Fehlerzustand, Fehlerwirkung
+Wie äußert sich Fehler oder Fehlfunktion? --> unplausibler Signalwert, falscher Wert oder out of range
+
+Abweichung zum SOLL ist nicht unbedingt programmseitiger Fehler, sondern kann aus Logikfunktion des Programmierers folgen. 
+
+\section{Aufbau einer Datenkommunikation auf CAN-Bus} \label{sec:AufbauDatenkommunikation} % HW-Anbindung an CAN-Bus, Arduino/Jetson, Darstellung Übertragung Dummy-Botschaften cansend/candump...
+
+\section{Implementierung der Diagnosefunktion} \label{sec:ImplementierungDiagnose} % SW-seitige Umsetzung inkl. kompletter Programmablaufplan, Funktionen erklären, Gesamtfunktion in ROS, ... 
+
+\section{Ergebnisbetrachtung} \label{sec:ErgebnisDiagnose} % Zeitkritisch? Echtzeit? Dauer der Verarbeitung, Wiederholungsrate der Sensorsignale, Rechenleistung, Synchronisation, ...
+\subsection{Test und Validierung} \label{subsec:TestValidierungDiagnose}
+\subsection{Mehrwert der Diagnosefunktion} \label{subsec:MehrwertDiagnose}
+% Alternative: UDP Das User Datagram Protocol, kurz UDP, ist ein minimales, verbindungsloses Netzwerkprotokoll, das zur Transportschicht der Internetprotokollfamilie gehört. UDP ermöglicht Anwendungen den Versand von Datagrammen in IP-basierten Rechnernetzen. --> Kabellos!
+
+
+
