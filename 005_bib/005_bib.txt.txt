@@ -1,0 +1,1 @@
+Hier werden bib-Dateien des Literaturverzeichnisses in LaTeX abgelegt.
