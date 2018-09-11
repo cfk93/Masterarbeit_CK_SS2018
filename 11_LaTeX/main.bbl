@@ -1,8 +1,901 @@
-\begin{thebibliography}{0}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\end{thebibliography}
+\datalist[entry]{none/global//global/global}
+  \entry{Klumann.2000}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KN}{%
+         family={Klu{\ss}mann},
+         familyi={K\bibinitperiod},
+         given={Niels},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {ger}%
+    }
+    \list{publisher}{1}{%
+      {H{\"u}thig}%
+    }
+    \keyw{Datenkommunikation;Daten{\"u}bertragung;Dictionaries;Electronic data
+  processing;Informatik;Informatik / Allgemeines;Information
+  science;Informationstechnik;Internet;Kommunikationstechnik;Lexikon;Multimedia;Telecommunication;Telekommunikation;W{\"o}rterbuch}
+    \strng{namehash}{KN1}
+    \strng{fullhash}{KN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{2., erw. und aktualisierte Aufl.}
+    \field{isbn}{3778539132}
+    \field{pagetotal}{871}
+    \field{subtitle}{{Telekommunikation, Datenkommunikation, Multimedia,
+  Internet}}
+    \field{title}{{Lexikon der Kommunikations- und Informationstechnik}}
+    \list{location}{1}{%
+      {Heidelberg}%
+    }
+    \verb{file}
+    \verb https://external.dandelon.com/download/attachments/dandelon/ids/CH001
+    \verb BBC43EC6B6E72E5BC12578E2004FAFB9.pdf
+    \endverb
+    \field{year}{2000}
+  \endentry
+
+  \entry{VectorInformatikGmbH.b}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vector Informatik GmbH}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Einf{\"u}hrung in serielle
+  Bussysteme;E-Learning;online-Lernen;SBS;Serielle Datenkommunikation im Kfz}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    E-Learning-Angebot zur Einf{\"u}hrung in serielle Bussysteme%
+    }
+    \field{note}{Copyright: 2018 Vector Informatik}
+    \field{title}{{Einf{\"u}hrung in die Seriellen Bussysteme im Kfz}}
+    \verb{url}
+    \verb https://elearning.vector.com/vl_sbs_introduction_de.html
+    \endverb
+    \list{location}{1}{%
+      {Stuttgart}%
+    }
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{VectorInformatikGmbH.c}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vector Informatik GmbH}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \keyw{CAN;CAN-Einf{\"u}hrung;CAN-Grundlagen;Controller Area
+  Network;Einf{\"u}hrung in CAN;Einf{\"u}hrung in das Controller Area
+  Network;E-Learning;online-Lernen}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    E-Learning-Angebot zur Einf{\"u}hrung in CAN%
+    }
+    \field{note}{Copyright: 2018 Vector Informatik}
+    \field{title}{{Einf{\"u}hrung in CAN}}
+    \verb{url}
+    \verb https://elearning.vector.com/vl_can_introduction_de.html
+    \endverb
+    \list{location}{1}{%
+      {Stuttgart}%
+    }
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Schuller.20.01.2005}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=SD}{%
+         family={Sch{\"u}ller},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SD1}
+    \strng{fullhash}{SD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{subtitle}{{Ausarbeitung zum Seminarvortrag}}
+    \field{title}{{Bussysteme im Automobil}}
+    \list{location}{1}{%
+      {Koblenz}%
+    }
+    \list{institution}{1}{%
+      {{Universit{\"a}t Koblenz-Landau}}%
+    }
+    \verb{file}
+    \verb 63e301b7-803e-4a8a-9550-61376ac2c53c:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\63e301b7-803
+    \verb e-4a8a-9550-61376ac2c53c.pdf:pdf
+    \endverb
+    \field{year}{2005-01-20}
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{InternationalOrganizationforStandardization.15.11.1994}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=I}{%
+         family={{International Organization for Standardization,}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {{ISO/IEC Copyright Office}}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{number}{7498-1}
+    \field{pagetotal}{68}
+    \field{title}{{ISO/IEC 7498-1: Information technology - Open Systems
+  Interconnection - Basic Reference Model: The Basic Model}}
+    \verb{url}
+    \verb http://standards.iso.org/ittf/PubliclyAvailableStandards/s020269_ISO_
+    \verb IEC_7498-1_1994(E).zip
+    \endverb
+    \list{location}{1}{%
+      {Genf, CH}%
+    }
+    \verb{file}
+    \verb 5fb3b93e-77a1-4241-b503-f2100cfa54db:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\5fb3b93e-77a
+    \verb 1-4241-b503-f2100cfa54db.pdf:pdf
+    \endverb
+    \field{type}{ISO/IEC}
+    \field{day}{15}
+    \field{month}{11}
+    \field{year}{1994}
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Wallentowitz.2011}{collection}{}
+    \name{editor}{2}{}{%
+      {{hash=WH}{%
+         family={Wallentowitz},
+         familyi={W\bibinitperiod},
+         given={Henning},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Reif},
+         familyi={R\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {ger}%
+    }
+    \list{publisher}{1}{%
+      {{Vieweg + Teubner}}%
+    }
+  \keyw{Book;Bussysteme;FlexRay;Kraftfahrzeugelektronik;Lin;Most;Motorsteuerung}
+    \strng{namehash}{WHRK1}
+    \strng{fullhash}{WHRK1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{edition}{2., verb. und aktualisierte Aufl.}
+    \field{isbn}{9783834807007}
+    \field{pagetotal}{724}
+    \field{series}{{ATZ/MTZ-Fachbuch}}
+    \field{subtitle}{{Grundlagen - Komponenten - Systeme - Anwendungen}}
+    \field{title}{{Handbuch Kraftfahrzeugelektronik}}
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \verb{file}
+    \verb http://d-nb.info/1007117141/04
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{Zimmermann.2014}{book}{}
+    \name{author}{2}{}{%
+      {{hash=ZW}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Werner},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Schmidgall},
+         familyi={S\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Vieweg}}%
+    }
+    \keyw{Bus;Computer
+  engineering;Engineering;Kommunikationsprotokoll;Kraftfahrzeugelektronik;Systems
+  engineering;Telecommunication}
+    \strng{namehash}{ZWSR1}
+    \strng{fullhash}{ZWSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Dieses Fachbuch gibt einen {\"U}berblick {\"u}ber die in der Kfz-Elektronik
+  verbreiteten Bussysteme wie CAN, FlexRay, LIN oder MOST, deren Protokolle und
+  die Softwarearchitektur moderner Steuerger{\"a}te. Die Beschreibung erfolgt
+  aus der Sicht von Ingenieuren, die diese Systeme in der Praxis einsetzen und
+  in Fahrzeuge integrieren m{\"u}ssen. Ausf{\"u}hrlich wird auf die h{\"o}heren
+  Schichten der ISO, SAE und ASAM-Transport- und Diagnoseprotokolle sowie deren
+  Anwendung eingegangen. Neben der Kommunikation wird die Softwarearchitektur
+  der Steuerger{\"a}te mit Betriebssystem und Basissoftware vorgestellt, wie
+  sie im Rahmen von AUTOSAR, OSEK/VDX und HIS definiert werden. Neu in dieser
+  Auflage wurden CAN FD, Automotive Ethernet, OTX und WWH-OBD aufgenommen. Der
+  Inhalt Bussysteme, Protokolle, Standards und Softwarearchitektur - Physical
+  und Data Link Layer f{\"u}r CAN, CAN FD, LIN, FlexRay, MOST, Automotive
+  Ethernet, SAE J1939, K-Line, SENT, PSI5, ASRB, DSI, Car-to-Car -
+  Transportprotokolle - Diagnoseprotokolle UDS, KWP 2000, OBD, DoIP -
+  Applikation und Diagnose mit ASAM FIBEX, ODX, OTX - Softwarestandards: OSEK,
+  HIS, AUTOSAR, Flashlader - Zeitverhalten von Bus und Betriebssystem -
+  Werkzeuge, Anwendungen und Einsatzgebiete Die Zielgruppen Entwicklungs- und
+  Applikationsingenieure in der Automobil- und Zulieferindustrie Studierende
+  der Kfz-Elektrik/Elektronik, Mechatronik, Technischen Informatik,
+  Softwaretechnik, Maschinenbau/Kraftfahrzeugtechnik Die Autoren Prof. Dr.-Ing.
+  Werner Zimmermann lehrt Regelungstechnik, Systementwurf, Digital- und
+  Rechnersysteme an der Hochschule Esslingen und war vorher bei der Robert
+  Bosch GmbH f{\"u}r die Steuerger{\"a}teentwicklung von Dieselfahrzeugen
+  verantwortlich. Dr. Ralf Schmidgall ist in der Entwicklung Fahrzeugdiagnose
+  der Daimler AG t{\"a}tig. Zuvor sammelte er Erfahrungen in der Entwicklung
+  von Flash-Bootladern in der Kfz-Zulieferindustrie%
+    }
+    \verb{doi}
+    \verb 10.1007/978-3-658-02419-2
+    \endverb
+    \field{edition}{5., aktual. und erw. Aufl.}
+    \field{isbn}{9783658024185}
+    \field{pagetotal}{507}
+    \field{series}{{ATZ / MTZ-Fachbuch}}
+    \field{subtitle}{{Protokolle, Standards und Softwarearchitektur}}
+    \field{title}{{Bussysteme in der Fahrzeugtechnik}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1007/978-3-658-02419-2
+    \endverb
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \verb{file}
+    \verb http://gbv.eblib.com/patron/FullRecord.aspx?p=1783365
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{VectorInformatikGmbH.}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vector Informatik GmbH}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Einf{\"u}hrung in
+  FlexRay;E-Learning;FlexRay;FlexRay-Einf{\"u}hrung;FlexRay-Grundlagen;online-Lernen}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    E-Learning-Angebot zur Einf{\"u}hrung in FlexRay%
+    }
+    \field{note}{Copyright: 2018 Vector Informatik}
+    \field{title}{{Einf{\"u}hrung in FlexRay}}
+    \verb{url}
+    \verb https://elearning.vector.com/vl_flexray_introduction_de.html
+    \endverb
+    \list{location}{1}{%
+      {Stuttgart}%
+    }
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{DINDeutschesInstitutfurNormunge.V..201511}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=D}{%
+         family={{DIN Deutsches Institut f{\"u}r Normung e.V.}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {{DIN Deutsches Institut f{\"u}r Normung e.V.}}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{number}{9000}
+    \field{pagetotal}{104}
+    \field{title}{{Qualit{\"a}tsmanagementsysteme}}
+    \verb{url}
+    \verb http://perinorm-fr.redi-bw.de/volltexte/CD21DE07/2325650/2325650.pdf?
+    \endverb
+    \field{version}{2005-12}
+    \field{volume}{01.040.03; 03.120.10}
+    \list{location}{1}{%
+      {Berlin}%
+    }
+    \verb{file}
+    \verb 178f0400-4336-45d2-8bf4-4de8a5c71003:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\178f0400-433
+    \verb 6-45d2-8bf4-4de8a5c71003.pdf:pdf
+    \endverb
+    \field{type}{DIN~EN~ISO}
+    \field{day}{01}
+    \field{month}{11}
+    \field{year}{2015}
+    \field{urlday}{13}
+    \field{urlmonth}{07}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{DINDeutschesInstitutfurNormunge.V..200805}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=D}{%
+         family={{DIN Deutsches Institut f{\"u}r Normung e.V.}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {{DIN Deutsches Institut f{\"u}r Normung e.V.}}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{number}{55350}
+    \field{pagetotal}{13}
+    \field{title}{{Begriffe zum Qualit{\"a}tsmanagement}}
+    \verb{url}
+    \verb http://perinorm-fr.redi-bw.de/volltexte/CD21DE03/1415055/1415055.pdf?
+    \endverb
+    \field{version}{11}
+    \field{volume}{01.040.03; 03.120.01}
+    \list{location}{1}{%
+      {Berlin}%
+    }
+    \verb{file}
+    \verb 5e123c65-68bd-4022-a37f-36675346df39:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\5e123c65-68b
+    \verb d-4022-a37f-36675346df39.pdf:pdf
+    \endverb
+    \field{type}{DIN}
+    \field{day}{01}
+    \field{month}{05}
+    \field{year}{2008}
+    \field{urlday}{13}
+    \field{urlmonth}{07}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Borcsok.2007}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={B{\"o}rcs{\"o}k},
+         familyi={B\bibinitperiod},
+         given={Josef},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{H{\"u}thig GmbH {\&} Co. KG}}%
+    }
+    \keyw{Anforderungsdefinition;Ausfallsicheres
+  System;Automatisierungstechnik;Datenverarbeitungssystem;Elektroinstallation;Funktionssicherheit;Risikoanalyse;Sicherheitstechnik}
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{2., {\"u}berarbeitete Auflage}
+    \field{isbn}{9783778540213}
+    \field{pagetotal}{608}
+    \field{series}{{Praxis}}
+    \field{subtitle}{{Hardwarekonzepte, Modelle und Berechnung}}
+    \field{title}{{Elektronische Sicherheitssysteme}}
+    \verb{url}
+    \verb http://deposit.d-nb.de/cgi-bin/dokserv?id=2995265&prov=M&dok_var=1&do
+    \verb k_ext=htm
+    \endverb
+    \list{location}{1}{%
+      {Heidelberg}%
+    }
+    \verb{file}
+    \verb http://d-nb.info/985373571/04
+    \endverb
+    \field{year}{2007}
+  \endentry
+
+  \entry{ISTQBAISBLGermanTestingBoarde.V.2017}{online}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{ISTQB AISBL, German Testing Board e.V}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{subtitle}{{Version vom 21.05.2017}}
+    \field{title}{{ISTQB GTB Standardglossar der Testbegriffe}}
+    \verb{url}
+    \verb http://glossar.german-testing-board.info/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Reif.2014}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RK}{%
+         family={Reif},
+         familyi={R\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Vieweg}}%
+    }
+    \keyw{Automobiles;Electronic
+  equipment;Kraftfahrzeugelektronik;Sensortechnik;Stra{\ss}enfahrzeugtechnik}
+    \strng{namehash}{RK1}
+    \strng{fullhash}{RK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{5., {\"u}berarb. Aufl.}
+    \field{isbn}{9783658050481}
+    \field{series}{{ATZ-MTZ-Fachbuch}}
+    \field{subtitle}{{Eine Einf{\"u}hrung f{\"u}r Ingenieure}}
+    \field{title}{{Automobilelektronik}}
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \verb{file}
+    \verb http://deposit.d-nb.de/cgi-bin/dokserv?id=4894075&prov=M&dok_var=1&do
+    \verb k_ext=htm
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{Leonhardt.1997}{online}{}
+    \name{author}{2}{}{%
+      {{hash=LS}{%
+         family={Leonhardt},
+         familyi={L\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Ayoubi},
+         familyi={A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=D}{%
+         family={{Darmstadt University of Technology}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {{Institute of Automatic Control}}%
+    }
+    \strng{namehash}{LSAM1}
+    \strng{fullhash}{LSAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/S0967-0661(97)00050-6
+    \endverb
+    \field{title}{{Methods of fault diagnosis}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0967066197000506
+    \endverb
+    \field{year}{1997}
+    \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Schaffer.2012}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SF}{%
+         family={Sch{\"a}ffer},
+         familyi={S\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {ger}%
+    }
+    \list{publisher}{1}{%
+      {Franzis}%
+    }
+    \keyw{Kraftfahrzeug;On-Board-Diagnose}
+    \strng{namehash}{SF1}
+    \strng{fullhash}{SF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9783645651561}
+    \field{pagetotal}{240}
+    \field{series}{{Elektronik}}
+    \field{title}{{OBD - Fahrzeugdiagnose in der Praxis}}
+    \list{location}{1}{%
+      {Haar bei M{\"u}nchen}%
+    }
+    \verb{file}
+    \verb http://deposit.d-nb.de/cgi-bin/dokserv?id=4128207&prov=M&dok_var=1&do
+    \verb k_ext=htm
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{NVIDIACorporation.2017}{online}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{NVIDIA Corporation}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=N}{%
+         family={{NVIDIA Corporation}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Jetson TX2 OEM Product Design Guide%
+    }
+    \field{pagetotal}{98}
+    \field{subtitle}{{OEM Product Design Guide}}
+    \field{title}{{NVIDIA Jetson TX2}}
+    \verb{url}
+    \verb https://developer.download.nvidia.com/assets/embedded/secure/jetson/T
+    \verb X2/docs/JetsonTX2_OEM_Product_DesignGuide.pdf?twst-Xd7IOsU0KjHLbw5ZyY
+    \verb DJhXhaUZm9qIQsFEWS9oWnj1B8pysivJs5zN4cjMk170j_IvZcf0mK6cAzHA9BLiaAPHc
+    \verb ajGiYxD4zntMmXHH96C_P7qnXd7WYVV8je-Jb-d075lSt0IP1OmUG3bnhsWqBJ6l6d3u3
+    \verb yTj7oUY1NU3z17x6Ig17LfE7A
+    \endverb
+    \verb{file}
+    \verb 03ff4a1c-7394-4c51-b50d-b0be23c105c3:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\03ff4a1c-739
+    \verb 4-4c51-b50d-b0be23c105c3.pdf:pdf
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{06}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{OliverHartkopp.2017}{online}{}
+    \name{author}{6}{}{%
+      {{hash=O}{%
+         family={{Oliver Hartkopp}},
+         familyi={O\bibinitperiod},
+      }}%
+      {{hash=U}{%
+         family={{Urs Thuermann}},
+         familyi={U\bibinitperiod},
+      }}%
+      {{hash=J}{%
+         family={{Jan Kizka}},
+         familyi={J\bibinitperiod},
+      }}%
+      {{hash=W}{%
+         family={{Wolfgang Grandegger}},
+         familyi={W\bibinitperiod},
+      }}%
+      {{hash=R}{%
+         family={{Robert Schwebel}},
+         familyi={R\bibinitperiod},
+      }}%
+      {{hash=M}{%
+         family={{Marc Kleine-Budde}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O+1}
+    \strng{fullhash}{OUJWRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Readme file for the Controller Area Network Protocol Family
+  (aka SocketCAN)}}
+    \verb{url}
+    \verb https://www.kernel.org/doc/Documentation/networking/can.txt
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{09}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{VectorInformatikGmbH.2015}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vector Informatik GmbH}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \keyw{V5.2.0}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{40}
+    \field{title}{{Handbuch CANcaseXL}}
+    \verb{url}
+    \verb https://vector.com/portal/medien/cmc/manuals/CANcaseXL_Manual_DE.pdf
+    \endverb
+    \verb{file}
+    \verb c84289cb-82b7-4138-b60c-34f7600e902b:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\c84289cb-82b
+    \verb 7-4138-b60c-34f7600e902b.pdf:pdf
+    \endverb
+    \field{year}{2015}
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{VectorInformatikGmbH.2018}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vector Informatik GmbH}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Produktinformation}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{54}
+    \field{subtitle}{{Produktinformation}}
+    \field{title}{{CANoe}}
+    \verb{url}
+    \verb https://vector.com/portal/medien/cmc/info/CANoe_ProductInformation_DE
+    \verb .pdf
+    \endverb
+    \verb{file}
+    \verb dc3e3dc9-25f5-4105-91df-19948e8d08ab:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\dc3e3dc9-25f
+    \verb 5-4105-91df-19948e8d08ab.pdf:pdf
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{VectorInformatikGmbH.07.08.2017}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vector Informatik GmbH}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {{Vector Informatik GmbH}}%
+    }
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{subtitle}{{Vector KnowledgeBase}}
+    \field{title}{{CAPL Documentation}}
+    \verb{url}
+    \verb https://kb.vector.com/entry/48/
+    \endverb
+    \list{location}{1}{%
+      {Stuttgart}%
+    }
+    \field{year}{07.08.2017}
+    \field{urlday}{08}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Quigley.2015}{book}{}
+    \name{author}{3}{}{%
+      {{hash=QM}{%
+         family={Quigley},
+         familyi={Q\bibinitperiod},
+         given={Morgan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Gerkey},
+         familyi={G\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Bill},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {O´Reilly}%
+    }
+    \keyw{Operating systems (Computers);Programming;Robot Operating
+  System;Robotics;Robotik;Robots}
+    \strng{namehash}{QMGBSB1}
+    \strng{fullhash}{QMGBSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{First edition}
+    \field{isbn}{9781449323899}
+    \field{series}{{Safari Tech Books Online}}
+    \field{subtitle}{{A practical introduction to the Robot Operating System}}
+    \field{title}{{Programming robots with ROS}}
+    \verb{url}
+    \verb http://proquest.safaribooksonline.com/9781449325480
+    \endverb
+    \list{location}{5}{%
+      {Beijing}%
+      {Boston}%
+      {Farnham}%
+      {Sebastopol}%
+      {Tokyo}%
+    }
+    \verb{file}
+    \verb http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nleb
+    \verb k&AN=1100699
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{PythonSoftwareFoundation.2018}{online}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={{Python Software Foundation}},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=P}{%
+         family={{Python Software Foundation}},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{subtitle}{{The Python Standard Library}}
+    \field{title}{{7.3. struct --- Interpret strings as packed binary data ---
+  Python 2.7.15 documentation}}
+    \verb{url}
+    \verb https://docs.python.org/2/library/struct.html
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{FordMotorCompany.2017}{online}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{Ford Motor Company}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=F}{%
+         family={{Ford Motor Company}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{subtitle}{{OpenXC Vehicle Interface Firmware}}
+    \field{title}{{Bit Numbering and Byte Order --- OpenXC Vehicle Interface
+  Firmware 7.2.1-dev documentation}}
+    \verb{url}
+    \verb http://vi-firmware.openxcplatform.com/en/master/config/bit-numbering.
+    \verb html
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Rouse.2014}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={Rouse},
+         familyi={R\bibinitperiod},
+         given={Margaret},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=TI}{%
+         family={TechTarget},
+         familyi={T\bibinitperiod},
+         given={Inc},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM1}
+    \strng{fullhash}{RM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Mit Big-Endian bzw Little-Endian l{\"a}sst sich definieren, in welcher
+  Reihenfolge Computerspeicher die zur Verf{\"u}gung stehenden Informationen
+  intern ablegen und abrufen.%
+    }
+    \field{title}{{Was ist Big-Endian und Little-Endian?}}
+    \verb{url}
+    \verb https://www.searchnetworking.de/definition/Big-Endian-und-Little-Endi
+    \verb an
+    \endverb
+    \field{year}{2014}
+    \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+\enddatalist
+\endinput

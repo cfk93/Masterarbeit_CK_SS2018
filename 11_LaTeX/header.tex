@@ -20,11 +20,21 @@
 \usepackage{graphicx}		% Einbetten von Grafiken
 \usepackage{epstopdf} 
 
-\usepackage[hidelinks]{hyperref}		% Hyperlinks innerhalb des Dokumentes
+%\usepackage[hidelinks]{hyperref}		% Hyperlinks innerhalb des Dokumentes
 
 \usepackage{longtable}		% Für Tabellen, die sich über mehrere Seiten erstrecken
 
-\usepackage{natbib}
+%\usepackage{natbib}
+%\bibliographystyle{unsrt}
+
+\usepackage{url}
+\usepackage[isbn=false, doi=false, backend=bibtex, sorting=none]{biblatex}
+\setlength\bibitemsep{0.5\baselineskip}
+\DefineBibliographyStrings{german}{% 
+	urlseen = {geprüft am}, 
+}
+%\nocite{*}
+\addbibresource{005_bib/literatur4.bib}
 
 
 \usepackage{amsmath}
@@ -41,6 +51,31 @@
 
 \usepackage{textcomp}
 
+\usepackage{pdfpages}		%zum Einbinden von pdf-Dokumenten
+
+\usepackage[colorlinks=true, linkcolor=black, pdfdisplaydoctitle=true,citecolor=black]{hyperref} %für pdf-Metadaten
+\hypersetup{
+	pdftitle    = {Weiterentwicklung eines autonom fahrenden Demonstrators für Fahrerassistenzsysteme},
+	pdfsubject  = {Masterthesis},
+	pdfauthor   = {Christof Kary},
+	pdfpagemode  = UseOutlines, % Anzeige Bookmarks
+	bookmarksopen = true,     % Anzeige Ebenen
+	bookmarksnumbered = false, % Anzeige Abschnittsnummern  
+	pdfstartpage = {1},        % Startseite, hilfreich mit pdf
+	urlcolor=black
+}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, decorations, decorations.text, decorations.pathmorphing}
+\usepackage{tikz-uml} % Für UML-Diagramme
+
+\usepackage{comment}
+
+\usepackage{chngcntr} % Für Fußnotenummerierung global über Kapitel hinweg
+\counterwithout{footnote}{chapter} 
+
+\usepackage{svg}	% Für Bilder im .svg-Format
+
 %-------------------------------------------------------------------
 %  Pfade der Dateien setzen
 %-------------------------------------------------------------------
@@ -52,7 +87,5 @@
 %-------------------------------------------------------------------
 %
 \makeindex
-
-\bibliographystyle{abbrvnat}
 
 \linespread{1.1} % Zeilenabstand für Dokument

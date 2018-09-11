@@ -1,5 +1,18 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
-The style file: abbrvnat.bst
-I found no \citation commands---while reading file main.aux
-Database file #1: 005_bib/literatur.bib
-(There was 1 error message)
+The style file: biblatex.bst
+Database file #1: main-blx.bib
+Database file #2: 005_bib/literatur4.bib
+Warning--I'm ignoring Schaffer.2012's extra "file" field
+--line 155 of file 005_bib/literatur4.bib
+Warning--I'm ignoring Reif.2014's extra "file" field
+--line 183 of file 005_bib/literatur4.bib
+Warning--I'm ignoring Quigley.2015's extra "file" field
+--line 201 of file 005_bib/literatur4.bib
+Warning--I'm ignoring Wallentowitz.2011's extra "file" field
+--line 416 of file 005_bib/literatur4.bib
+Warning--I'm ignoring Zimmermann.2014's extra "file" field
+--line 435 of file 005_bib/literatur4.bib
+Warning--I'm ignoring Zimmermann.2014's extra "file" field
+--line 437 of file 005_bib/literatur4.bib
+Biblatex version: 3.8
+(There were 6 warnings)
