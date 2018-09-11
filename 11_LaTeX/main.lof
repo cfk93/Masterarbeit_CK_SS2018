@@ -1,15 +1,40 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces CAN-Netzwerk: Ein einzelner \acs {CAN}-Knoten besteht aus einem Mikrocontroller, einem \acs {CAN}-Controller und einem \acs {CAN}-Transceiver. Der Abschlusswiderstand unterdr\IeC {\"u}ckt Busreflexionen \cite {Zimmermann.2014}.}}{8}{figure.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Signalpegel Low-Speed-\acs {CAN} (links) und High-Speed-\acs {CAN} (rechts) \cite {VectorInformatikGmbH.}.}}{8}{figure.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Aufbau des Standard \acs {CAN} Data-Frames \cite {VectorInformatikGmbH.}.}}{9}{figure.2.3}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces CAN-Netzwerk}}{10}{figure.2.1}
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces CAN-Signalpegel}}{10}{figure.2.2}
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces CAN-Signalpegel}}{11}{figure.2.3}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Ablauf einer Diagnose im Kfz-Umfeld \cite {Leonhardt.1997}}}{16}{figure.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Use-Case-Diagramm einer Diagnosefunktion f\IeC {\"u}r den Fahrdemonstrator}}{18}{figure.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Layout des CAN-Interfaces auf dem NVIDIA Jetson TX2 nach dem NVIDIA Product Design Guide \cite {NVIDIACorporation.2017}}}{22}{figure.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Schaltplan des SN65HVD230 CAN-Transceivers}}{23}{figure.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Schematischer Aufbau der Buskommunikation zwischen dem EVObot und dem Diagnoserechner}}{26}{figure.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Programmgraph des initialen ROS-Paketes \emph {autonomous}, mit dem Befehl \texttt {rqt\_graph} automatisch erzeugt}}{27}{figure.4.6}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
