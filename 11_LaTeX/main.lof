@@ -31,7 +31,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Schematischer Aufbau der Buskommunikation zwischen dem EVObot und dem Diagnoserechner}}{26}{figure.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Programmgraph des initialen ROS-Paketes \emph {autonomous}, mit dem Befehl \texttt {rqt\_graph} automatisch erzeugt}}{27}{figure.4.6}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Programmgraph des initialen ROS-Paketes \emph {autonomous}, mit dem Befehl \texttt {rqt\_graph} automatisch generiert}}{27}{figure.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Programmgraph des neuen ROS-Paketes \emph {autonomous} inklusive dem Knoten \emph {diagnostic\_node}, mit dem Befehl \texttt {rqt\_graph} automatisch generiert}}{36}{figure.4.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -17,6 +17,42 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{Kary.12.09.2016}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=KC}{%
+         family={Kary},
+         familyi={K\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KC1}
+    \strng{fullhash}{KC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{96}
+    \field{titleaddon}{Institut f{\"u}r Energieeffiziente Mobilit{\"a}t}
+    \field{title}{{Ermittlung der Rekuperationsenergie und der
+  Leistungsaufnahme von Nebenverbrauchern in einem Elektroauto}}
+    \list{location}{1}{%
+      {Karlsruhe}%
+    }
+    \list{institution}{1}{%
+      {{Hochschule Karlsruhe}}%
+    }
+    \verb{file}
+    \verb cf2165cb-df6b-48f0-91f5-9b6d1bce613a:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\cf2165cb-df6
+    \verb b-48f0-91f5-9b6d1bce613a.pdf:pdf
+    \endverb
+    \field{type}{{Bachelorarbeit}}
+    \field{year}{2016-09-12}
+    \field{urlday}{12}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
   \entry{Klumann.2000}{book}{}
     \name{author}{1}{}{%
       {{hash=KN}{%
@@ -223,7 +259,8 @@
       {Wiesbaden}%
     }
     \verb{file}
-    \verb http://d-nb.info/1007117141/04
+    \verb http://deposit.d-nb.de/cgi-bin/dokserv?id=3540038&prov=M&dok_var=1&do
+    \verb k_ext=htm
     \endverb
     \field{year}{2011}
   \endentry
@@ -602,11 +639,8 @@
     \field{subtitle}{{OEM Product Design Guide}}
     \field{title}{{NVIDIA Jetson TX2}}
     \verb{url}
-    \verb https://developer.download.nvidia.com/assets/embedded/secure/jetson/T
-    \verb X2/docs/JetsonTX2_OEM_Product_DesignGuide.pdf?twst-Xd7IOsU0KjHLbw5ZyY
-    \verb DJhXhaUZm9qIQsFEWS9oWnj1B8pysivJs5zN4cjMk170j_IvZcf0mK6cAzHA9BLiaAPHc
-    \verb ajGiYxD4zntMmXHH96C_P7qnXd7WYVV8je-Jb-d075lSt0IP1OmUG3bnhsWqBJ6l6d3u3
-    \verb yTj7oUY1NU3z17x6Ig17LfE7A
+    \verb https://devtalk.nvidia.com/default/topic/998129/jetson-tx2/links-to-j
+    \verb etson-tx2-resources/
     \endverb
     \verb{file}
     \verb 03ff4a1c-7394-4c51-b50d-b0be23c105c3:C\:\\Users\\c.kary\\AppData\\Loc

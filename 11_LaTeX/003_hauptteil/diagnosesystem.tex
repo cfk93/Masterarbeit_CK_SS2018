@@ -1,3 +1,28 @@
+\begin{comment}
+TODO:
+--> Bildquellen überprüfen
+--> Referenzen zu Bilder, Tabellen und Quellen im Text prüfen
+--> Einarbeitungleitfaden ergänzen: neuer Knoten anlegen, Directory builden usw aus Fabis Anleitung
+--> Einarbeitungleitfaden ergänzen: Midnight Commander 
+
+--> Kapitel zur Fernsteuerung des EVObots: zuerst via VNC Client Desktop gespiegelt, um mobil ohne Bildschirm und Maus/Tastatur auf Gerät arbeiten zu können. Später hat sich aber gezeigt, dass Grafikberechnung und Übertragung des Desktops zu viel Rechenleistung benötigt, wodurch Rechenleistung von ROS reduziert wird, demnach kamen Algorithmen zum Spurhalten dem realen Verhalten nicht hinterher, deshalb Zeitverzug und keine Spurregelung möglich! Umstieg auf SSH zugriff via Terminal auf PC, grafische Benutzeroberfläche auf Ubuntu deaktiviert, um sämtliche Ressourcen für ROS zu generieren. Ergebnis zeigt echtzeitgetreue Spurerfassung und Regelung!
+
+CAN-to-WiFi Gateway mit PaspberryPi oder Ardiuno möglich
+
+Mehr Zustandsüberwachungssystem als Diagnosesystem 
+
+Off-Board-Kommunikation als Diagnose in ISO Schicht 7 geregelt 
+
+Generierung von Diagnosedaten ist von Beginn der Entwicklung an essentiell, um spätere Komplexität zu beherrschen. 
+
+Fehler sind üblich in komplexen Systemen. Sollten vermieden werden, kommen aber unter bestimmten Bedingungen und Voraussetzungen vor. Abhängig von Implementierung, Fehlervermeidung usw. Fale-Safe-Zustand. Fehlerzustand, Fehlerwirkung
+Wie äußert sich Fehler oder Fehlfunktion? --> unplausibler Signalwert, falscher Wert oder out of range
+
+Abweichung zum SOLL ist nicht unbedingt programmseitiger Fehler, sondern kann aus Logikfunktion des Programmierers folgen. 
+\end{comment}
+
+
+
 \chapter{Diagnosesystem} \label{cha:Diagnosesystem}
 
 Dieser Kapitel soll detailliert die zentrale Aufgabe der Arbeit beschreiben. Es solle Verfahren zu Diagnose des EVObots entwickelt und erstellt werden, um im Fahrbetrieb die internen Zustands- und Sensordaten echtzeitnah darzustellen und somit die Applikation des Fahralgorithmus zu erleichtern. 
@@ -118,33 +143,8 @@ Daher wird der Ansatz verfolgt, eine drahtgebundene Off-Board-Kommunikation übe
 Der Verzicht auf die Verwendung eines normierten Transportprotokolls impliziert eine weitere Einschränkung des Diagnosesystems: Üblicherweise werden im Fahrzeugbetrieb erkannte Fehlfunktionen und Störungen durch einen Eintrag im Fehlerspeicher des Steuergerätes dokumentiert. Diese Einträge weisen neben den nach dem Diagnoseprotokoll normierten Fehlercodes und einer Fehlerbeschreibung zusätzliche situationsabhängige Umgebungsdaten und zeitliche Informationen auf. Da die zu implementierende Diagnosefunktion lediglich ein echtzeitnahes Daten-Monitoring ermöglichen soll und eine Speicherung, respektive  Auswertung der Diagnosedaten nur auf dem externen Diagnoserechner nötig ist, wird im weiteren Verlauf auf die formale Definition eines Fehlerspeichers und der Regeln zur Fehlerablage verzichtet. Demzufolge steht die strikte Einhaltung des standardisierten Datenmodells für den Austausch diagnoserelevanter Daten nach dem \emph{Open Diagnostic Data Exchange} \acs{ODX}-Standard nicht im Fokus der Arbeit.
 
 
-\begin{comment}
-	TODO:
-	--> Bildquellen überprüfen
-	--> Referenzen zu Bilder, Tabellen und Quellen im Text prüfen
-	--> Einarbeitungleitfaden ergänzen: neuer Knoten anlegen, Directory builden usw aus Fabis Anleitung
-	--> Einarbeitungleitfaden ergänzen: Midnight Commander 
-	
-	--> Kapitel zur Fernsteuerung des EVObots: zuerst via VNC Client Desktop gespiegelt, um mobil ohne Bildschirm und Maus/Tastatur auf Gerät arbeiten zu können. Später hat sich aber gezeigt, dass Grafikberechnung und Übertragung des Desktops zu viel Rechenleistung benötigt, wodurch Rechenleistung von ROS reduziert wird, demnach kamen Algorithmen zum Spurhalten dem realen Verhalten nicht hinterher, deshalb Zeitverzug und keine Spurregelung möglich! Umstieg auf SSH zugriff via Terminal auf PC, grafische Benutzeroberfläche auf Ubuntu deaktiviert, um sämtliche Ressourcen für ROS zu generieren. Ergebnis zeigt echtzeitgetreue Spurerfassung und Regelung!
-
-	CAN-to-WiFi Gateway mit PaspberryPi oder Ardiuno möglich
-	
-	Mehr Zustandsüberwachungssystem als Diagnosesystem 
-	
-	Off-Board-Kommunikation als Diagnose in ISO Schicht 7 geregelt 
-	
-	Generierung von Diagnosedaten ist von Beginn der Entwicklung an essentiell, um spätere Komplexität zu beherrschen. 
-	
-	Fehler sind üblich in komplexen Systemen. Sollten vermieden werden, kommen aber unter bestimmten Bedingungen und Voraussetzungen vor. Abhängig von Implementierung, Fehlervermeidung usw. Fale-Safe-Zustand. Fehlerzustand, Fehlerwirkung
-	Wie äußert sich Fehler oder Fehlfunktion? --> unplausibler Signalwert, falscher Wert oder out of range
-	
-	Abweichung zum SOLL ist nicht unbedingt programmseitiger Fehler, sondern kann aus Logikfunktion des Programmierers folgen. 
-\end{comment}
-
-
-
 \section{Aufbau einer Datenkommunikation auf CAN-Bus} \label{sec:AufbauDatenkommunikation} % HW-Anbindung an CAN-Bus, Arduino/Jetson, Darstellung Übertragung Dummy-Botschaften cansend/candump, MTTCAN Treiber Kernel rebuild, Socketcan erklären, python-can, can-utils
-Neben der softwareseitigen Umsetzung einer Datenkommunikation spielt die physikalische Busanbindung auf dem EVObot entsprechend der ersten Schicht im ISO/OSI-Schichtenmodell eine zentrale Rolle. 
+Neben der softwareseitigen Umsetzung einer Datenkommunikation spielt die physikalische Busanbindung auf dem EVObot entsprechend der Bitübertragungsschicht im ISO/OSI-Schichtenmodell eine zentrale Rolle. 
 
 \subsection{Fahrzeugseitige Busanbindung} \label{subsec:FahrzeugseitigeBusanbindung}
 Zur Übertragung einzelner CAN-Botschaften vom Modellfahrzeug auf einen externen Diagnoserechner stehen mehrere Möglichkeiten zur Auswahl. Zum einen lässt sich die Hardwareanbindung über einen Arduino realisieren. Auf dem EVObot ist bereits ein Arduino Uno verbaut, der das Eingangssignal des Ultraschallsensors einliest und zum Ansteuern der Aktorik eingesetzt wird. Durch die Erweiterung des Arduinos um ein \emph{CAN-Bus Shield} lässt sich ein feldbusfähiges Kommunikationssystem aufbauen. Ein CAN-Shield erweitert den herkömmlichen Mikroprozessor der Arduino-Plattform um einen CAN-Controller mit einer SPI-Schnittstelle und einem geeigneten CAN-Transceiver. Die verfügbaren CAN-Bus Shields implementieren den üblichen CAN High Speed Standard mit einer maximalen Datenrate von 1\,Mbit/s, was die Anforderungen an die  Datenübertragung in der späteren Verwendung in jedem Fall erfüllt. Es können Identifier sowohl im 11\,Bit Standard-Format, als auch im 29\,Bit Extended-Format verarbeitet werden. Zudem liefert eine solche Erweiterungsplatine umfangreiche Programmbibliotheken, um die Verwendung einer CAN-Anbindung in der Arduino Entwicklungsumgebung zu ermöglichen. Es lassen sich sämtliche diagnoserelevante Daten von dem Hauptrechner, dem NVIDIA Jetson TX2, über die serielle Schnittstelle zyklisch an den Arduino senden. Auf diesem werden die Informationen in das gängige CAN-Format gepackt und physikalisch auf den Bus gesendet. Da es jedoch ein explizites Projektziel ist, künftig auf die Verwendung des Arduinos zu verzichten, wäre es nicht zielführend, die Diagnosekommunikation hardwareseitig durch einen Arduino mit einem Erweiterungsboard zu realisieren.
@@ -218,7 +218,7 @@ Dabei gilt zu beachten, dass hier lediglich zufällige Botschaften mit zufällig
 Es sei hier noch angemerkt, dass es sich bei den \emph{can-utils}-Funktionen um Terminal-Anwendungen handelt, d.h. die einzelnen Befehle werden unter Linux im Terminal aufgerufen und die zugehörigen Funktionsparameter wie ID oder Botschaftsdaten als Kommandozeilenbefehl angegeben. Zur Realisierung der Diagnosefunktion wird von diesem Konzept abgewichen, um den Diagnoseumfang erweiterbar zu implementieren.
 
 
-\subsection{Empfängerseitige Busanbindung}
+\subsection{Empfängerseitige Busanbindung} \label{subsec:EmpfängerseitigeBusanbindung}
 Nachdem die Busanbindung aufgebaut und getestet wurde, muss nun der Laptop an die Busleitung gekoppelt und zum zyklischen Empfang der Diagnosedaten konfiguriert werden. Die gesamte Busverbindung wird wie in Abbildung \ref{abb:AufbauBuskommunikation} dargestellt aufgebaut. 
 
 \begin{figure}[!htbp]
@@ -254,16 +254,17 @@ Das Softwaretool liefert zusätzlich die integrierte und firmeneigene Programmie
 
 \section{Implementierung der Diagnosefunktion} \label{sec:ImplementierungDiagnose} % SW-seitige Umsetzung inkl. kompletter Programmablaufplan, Funktionen erklären, Gesamtfunktion in ROS, ... 
 
-Nachdem nun alle hardwareseitigen Voraussetzungen erfüllt und sowohl der EVObot, als auch der Diagnoselaptop für eine Buskommunikation konfiguriert sind, kann die vollständige Diagnosefunktion implementiert werden. Wie bereits in Abschnitt \ref{sec:EVObotSoftware} beschrieben, stellt das Framework Robot Operating System die zentrale Entwicklungsumgebung des Projektes dar. Daher kann auch aus den definierten Anforderungen der Anspruch entnommen werden, die Diagnose ebenfalls in ROS einzubinden. Dazu wird ein neuer Knoten\footnote{Der Begriff Knoten beschreibt in ROS in den meisten Fällen entkoppelt ausführbare Skripte, in denen diverse Funktionen umgesetzt werden. Daher wird nachfolgend im direkten Bezug zur ROS-Umgebung nicht zwischen den Begrifflichkeiten Diagnosefunktion und Diagnoseknoten unterschieden.} erstellt, der sich in die Knotenstruktur des ROS Entwicklungsprojektes eingliedert. Der bisherige Programmgraph wird aus Abbildung \ref{abb:rosgraphOhneDiagnose} ersichtlich.
+Nachdem nun alle hardwareseitigen Voraussetzungen erfüllt und sowohl der EVObot, als auch der Diagnoselaptop für eine Buskommunikation konfiguriert sind, kann die vollständige Diagnosefunktion implementiert werden. Es soll das Vorgehen bei der softwareseitigen Umsetzung beschrieben und relevante Auszüge aus Programmcode näher betrachtet werden.\\
+Wie bereits in Abschnitt \ref{sec:EVObotSoftware} beschrieben, stellt das Framework Robot Operating System die zentrale Entwicklungsumgebung des Projektes dar. Daher kann auch aus den definierten Anforderungen der Anspruch entnommen werden, die Diagnose ebenfalls in ROS einzubinden. Dazu wird ein neuer Knoten\footnote{Der Begriff Knoten beschreibt in ROS in den meisten Fällen entkoppelt ausführbare Skripte, in denen diverse Funktionen umgesetzt werden. Daher wird nachfolgend im direkten Bezug zur ROS-Umgebung nicht zwischen den Begrifflichkeiten Diagnosefunktion und Diagnoseknoten unterschieden.} erstellt, der sich in die Knotenstruktur des ROS Entwicklungsprojektes eingliedert. Der bisherige Programmgraph wird aus Abbildung \ref{abb:rosgraphOhneDiagnose} ersichtlich.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\textwidth]{./rosgraph_ohne_diagnose_geteilt}
-	\caption{Programmgraph des initialen ROS-Paketes \emph{autonomous}, mit dem Befehl \texttt{rqt\_graph} automatisch erzeugt}
+	\caption{Programmgraph des initialen ROS-Paketes \emph{autonomous}, mit dem Befehl \texttt{rqt\_graph} automatisch generiert}
 	\label{abb:rosgraphOhneDiagnose}
 \end{figure} 
 
-Wie bereits in Abschnitt \ref{sec:EVObotSoftware} erwähnt, werden Knoten in der ROS-Umgebung als ovale Felder dargestellt. Tauschen einzelne Knoten Informationen in Form von Messages aus, wird dies über die Topics genannten Datenstreams realisiert. Topics werden im Schaubild als Rechtecke dargestellt. Es sei an dieser Stelle angemerkt, dass die Darstellung in Abbildung \ref{abb:rosgraphOhneDiagnose} für eine angenehme Übersicht auf zwei Zeilen aufgeteilt wurde. Auf die expliziten Funktionsumfänge der einzelnen Knoten wird an späterer Stelle eingegangen.\\
+Wie zuvor in Abschnitt \ref{sec:EVObotSoftware} erwähnt, werden Knoten in der ROS-Umgebung als ovale Felder dargestellt. Tauschen einzelne Knoten Informationen in Form von Messages aus, wird dies über die Topics genannten Datenstreams realisiert. Topics werden im Schaubild als Rechtecke dargestellt. Es sei an dieser Stelle angemerkt, dass die Darstellung in Abbildung \ref{abb:rosgraphOhneDiagnose} für eine angenehme Übersicht auf zwei Zeilen aufgeteilt wurde. Auf die expliziten Funktionsumfänge der einzelnen Knoten wird an späterer Stelle eingegangen.\\
 ROS lässt sich sowohl in der sehr effiziente und maschinennahe Programmiersprache C++, als auch in der benutzerfreundlichen und universellen Skriptsprache Python betreiben. Python bietet den entscheidenden Vorteil, eine große Anzahl von Standardbibliotheken verwenden zu können, die sich zusätzlich simpel durch das Laden von Paketen erweitern lässt. Sämtliche im EVObot bereits implementierte Funktionen wurden zuvor in Python umgesetzt. Um eine generische Projektfunktionalität zu gewährleisten, wird die Umsetzung der Diagnose in der ROS-Umgebung ebenfalls in Python in der Version 2.7 realisiert.
 
 
@@ -356,7 +357,7 @@ Daher wurden zunächst sämtliche selbstdefinierten Messages geprüft und auf ei
 
 
 \subsection{Wandlung der Speichervariablen} \label{subsec:WandlungSpeichervariblen}
-Bei Erhalt einer neuen Message werden die Variablenwerte der abonnierten Topics zuerst in eine geeignete Form gewandelt, um sie anschließend einer Busbotschaft zuzuweisen und auf dem CAN-Bus zu versenden. Dies geschieht in einzelnen \emph{callback}-Funktionen, aus denen heraus die Messages der entsprechenden Topics ebenfalls als Datenstream versendet werden. Gegenüber einer herkömmlichen Funktion in der Informatik, wird eine callback-Funktion einer andere Funktion als Pointer übergeben und von dieser mit den definierten Argumenten aufgerufen. Eine callback-Funktion wird für gewöhnlich zwar vom Anwender definiert, jedoch nicht durch ihn aufgerufen. In ROS wird eine callback-Routine meist als Message Handler verwendet. Sobald ein Knoten ein Topic abonniert und eine neue Message verfügbar ist, die von diesem Knoten zyklisch publiziert wird, wird der Message Handler durch ROS aufgerufen und die neue Message durch die Rückruffunktion an eine definierte Funktion übergeben. So können zyklisches Messages ähnlich einem \emph{Interrupt} verarbeitet werden.
+Bei Erhalt einer neuen Message werden die Variablenwerte der abonnierten Topics zuerst in eine geeignete Form gewandelt, um sie anschließend einer Busbotschaft zuzuweisen und auf dem CAN-Bus zu versenden. Dies geschieht in einzelnen \emph{Callback}-Funktionen, aus denen heraus die Messages der entsprechenden Topics ebenfalls als Datenstream versendet werden. Gegenüber einer herkömmlichen Funktion in der Informatik, wird eine Callback-Funktion einer andere Funktion als Pointer übergeben und von dieser mit den definierten Argumenten aufgerufen. Eine Callback-Funktion wird für gewöhnlich zwar vom Anwender definiert, jedoch nicht durch ihn aufgerufen. In ROS wird eine Callback-Routine meist als Message Handler verwendet. Sobald ein Knoten ein Topic abonniert und eine neue Message verfügbar ist, die von diesem Knoten zyklisch publiziert wird, wird der Message Handler durch ROS aufgerufen und die neue Message durch die Rückruffunktion an eine definierte Funktion übergeben. So können zyklisches Messages ähnlich einem \emph{Interrupt} verarbeitet werden.
 
 Ist für den Diagnoseknoten eine neue Message der abonnierten Topics verfügbar, wird diese durch einen Callback an eine Funktion übergeben, die den Inhalt der Message in hexadezimale Bytes packt. Dazu wird die Python-Bibliothek \texttt{struct} verwendet \cite{PythonSoftwareFoundation.2018}. Das Modul stellt verschiedene Funktionen bereit, mit denen strukturierte binäre Daten verarbeitet werden können. Es lassen sich Python Variablen mit sämtlichen Datentypen in einen eindimensionalen Byte Array wandeln. Dies soll anhand folgendem Beispiel verdeutlicht werden:\\
 Der PWM-Wert zur Ansteuerung des Antriebsmotors beträgt 1550 in der Variable \texttt{eng\_pwm}. Dies entspricht der hexadezimalen Form 0x\,60E. Der Variablenwert wird mit dem Befehl \texttt{struct.pack(\grqq{}Format\grqq{}, \grqq{}Wert\grqq{})} einen Byte Array gewandelt. Als Byteorder kommt hier das Big-Endian-Format zum Einsatz. Der Variabelenwert soll durch das Format H in den Datentypen \emph{unsigned short} mit einer Speicherbreite von 2\,Byte umgeschrieben werden.
@@ -380,7 +381,48 @@ Demzufolge liegt das Ergebnis nun in einer Byte-Zeichenfolge vor, die hier in he
 Bei der Verwendung der gezeigten Methode ist darauf zu achten, eine einheitliche Byte-Reihenfolge bei der Interpretation zu verwenden. Bedingt durch die Prozessorarchitektur werden die einzelnen Bytes einer gesamten Botschaft in unterschiedlicher Reihenfolge versendet und eingelesen. Diese Byte-Reihenfolge wird als Endianness bezeichnet. Die Endianness bestimmt, welches Byte innerhalb einer Busbotschaft das nullte und welches das höchste Byte darstellt \cite{FordMotorCompany.2017}. Man unterscheidet grundlegend zwischen den beiden Formaten \emph{Big-Endian}, also das große Ende und \emph{Little-Endian}, das kleine Ende. Bei Big-Endian wird der signifikanteste Wert in einer Sequenz zuerst abgelegt, also in der niedrigsten Speicheradresse der Sequenz. Bei Little-Endian hingegen, wird der am wenigsten signifikante Wert zuerst gespeichert. Umgänglich wird das Big-Endian-Format auch als Motorola-Format bezeichnet. Das Little-Endian-Format ist hingegen als Intel-Format bekannt. Diese Bezeichnungen entstanden durch die grundsätzlich differenzierte Umsetzung der Prozessorarchitekturen beider Hersteller \cite{Rouse.2014}. In automotiven Netzwerken wird in den häufigsten Fällen Big-Endian – das Motorola-Übertragungsformat – verwendet. CAN ist jedoch lediglich ein Kommunikationsprotokoll, die Endianness kommt mit der gewählten Prozessorarchitektur. Die Basis CAN-Spezifikation und die \emph{ISO 11898} definieren den Informationstransport ohne eine explizite Byte-Reihenfolge.
 
 
-\subsection{Versenden der CAN-Botschaften}
+\subsection{Versenden der CAN-Botschaften} \label{subsec:VersendenCAN-Botschaten}
+
+Wie bereits in den Grundlagen in Abschnitt \ref{subsec:DataLinkLayer} erläutert, können in einem Datenfeld einer CAN-Botschaft bis zu 8 Byte an Nutzdaten übertragen werden. Da die Sensor- und Signaldaten der Fahrroutine in ROS nun als Byte-Reihe vorliegen, können diese segmentiert in jeweils 8 Bytes nun in eine CAN-Botschaft gepackt werden. Hierzu wird die Bibliothek \texttt{python-can} [\textbf{python-can}] verwendet. Diese Erweiterung bietet eine CAN-Unterstützung in der Python-Umgebung, unabhängig vom Betriebssystem. Sie bietet gängige Abstraktionen für eine Vielzahl von Hardwaregeräten, sowie eine Reihe von Dienstprogrammen zum Senden und Empfangen von Nachrichten auf einem CAN-Bus.
+Für gewöhnlich wird die Bibliothek in Verbindung mit einem definierten CAN-Interface verwendet. Im Anwendungsfall handelt es sich um das in Abschnitt \ref{subsec:EmpfängerseitigeBusanbindung} beschriebene CANcaseXL. Dieses Interface kann direkt im ausführbaren Skript spezifiziert werden, aus Konfigurationsdateien oder Umgebungsvariablen gelesen werden. Um eine Busbotschaft auf einem Python-Skript heraus über die Schnittstelle auf den physischen Bus zu versenden, wird das Interface und der Kanal direkt im Skript nach Initialisierung des Diagnoseknotens spezifiziert:
+\begin{addmargin}[1cm]{0cm} 
+	\begin{verbatim}
+		bus = can.interface.Bus(bustype='socketcan', channel='can0',
+     	bitrate=500000) 
+	\end{verbatim}
+\end{addmargin}
+Als Interface wird hier die zuvor eingerichtete API SocketCAN verwendet. Der CAN-Netzwerktreiber bietet eine generische Schnittstelle für eine Vielzahl von CAN-Geräten. Zwar können in der neuesten Version der Funktionsbibliothek an dieser Stelle direkt herstellerspezifische CAN-Interfaces - auch Produkte der Firma Vektor Informatik GmbH - eingebunden werden, diese Version weist allerdings zum Zeitpunkt der Umsetzung noch diverse Mängel auf, weshalb sich mit der generischen Schnittstelle beholfen wird. Als Kanal wird einer der beiden auf dem Jetson TX2 eingerichteten Controller eingestellt. Die Datenrate wird netzwerkweit mit 500\,kBit/s definiert.\\
+Im Anschluss wird der Botschaftsrahmen sämtlicher CAN-Frames beschrieben. Es werden die Identifier den Botschaftsobjekten zugeordnet und alle Nutzdaten der Botschaften mit dem Inhalt 0x\,00 initialisiert. Nach dieser Initialisierung weisen alle Botschaften eine Datenlänge von 8 Byte auf. Zudem können die Botschaftsobjekte mit einem Zeitstempel versehen und sowohl der Frametyp (Data Frame, Remote Frame, Error Frame), als auch das Identifier-Format festgelegt werden. Eine weitere Definition des Botschaftsrahmens ist nicht notwendig, das CRC-Feld und das ACK-Feld werden vom CAN-Protokoll auf der Datensicherungsebene einer Botschaft beigefügt. Der Schritt der manuellen Vergabe der Identifiern kann umgangen werden, indem  unter Verwendung der Bibliothek \texttt{cantools} [\textbf{cantools}] eine definierte Datenbasis in das Skript geladen wird. Die Nutzung einer Datenbasis und einer zugehörigen Kommunikationsmatrix erleichtert das Arbeiten mit CAN-Botschaften erheblich. Die Hintergründe sollen im nächsten Abschnitt \ref{subsec:ImplementierungCANoe} erläutert werden. 
+
+Nachdem alle nötigen Komponenten initialisiert sind, wird in der Hauptroutine des Diagnoseskriptes eine Warteschleife durchlaufen und dabei der CAN-Bus eingelesen, bis eine explizite Busbotschaft empfangen wird. Diese Botschaft wird aus CANoe heraus auf den Bus gesendet (vgl. Abschnitt \ref{subsec:ImplementierungCANoe}) und stellt eine Startanweisung der Diagnosefunktion dar. Entspricht der Identifier dem hochprioren Wert 0x\,01 und enthält die Botschaft den Bytewert 0x\,01, soll die Diagnosekommunikation gestartet werden. In diesem Fall wird zunächst durch den Befehl 
+\begin{addmargin}[1cm]{0cm} 
+	\begin{verbatim}
+		bus.send(reset_msg)
+	\end{verbatim}
+\end{addmargin}
+eine Reset-Botschaft auf den Bus gesendet. Dieses einmalige Senden einer Botschaft mit definiertem, aber irrelevantem Inhalt dient lediglich der Absicherung, dass keine falschen Informationen versendet werden und soll eine spätere Analyse der Buskommunikation erleichtern.\\
+Im Anschluss werden zunächst die statischen Informationen wie zuvor aufgezeigt in den Diagnoseknoten eingelesen, die Datentypen in Byte-Arrays gewandelt und im Motorola-Format dem Nutzdatenfeld der Botschaften mit definierten Identifiern zugewiesen. Dabei muss die Breite der Nutzbytes beachtet werden. Werden mehrere Signalinformationen in einer Botschaft zusammengelegt, darf eine maximale Anzahl von 8\,Bytes, respektive 64\,Bits nicht überschritten werden, ansonsten kommt es zu einem Überlauf der Busbotschaft und es gehen Teile der Signalinformationen verloren. Die statischen Parameter der Kamera werden beispielsweise wie folgt an die Busbotschaft \texttt{stat\_img\_info\_msg} übergeben:
+\begin{addmargin}[1cm]{0cm} 
+	\begin{verbatim}
+	for i in reversed(range(0, len(camera_width))):
+	      stat_img_info_msg.data[i + 6] = camera_width[i]
+	      stat_img_info_msg.data[i + 4] = camera_height[i]
+	      stat_img_info_msg.data[i + 2] = camera_fps[i]
+	\end{verbatim}
+\end{addmargin}
+Da es sich hierbei jeweils um ursprünglich 2\,Byte breite integer-Werte handelt, weist die Busbotschaft eine Datenlänge von 6\,Byte auf. Ist das Statusflag für den Buszustand auf aktiv, wird abschließend die entsprechende Botschaft gesendet: 
+\begin{addmargin}[1cm]{0cm} 
+	\begin{verbatim}
+		bus.send(stat_img_info_msg)
+	\end{verbatim}
+\end{addmargin}
+
+Wurde die Routine der statischen Parameter durchlaufen, werden sämtliche Topics mit dynamischen Parametern abonniert und dem Anwender eine Information ausgegeben, dass der Diagnosemodus aktiv ist. Nun werden bei eintreffen einer neuen Message wie zuvor erläutert die Callback-Funktionen der Topics aufgerufen, die dynamischen Parameter nach gleichem Schema in das Datenfeld der Busbotschaften gelegt und die CAN-Nachrichten versendet. Das Eintreffen einer neuen Message ist zeitlich abhängig von dem Rechenaufwand der implementierten Prozesse in den Topics. Weitere Abhängigkeiten ergeben sich durch das Betriebssystem, die CPU-Taktrate, die Größe des Hauptspeichers und die rechnerinterne Übertragungsrate. Da der CAN-Bus ereignisgesteuert ist, wurde auf ein explizites Time-Scheduling in der Diagnosefunktion verzichtet. Die Busbotschaften werden also nicht zyklisch, sukzessiv nach einem vorgegebenen Ablauf ausgegeben, sondern werden abhängig vom Eintreffen einer neuen Message unverzüglich versendet. Zudem wird ein Senden redundanter Signalinformationen vermieden und somit die Busauslastung auf ein Minimum gesenkt. 
+
+Parallel zum dauerhaften Senden der aktualisierten Signaldaten in Busbotschaften wird der CAN-Bus auf eingehende Nachrichten gefiltert. Wie den Diagnosemodus durch eine Startanweisung zu aktivieren, kann dieser auch wieder ausgeschaltet werden. Dazu wird die Nachricht \texttt{diagnostic\_status\_message} mit dem Identifier 0x\,01 und dem Nachrichteninhalt 0x\,00 vom externen Netzwerkknoten, also dem Laptop, erwartet. Wird diese Botschaft auf dem CAN-Bus erkannt, wird das Statusflag gekippt und sämtliche Topics deabonniert. Somit wird das gesamte Diagnoseskript in einen passiven Modus gesetzt und das Senden der Busbotschaften wird unterbunden. Durch das explizite Deabonnieren wird verhindert, dass die Prozesslaufzeiten der weiterhin aktiven ROS-Knoten unnötigerweise ansteigen und damit die verfügbare Rechenleistung eingeschränkt wird. Durch nochmaliges Senden der Statusnachricht kann der Prozess der Diagnosefunktion wieder angestoßen und damit die Buskommunikation erneut gestartet werden. Somit ist ohne die Verwendung eines normierten Diagnoseprotokolls auf der Anwendungsschicht ein ähnliches Vorgehen umgesetzt: Durch das Senden einer \emph{Diagnostic Service Request} von dem Ausgabegerät an das Demonstratorfahrzeug wird eine \emph{Diagnostic Session} gestartet und die diagnoserelevanten Parameter an den externen CAN-Knoten versendet (vgl. \cite{Kary.12.09.2016} S. 18 ff.).
+
+
+Botschaftsrahmen, Datenbytes
 Python Package can:
 Initialisierung des physischen Bus
 Definition der Messages
@@ -389,7 +431,7 @@ Senden der Busbotschaft innerhalb callback
 Deabonnieren, wenn Diagnose passiv ist
 
 
-\subsection{Interpretation und Visualisierung der CAN-Botschaften}
+\subsection{Interpretation und Visualisierung der CAN-Botschaften}\label{subsec:ImplementierungCANoe}
 Konfiguration der CANoe-Umgebung
 Erstellung Datenbasis als dbc
 Kommunikationsmatrix Amann
@@ -424,7 +466,16 @@ Visualisierung im Panel
 
 
 
-\section{Ergebnisbetrachtung} \label{sec:ErgebnisDiagnose} % Zeitkritisch? Echtzeit? Dauer der Verarbeitung, Wiederholungsrate der Sensorsignale, Rechenleistung, Synchronisation, Berechnung Größe aller Variablen und Summe Bytes der CAN-Frames, Vergleich mit Datenrate CAN um auf Echtzeitfähigkeit zu kommen. Busauslastung? Erst ohne Timing und dann Vorteil von Timing: Unnötige Datenübertragung reduzieren, Busauslastung senken
+\section{Ergebnisbetrachtung} \label{sec:ErgebnisDiagnose} % Zeitkritisch? Echtzeit? Dauer der Verarbeitung, Wiederholungsrate der Sensorsignale, Rechenleistung, Synchronisation, Berechnung Größe aller Variablen und Summe Bytes der CAN-Frames, Vergleich mit Datenrate CAN um auf Echtzeitfähigkeit zu kommen. Busauslastung? Erst ohne Timing und dann Vorteil von Timing: Unnötige Datenübertragung reduzieren, Busauslastung senken, Mehr Zustandsüberwachungssystem als Diagnosesystem
+
+Wie eingangs erläutert, war es die Intention, eine Diagnosefunktion  vollständig in der ROS-Umgebung einzubinden und als einen neuen Programmknoten umzusetzen, ohne die bereits implementierten Skripte editieren zu müssen. Abbildung \ref{abb:rosgraphMitDiagnose} zeigt, dass dies anhand dem beschriebenen Vorgehen gelungen ist. Der \texttt{diagnostic\_node} reiht sich in dem initialen Programmgraphen ein und hat sämtliche Topics abonniert, die innerhalb ROS publiziert werden. Der Diagnoseknoten selbst veröffentlicht keine Informationen in der Programmumgebung und agiert damit lediglich passiv im ROS-Framework. Die eigentliche Fahrroutine und sämtliche Algorithmen zur Bildverarbeitung und der Fahrzeugregelung werden durch die Diagnosefunktion nicht beeinträchtigt.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./rosgraph_mit_diagnose_geteilt}
+	\caption{Programmgraph des neuen ROS-Paketes \emph{autonomous} inklusive dem Knoten \emph{diagnostic\_node}, mit dem Befehl \texttt{rqt\_graph} automatisch generiert}
+	\label{abb:rosgraphMitDiagnose}
+\end{figure} 
 
 \subsection{Test und Validierung} \label{subsec:TestValidierungDiagnose}
 \subsection{Mehrwert der Diagnosefunktion} \label{subsec:MehrwertDiagnose}
