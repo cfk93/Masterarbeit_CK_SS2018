@@ -61,44 +61,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.3}Versenden der CAN-Botschaften}{32}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Interpretation und Visualisierung der CAN-Botschaften}{32}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.4}Interpretation und Visualisierung der CAN-Botschaften}{35}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Ergebnisbetrachtung}{33}{section.4.4}
+\contentsline {section}{\numberline {4.4}Ergebnisbetrachtung}{35}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Test und Validierung}{33}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Test und Validierung}{36}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Mehrwert der Diagnosefunktion}{33}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Mehrwert der Diagnosefunktion}{36}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Dynamische L\IeC {\"a}ngs- und Querregelung}{35}{chapter.5}
+\contentsline {chapter}{\numberline {5}Dynamische L\IeC {\"a}ngs- und Querregelung}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Umsetzung des Fahralgorithmus}{35}{section.5.1}
+\contentsline {section}{\numberline {5.1}Umsetzung des Fahralgorithmus}{37}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Kritische Analyse der implementierten Algorithmen}{35}{section.5.2}
+\contentsline {section}{\numberline {5.2}Kritische Analyse der implementierten Algorithmen}{37}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Optimierung der Regelung}{35}{section.5.3}
+\contentsline {section}{\numberline {5.3}Optimierung der Regelung}{37}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Implementierung der optimierten Spurregelung}{35}{section.5.4}
+\contentsline {section}{\numberline {5.4}Implementierung der optimierten Spurregelung}{37}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Ergebnisbetrachtung}{35}{section.5.5}
+\contentsline {section}{\numberline {5.5}Ergebnisbetrachtung}{37}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Test und Validierung}{35}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.1}Test und Validierung}{37}{subsection.5.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Mehrwert der optimierten Spurregelung}{35}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.2}Mehrwert der optimierten Spurregelung}{37}{subsection.5.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{37}{chapter.6}
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{39}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung}{37}{section.6.1}
+\contentsline {section}{\numberline {6.1}Zusammenfassung}{39}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Ausblick}{38}{section.6.2}
+\contentsline {section}{\numberline {6.2}Ausblick}{40}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Tabellenverzeichnis}{41}{chapter*.7}
+\contentsline {chapter}{Tabellenverzeichnis}{43}{chapter*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abbildungsverzeichnis}{43}{chapter*.8}
+\contentsline {chapter}{Abbildungsverzeichnis}{45}{chapter*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literaturverzeichnis}{47}{chapter*.9}
+\contentsline {chapter}{Literaturverzeichnis}{49}{chapter*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Anhang}{49}{appendix.A}
+\contentsline {chapter}{\numberline {A}Anhang}{51}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Auszug aus dem Datenblatt SN65HVD230}{49}{section.A.1}
+\contentsline {section}{\numberline {A.1}Auszug aus dem Datenblatt SN65HVD230}{51}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Einarbeitungsleitfaden Projekt EVObot}{51}{section.A.2}
+\contentsline {section}{\numberline {A.2}Einarbeitungsleitfaden Projekt EVObot}{53}{section.A.2}

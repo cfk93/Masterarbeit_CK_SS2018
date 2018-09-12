@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.9)  11 SEP 2018 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.9)  12 SEP 2018 21:21
 entering extended mode
 **./main.tex
 (main.tex
@@ -2281,7 +2281,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 75.
-<006_img/./2_2_3_CAN-Netzwerk.png, id=462, 505.13719pt x 222.07968pt>
+<006_img/./2_2_3_CAN-Netzwerk.png, id=464, 505.13719pt x 222.07968pt>
 File: 006_img/./2_2_3_CAN-Netzwerk.png Graphic file (type png)
 <use 006_img/./2_2_3_CAN-Netzwerk.png>
 Package pdftex.def Info: 006_img/./2_2_3_CAN-Netzwerk.png  used on input line 8
@@ -2301,7 +2301,7 @@ been already used, duplicate ignored
                    \relax 
 l.86 
       [7]
-<006_img/./2_2_3_Signalpegel-CAN.png, id=490, 538.26094pt x 175.40532pt>
+<006_img/./2_2_3_Signalpegel-CAN.png, id=492, 538.26094pt x 175.40532pt>
 File: 006_img/./2_2_3_Signalpegel-CAN.png Graphic file (type png)
 <use 006_img/./2_2_3_Signalpegel-CAN.png>
 Package pdftex.def Info: 006_img/./2_2_3_Signalpegel-CAN.png  used on input lin
@@ -2331,7 +2331,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 98.
 ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<006_img/./2_2_4_CAN-Standard_Data_Frame.png, id=509, 658.71094pt x 133.24782pt
+<006_img/./2_2_4_CAN-Standard_Data_Frame.png, id=511, 658.71094pt x 133.24782pt
 >
 File: 006_img/./2_2_4_CAN-Standard_Data_Frame.png Graphic file (type png)
 <use 006_img/./2_2_4_CAN-Standard_Data_Frame.png>
@@ -2415,111 +2415,116 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 7.
  [13])
-(003_hauptteil/diagnosesystem.tex
+(003_hauptteil/diagnosesystem.tex Excluding 'comment' comment.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 26.
  [14]
 chapter 4.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 36.
 [15
 
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 56.
  [16]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 64.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 71.
+(Font)              <10> on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 71.
+(Font)              <7> on input line 96.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 104.
  [17]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 117.
 [18]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 128.
 
-Overfull \hbox (4.14772pt too wide) in paragraph at lines 114--119
+Overfull \hbox (4.14772pt too wide) in paragraph at lines 139--144
 \T1/lmr/m/n/10.95 einen Da-ten-aus-tausch mit au-to-no-men Sys-te-men. Um ei-ne
  mög-li-che Bluetooth-Verbindung
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
 [19]
 Underfull \vbox (badness 1308) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 144.
  [20]
-Excluding 'comment' comment.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 146.
+
+Overfull \hbox (13.3263pt too wide) in paragraph at lines 147--148
+\T1/lmr/m/n/10.95 sche Bu-s-an-bin-dung auf dem EVO-bot ent-spre-chend der Bit-
+über-tra-gungs-schicht im ISO/OSI-
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2532,8 +2537,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 151.
- [21]
-<006_img/./Jetson_TX2_CAN_Connector_BW.png, id=634, 398.23781pt x 151.3153pt>
+[21]
+<006_img/./Jetson_TX2_CAN_Connector_BW.png, id=636, 398.23781pt x 151.3153pt>
 File: 006_img/./Jetson_TX2_CAN_Connector_BW.png Graphic file (type png)
 <use 006_img/./Jetson_TX2_CAN_Connector_BW.png>
 Package pdftex.def Info: 006_img/./Jetson_TX2_CAN_Connector_BW.png  used on inp
@@ -2548,7 +2553,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 163.
  [22 <./006_img/./Jetson_TX2_CAN_Connector_BW.png>]
-<006_img/./CAN_Transceiver_Schematic_pdf.pdf, id=647, 374.44893pt x 145.97035pt
+<006_img/./CAN_Transceiver_Schematic_pdf.pdf, id=649, 374.44893pt x 145.97035pt
 >
 File: 006_img/./CAN_Transceiver_Schematic_pdf.pdf Graphic file (type pdf)
 <use 006_img/./CAN_Transceiver_Schematic_pdf.pdf>
@@ -2610,90 +2615,133 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 255.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 255.
-<006_img/./rosgraph_ohne_diagnose_geteilt.png, id=701, 610.9224pt x 217.2918pt>
+<006_img/./rosgraph_ohne_diagnose_geteilt.png, id=703, 610.9224pt x 217.2918pt>
 
 File: 006_img/./rosgraph_ohne_diagnose_geteilt.png Graphic file (type png)
 <use 006_img/./rosgraph_ohne_diagnose_geteilt.png>
 Package pdftex.def Info: 006_img/./rosgraph_ohne_diagnose_geteilt.png  used on 
-input line 261.
+input line 262.
 (pdftex.def)             Requested size: 418.25368pt x 148.76439pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 269.
 
 [27 <./006_img/./rosgraph_ohne_diagnose_geteilt.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 292.
  [28]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 329.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 329.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 329.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 329.
  [29]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 356.
+(babel)             in language  on input line 357.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 356.
+(babel)             in language  on input line 357.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 356.
+(babel)             in language  on input line 357.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 356.
+(babel)             in language  on input line 357.
  [30]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 359.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 359.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 368.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 368.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 368.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 368.
+(babel)             in language  on input line 364.
  [31]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 383.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 383.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 388.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 388.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 388.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 388.
 
-Excluding 'comment' comment.
+[32]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 398.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 398.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 398.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 398.
+ [33]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 430.
-) (003_hauptteil/dynamische_regelung.tex
+(babel)             in language  on input line 423.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 423.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 423.
+ [34]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 434.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 434.
+ Excluding 'comment' comment.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 469.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 469.
+<006_img/./rosgraph_mit_diagnose_geteilt.png, id=762, 701.5008pt x 295.8252pt>
+File: 006_img/./rosgraph_mit_diagnose_geteilt.png Graphic file (type png)
+<use 006_img/./rosgraph_mit_diagnose_geteilt.png>
+Package pdftex.def Info: 006_img/./rosgraph_mit_diagnose_geteilt.png  used on i
+nput line 475.
+(pdftex.def)             Requested size: 418.25368pt x 176.38605pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 478.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 478.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 478.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 478.
+ [35]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 480.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 480.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 481.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 481.
+)
+(003_hauptteil/dynamische_regelung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2702,29 +2750,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [32]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-
-[33]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [34
-
-
-]
+ [36 <./006_img/./rosgraph_mit_diagnose_geteilt.png>]
 chapter 5.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2767,7 +2793,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [35]
+ [37
+
+
+]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2776,7 +2805,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [36
+ [38
 
 
 ]
@@ -2797,7 +2826,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
-[37]
+[39]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2810,7 +2839,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
- [38])
+ [40])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2819,7 +2848,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
- [39]
+ [41]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2828,7 +2857,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
- [40
+ [42
 
 
 ] (main.lot)
@@ -2847,7 +2876,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
- [41]
+ [43]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2856,7 +2885,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
- [42
+ [44
 
 
 ] (main.lof)
@@ -2875,7 +2904,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 85.
- [43]
+ [45]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2884,7 +2913,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 85.
- [44
+ [46
 
 
 ]
@@ -2896,18 +2925,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 85.
- [45]
-Overfull \hbox (98.87195pt too wide) in paragraph at lines 86--86
-\T1/lmtt/m/n/10.95 DesignGuide . pdf ? twst -[] Xd7IOsU0KjHLbw5ZyYDJhXhaUZm9qIQ
-sFEWS9oWnj1B8pysivJs5zN4cjMk170j _
- []
-
-
-Overfull \hbox (283.33142pt too wide) in paragraph at lines 86--86
-\T1/lmtt/m/n/10.95 IvZcf0mK6cAzHA9BLiaAPHcajGiYxD4zntMmXHH96C _ P7qnXd7WYVV8je 
--[] Jb -[] d075lSt0IP1OmUG3bnhsWqBJ6l6d3u3yTj7oUY1NU3z17x6Ig17LfE7A$[][]
- []
-
+ [47]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2916,7 +2934,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 85.
-[46]
+ [48]
 Overfull \hbox (33.93109pt too wide) in paragraph at lines 86--86
 \T1/lmr/m/n/10.95 Books On-li-ne. Bei-jing u.a.: O\TS1/lmr/m/n/10.95 ´\T1/lmr/m
 /n/10.95 Reilly, 2015. \T1/lmr/m/sc/10.95 url\T1/lmr/m/n/10.95 : [][]$\T1/lmtt/
@@ -2936,7 +2954,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [47]
+ [49]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2945,7 +2963,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [48
+ [50
 
 
 ]
@@ -2958,13 +2976,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
-<006_img/./SN65HVD230_Datasheet_Seite1.png, id=887, 411.78844pt x 373.395pt>
+<006_img/./SN65HVD230_Datasheet_Seite1.png, id=906, 411.78844pt x 373.395pt>
 File: 006_img/./SN65HVD230_Datasheet_Seite1.png Graphic file (type png)
 <use 006_img/./SN65HVD230_Datasheet_Seite1.png>
 Package pdftex.def Info: 006_img/./SN65HVD230_Datasheet_Seite1.png  used on inp
 ut line 6.
 (pdftex.def)             Requested size: 418.25368pt x 379.26254pt.
-<006_img/./SN65HVD230_Datasheet_Seite2.png, id=888, 411.03563pt x 451.6875pt>
+<006_img/./SN65HVD230_Datasheet_Seite2.png, id=907, 411.03563pt x 451.6875pt>
 File: 006_img/./SN65HVD230_Datasheet_Seite2.png Graphic file (type png)
 <use 006_img/./SN65HVD230_Datasheet_Seite2.png>
 Package pdftex.def Info: 006_img/./SN65HVD230_Datasheet_Seite2.png  used on inp
@@ -2978,7 +2996,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
-[49 <./006_img/./SN65HVD230_Datasheet_Seite1.png>]
+[51 <./006_img/./SN65HVD230_Datasheet_Seite1.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2987,8 +3005,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
- [50 <./006_img/./SN65HVD230_Datasheet_Seite2.png>]
-<004_schluss/Einarbeitungsleitfaden.pdf, id=899, 597.50829pt x 845.0471pt>
+ [52 <./006_img/./SN65HVD230_Datasheet_Seite2.png>]
+<004_schluss/Einarbeitungsleitfaden.pdf, id=919, 597.50829pt x 845.0471pt>
 File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
 <use 004_schluss/Einarbeitungsleitfaden.pdf>
 Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf  used on input 
@@ -2999,7 +3017,7 @@ File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
 Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf  used on input 
 line 18.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<004_schluss/Einarbeitungsleitfaden.pdf, id=902, page=1, 597.50829pt x 845.0471
+<004_schluss/Einarbeitungsleitfaden.pdf, id=922, page=1, 597.50829pt x 845.0471
 pt>
 File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
 <use 004_schluss/Einarbeitungsleitfaden.pdf, page 1>
@@ -3038,94 +3056,42 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 18.
- [51 <./004_schluss/Einarbeitungsleitfaden.pdf>]
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf  used on input 
-line 19.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf  used on input 
-line 19.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<004_schluss/Einarbeitungsleitfaden.pdf, id=931, page=2, 597.50829pt x 845.0471
-pt>
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
- input line 19.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
- input line 19.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
- input line 19.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
- input line 19.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
- input line 19.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
- [52 <./004_schluss/Einarbeitungsleitfaden.pdf>]
-<004_schluss/Einarbeitungsleitfaden.pdf, id=941, page=3, 597.50829pt x 845.0471
-pt>
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 3>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page3 used on
- input line 19.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 3>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page3 used on
- input line 19.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 3>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page3 used on
- input line 19.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
  [53 <./004_schluss/Einarbeitungsleitfaden.pdf>]
-<004_schluss/Einarbeitungsleitfaden.pdf, id=946, page=4, 597.50829pt x 845.0471
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf  used on input 
+line 19.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf  used on input 
+line 19.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<004_schluss/Einarbeitungsleitfaden.pdf, id=950, page=2, 597.50829pt x 845.0471
 pt>
 File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 4>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page4 used on
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
  input line 19.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 4>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page4 used on
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
  input line 19.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
-<use 004_schluss/Einarbeitungsleitfaden.pdf, page 4>
-Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page4 used on
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 2>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page2 used on
  input line 19.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 Package babel Info: Redefining ngerman shorthand "|
@@ -3137,7 +3103,59 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
  [54 <./004_schluss/Einarbeitungsleitfaden.pdf>]
-<004_schluss/Einarbeitungsleitfaden.pdf, id=951, page=5, 597.50829pt x 845.0471
+<004_schluss/Einarbeitungsleitfaden.pdf, id=960, page=3, 597.50829pt x 845.0471
+pt>
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 3>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page3 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 3>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page3 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 3>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page3 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 19.
+ [55 <./004_schluss/Einarbeitungsleitfaden.pdf>]
+<004_schluss/Einarbeitungsleitfaden.pdf, id=965, page=4, 597.50829pt x 845.0471
+pt>
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 4>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page4 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 4>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page4 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
+<use 004_schluss/Einarbeitungsleitfaden.pdf, page 4>
+Package pdftex.def Info: 004_schluss/Einarbeitungsleitfaden.pdf , page4 used on
+ input line 19.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 19.
+ [56 <./004_schluss/Einarbeitungsleitfaden.pdf>]
+<004_schluss/Einarbeitungsleitfaden.pdf, id=970, page=5, 597.50829pt x 845.0471
 pt>
 File: 004_schluss/Einarbeitungsleitfaden.pdf Graphic file (type pdf)
 <use 004_schluss/Einarbeitungsleitfaden.pdf, page 5>
@@ -3162,7 +3180,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
- [55 <./004_schluss/Einarbeitungsleitfaden.pdf>])
+ [57 <./004_schluss/Einarbeitungsleitfaden.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
  (main.aux)
@@ -3175,10 +3193,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34197 strings out of 492973
- 695879 string characters out of 3126250
- 1245729 words of memory out of 3000000
- 37166 multiletter control sequences out of 15000+200000
+ 34212 strings out of 492973
+ 696368 string characters out of 3126250
+ 1247780 words of memory out of 3000000
+ 37176 multiletter control sequences out of 15000+200000
  94506 words of font info for 75 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,18n,88p,9085b,3093s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3209,9 +3227,9 @@ msy10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 ublic/lm/lmtt10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmtt12.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (71 pages, 1597155 bytes).
+Output written on main.pdf (73 pages, 1666807 bytes).
 PDF statistics:
- 1057 PDF objects out of 1200 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
- 637 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1080 PDF objects out of 1200 (max. 8388607)
+ 184 named destinations out of 1000 (max. 500000)
+ 642 words of extra memory for PDF output out of 10000 (max. 10000000)
 
