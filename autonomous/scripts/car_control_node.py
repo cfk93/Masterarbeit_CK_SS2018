@@ -33,6 +33,8 @@ straightee = []
 cha = 0
 stra = 0
 winkel = []
+VELOCITY_FORWARD = 1600
+VELOCITY_ZERO = 1500
 
 
 
@@ -46,7 +48,7 @@ class carcontrolnode:
         self.control_pub = rospy.Publisher(pub_topic1, carcontrol, queue_size=QUEUE_SIZE)
         
         rospy.init_node(node_name, anonymous=True)
-        rate = rospy.Rate(25) #publish Rate wird auf 25 Hz gesetzt, da Kamera maximal 25 Bilder/s liefert
+        rate = rospy.Rate(30) #publish Rate wird auf 30 Hz gesetzt, da Kamera maximal 30 Bilder/s liefert
         
         rospy.Subscriber(sub_topic1, Float64, self.callback1)   #subscribe to Lenkungsregler (Querregelung)
         rospy.Subscriber(sub_topic2, UInt16, self.callback2)    #subscribe to Motorsteuerung (Längsregelung)
@@ -68,15 +70,18 @@ class carcontrolnode:
             if self.esce_ and self.erkennung_:
                 controller.esc = self.esce.data
             else:
-                controller.esc = 1500
+                controller.esc = VELOCITY_ZERO
             
             self.control_pub.publish(controller) #aussenden car_controller topic, wird vom Arduino empfangen
+            
             rate.sleep()    # Schleife entsprechend der publish rate, um Wiederholungsfrequenz einzuhalten
-        
         rospy.spin()
 
+
+
+
     
-    
+# callback zur Querregelung, input: Reglerwert von Ausgang control_steering PID-Regler
     def callback1(self, data):
         
         self.steer = UInt16(90 + (data.data))
@@ -93,7 +98,10 @@ class carcontrolnode:
            # self.steer = UInt16((winkel[9])+90)
         
         
-                
+        
+        
+        
+# callback zur Längsregelung, Input: esc-Daten                  
     def callback2(self, data):
         
         if data.data > 0:
@@ -103,7 +111,11 @@ class carcontrolnode:
         else:
             self.esce_ = False
             
-
+            
+            
+            
+            
+# callback zur Spurerkennung, Input: lane-Daten
     def callback3(self, data,  strchastra):
         #Algorithmus um Lenkwinkel nach Kurven offen zu halten
         if len(straightee)<25:

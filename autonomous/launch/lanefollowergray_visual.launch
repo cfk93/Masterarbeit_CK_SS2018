@@ -17,7 +17,7 @@
 	<node
 		pkg="autonomous"
 		name="image_preprocessinggray_node"
-		type="image_preprocessinggray_node.py"
+		type="image_preprocessinggray_node_visual.py"
 		respawn="true"
 		output="screen"
 	/>
@@ -26,7 +26,7 @@
 	<node
 		pkg="autonomous"
 		name="image_lanedetection_node"
-		type="image_lanedetection_node.py"
+		type="image_lanedetection_node_visual.py"
 		respawn="true"
 		output="screen"
 	/>
@@ -35,7 +35,7 @@
 	<node
 		pkg="autonomous"
 		name="image_stopsign_node"
-		type="image_stopsign_node.py"
+		type="image_stopsign_node_visual.py"
 		respawn="true"
 	/>
 

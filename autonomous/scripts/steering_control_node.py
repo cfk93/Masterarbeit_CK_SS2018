@@ -34,7 +34,7 @@ class steeringcontrolnode:
         self.control_pub = rospy.Publisher(pub_topic, carcontrol, queue_size=QUEUE_SIZE)
         
         rospy.init_node(node_name, anonymous=True)
-        rate = rospy.Rate(25) #publish Rate wird auf 25 Hz gesetzt, da Kamera maximal 25 Bilder/s liefert
+        rate = rospy.Rate(30) #publish Rate wird auf 30 Hz gesetzt, da Kamera maximal 30 Bilder/s liefert
         
         self.stop_sub = rospy.Subscriber(sub_topic, Float64, self.callback, winkel) #subscribe to Regler Output
         
@@ -46,7 +46,7 @@ class steeringcontrolnode:
     def callback(self, data, winkel):
                 
         #hier mögliche Filterung, aktuell ungenutzt und nur Umrechnung auf richtigen Lenkwinkel        
-        if len winkel<10:
+        if len(winkel)<10:
             winkel.append(data.data)
             controller.servo = int(data.data)+90
         else:
