@@ -32,7 +32,7 @@ class imagepreprocessingnode:
         self.image_pub = rospy.Publisher(pub_topic, Image, queue_size=QUEUE_SIZE)
         
         rospy.init_node(node_name, anonymous=True)
-        rate = rospy.Rate(25) #publish Rate wird auf 25 Hz gesetzt, da Kamera maximal 25 Bilder/s liefert
+        rate = rospy.Rate(30) #publish Rate wird auf 30 Hz gesetzt, da Kamera maximal 30 Bilder/s liefert
         
         self.image_sub = rospy.Subscriber(sub_topic, Image, self.callback)
         
@@ -55,19 +55,19 @@ class imagepreprocessingnode:
         
         
         gray_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY) #turn image to gray
-	img_hsv = cv2.cvtColor(cv_image, cv2.COLOR_RGB2HSV)
+        img_hsv = cv2.cvtColor(cv_image, cv2.COLOR_RGB2HSV)
         
         lower_yellow = np.array([0, 0, 0], dtype = "uint8")
-	upper_yellow = np.array([180, 255, 30], dtype = "uint8")
+        upper_yellow = np.array([180, 255, 30], dtype = "uint8")
 
-	mask_yellow = cv2.inRange(img_hsv, lower_yellow, upper_yellow)
-	mask_white = cv2.inRange(gray_image, 0, 50)
-	mask_yw = cv2.bitwise_or(mask_white, mask_yellow)
-	mask_yw_image = cv2.bitwise_and(gray_image, mask_yw)
-	
+        mask_yellow = cv2.inRange(img_hsv, lower_yellow, upper_yellow)
+        mask_white = cv2.inRange(gray_image, 0, 50)
+        mask_yw = cv2.bitwise_or(mask_white, mask_yellow)
+        mask_yw_image = cv2.bitwise_and(gray_image, mask_yw)
 
-	gauss_gray = cv2.GaussianBlur(mask_yw_image, (5, 5), 0);
-	canny_edges = cv2.Canny(gauss_gray, threshold_low, threshold_high)
+
+        gauss_gray = cv2.GaussianBlur(mask_yw_image, (5, 5), 0)
+        canny_edges = cv2.Canny(gauss_gray, threshold_low, threshold_high)
 
         try:
             self.image_pub.publish(self.bridge.cv2_to_imgmsg(canny_edges, "mono8"))

@@ -13,6 +13,7 @@
 
 
 import rospy
+import math
 import numpy as np
 import cv2
 from sensor_msgs.msg import Image
@@ -276,6 +277,30 @@ class imagelanedetectionnode:
             self.set_pub.publish(setp)
         except CvBridgeError as e:
             rospy.logerr(e)
+
+        cv2.line(warped_image, (w/2, 0), (w/2, h), (255, 0, 0), 1)
+        cv2.drawMarker(warped_image, (spur.right, 400), (255, 0, 0), markerType=cv2.MARKER_CROSS, markerSize=20, thickness=1, line_type=cv2.LINE_AA)
+        cv2.drawMarker(warped_image, (spur.left, 400), (255, 0, 0), markerType=cv2.MARKER_CROSS, markerSize=20, thickness=1, line_type=cv2.LINE_AA)
+        cv2.drawMarker(warped_image, (spur.left + (spur.right - spur.left)/2, 400), (255, 0, 0), markerType=cv2.MARKER_TILTED_CROSS, markerSize=20, thickness=1, line_type=cv2.LINE_AA)
+        #cv2.putText(warped_image, "Erkennung: %.2f" % spur.erkennung, (350, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        #cv2.putText(warped_image, "Miss rechts: %d" % miss[0], (350, 120), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        #cv2.putText(warped_image, "Miss links:   %d" % miss[1], (350, 160), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        #cv2.putText(warped_image, "Abweichung: %d" % spur.abw, (350, 200), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA )
+        cv2.imshow('birdview_img', warped_image)
+        cv2.waitKey(1)
+
+        '''birdview_image = cv2.cvtColor(warped_image, cv2.COLOR_GRAY2RGB)
+
+        hoehe_spurmitte = [np.mean(righty), np.mean(lefty)]
+        hoehe_spurmitte = int(np.mean(hoehe_spurmitte))
+        cv2.drawMarker(birdview_image, (spur.right, int(np.mean(righty))), (0, 0, 255), markerType=cv2.MARKER_CROSS, markerSize=30, thickness=2, line_type=cv2.LINE_AA)
+        cv2.drawMarker(birdview_image, (spur.left, int(np.mean(lefty))), (0, 0, 255), markerType=cv2.MARKER_CROSS, markerSize=30, thickness=2, line_type=cv2.LINE_AA)
+        cv2.drawMarker(birdview_image, (spur.left + (spur.right - spur.left) / 2, hoehe_spurmitte), (0, 255, 0), markerType=cv2.MARKER_TILTED_CROSS, markerSize=30, thickness=2, line_type=cv2.LINE_AA)
+        cv2.putText(birdview_image, "Setpoint: %.2f" % setp, (350, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        cv2.putText(birdview_image, "Radius: %.2f" % spur.radius, (350, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        cv2.imshow('birdview_img', birdview_image)
+        cv2.waitKey(1)'''
+
 
 def main():
     try:

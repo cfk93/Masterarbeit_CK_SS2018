@@ -40,7 +40,7 @@ class imuvelocitynode:
         self.velo_pub = rospy.Publisher(pub_topic, Float64, queue_size=QUEUE_SIZE)
         
         rospy.init_node(node_name, anonymous=True)
-        rate = rospy.Rate(25) #publish Rate wird auf 25 Hz gesetzt, da Kamera maximal 25 Bilder/s liefert
+        rate = rospy.Rate(30) #publish Rate wird auf 30 Hz gesetzt, da Kamera maximal 30 Bilder/s liefert
         
         self.imu_sub = rospy.Subscriber(sub_topic, Imu, self.callback)
         

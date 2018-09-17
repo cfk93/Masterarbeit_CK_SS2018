@@ -1,0 +1,13 @@
+          
+        
+        birdview_image = cv2.cvtColor(warped_image, cv2.COLOR_GRAY2RGB)
+ 
+        hoehe_spurmitte = [np.mean(righty), np.mean(lefty)]
+        hoehe_spurmitte = int(np.mean(hoehe_spurmitte))
+        cv2.drawMarker(birdview_image, (spur.right, int(np.mean(righty))), (0,0,255), markerType=cv2.MARKER_CROSS, markerSize=30, thickness=2, line_type=cv2.LINE_AA)
+        cv2.drawMarker(birdview_image, (spur.left, int(np.mean(lefty))), (0,0,255), markerType=cv2.MARKER_CROSS, markerSize=30, thickness=2, line_type=cv2.LINE_AA)
+        cv2.drawMarker(birdview_image, (spur.left + (spur.right - spur.left)/2, hoehe_spurmitte), (0,255,0), markerType=cv2.MARKER_TILTED_CROSS, markerSize=30, thickness=2, line_type=cv2.LINE_AA)
+        cv2.putText(birdview_image, "Setpoint: %.2f" % setp, (350, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        cv2.putText(birdview_image, "Radius: %.2f" % spur.radius, (350, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        cv2.imshow('birdview_img', birdview_image)
+        cv2.waitKey(1)

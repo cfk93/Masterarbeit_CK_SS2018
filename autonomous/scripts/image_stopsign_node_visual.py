@@ -61,19 +61,33 @@ class imagestopsignnode:
         image_gray = cv2.cvtColor(image_gray, cv2.COLOR_GRAY2RGB)
         img = image[0:image.shape[0],(image.shape[1]/2):image.shape[1]]   #nur rechte Bildseite durchlassen
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)                      #Graustufenbild rechte Seite
-        stops = stop_detect.detectMultiScale(gray, 1.3, 5)                #Anwendung CascadeClassifier # original scalingFactor: 1.4
-
-        #unrelevanter Bereich grau einfaerben
-        overlay = image_gray.copy()
-        cv2.rectangle(overlay, (0,0), (320,480), (150,150,150), -1)
-        alpha = 0.8
+	stops = stop_detect.detectMultiScale(gray, 1.3, 5)                #Anwendung CascadeClassifier # original scalingFactor: 1.4
+	
+	
+	#unrelevanter Bereich grau einfaerben
+	overlay = image_gray.copy()
+	cv2.rectangle(overlay, (0,0), (320,480), (150,150,150), -1)
+	alpha = 0.8
         cv2.addWeighted(overlay, alpha, image_gray, 1-alpha, 0, image_gray)
-
-        for (x, y, w, h) in stops:
-            stop_x_px = x + 320
+	
+	
+	
+	
+	#Visualisierung erkanntes Stoppschild
+	for (x,y,w,h) in stops:
+            cv2.putText(image_gray,'Stop!',(x+320,y-10),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),2,cv2.LINE_AA)
+            cv2.rectangle(image_gray,(x+320,y),(x+w+320,y+h),(5,116,236),2)
+            
+            stop_x_px = x+320
             stop_y_px = y
             stop_breite_px = w  # theoretisch maximal moegliche Breite = 320px, praktisch aber maximal <= 255px --> kann in uint8 gespeichert werden, Ueberschreitung muss aber abgefangen werden
-            stop_hoehe_px = h
+            stop_hoehe_px  = h
+        
+            cv2.putText(image_gray, "Breite: %.2fpx" % (h), (350, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
+            
+        cv2.imshow('Stoppschild Image',image_gray)
+        cv2.waitKey(1) 
+        
         
         #Erkennung auf 1 setzen wenn erkannt (keine Erkennung: Format = tuple)
         if isinstance(stops, tuple):
