@@ -1,14 +1,17 @@
-\chapter{Dynamische Längs- und Querregelung} \label{cha:DynamischeRegelung}
-\lipsum[1-1]
+\chapter{Kritische Analyse der implementierten Algorithmen} \label{cha:AnalyseAlgorithmen}
+Dieses Kapitel setzt sich mit den Algorithmen zur Bildverarbeitung und der Fahrzeugregelung auseinander. Es sollen die implementierten Teilfunktionen beschrieben und hinsichtlich Ihrer Tauglichkeit für dieses Projekt untersucht werden. Zudem werden die eigens umgesetzten Änderungen vorgestellt. Es sollen Verbesserungsvorschläge und mögliche künftige Erweiterungen der Fahrfunktionen aufgezeigt werden. 
+Dabei muss klar erwähnt werden, dass ein Großteil der Fahrfunktionen nicht im Zeitraum der Masterarbeit umgesetzt wurde, sondern aus einer vorherigen studentischen Arbeit \cite{Fitzer.31.03.2018} hervorgingen. 
 
-\section{Umsetzung des Fahralgorithmus} \label{sec:UmsetzungFahralgorithmus} % Wie ist die Regelung aktuell umgesetzt?
+\section{Zeitsynchronisation der Programmknoten} \label{sec:Zeitsynchronisation}
+% Aus Diagnose geht hervor: Ereignisgesteuerter Bus, Berechnung der Prozesse unabhängig voneinander, unsinnig, weil global begrenzender Faktor ist Kamera-fps --> Anpassung aller Knoten auf 30 Fps --> geregeltere CAN-Kommunikation ohne Latenzen niederpriorer Botschaften, Vergleich Buslast mit/ohne Zeitsynchronisation?
 
-\section{Kritische Analyse der implementierten Algorithmen} \label{sec:KritischeAnalyseAlgorithmen} % An welchen Stellen kann verbesserten werden? Ist Regelalgoritmus zielführend? Vor/Nachteile PID-Regler oder Fuzzy-Regler
+\section{Fahrspurerkennung}  \label{sec:Fahrspurerkennung}
+% Kamera umgebaut und kalibriert, ROI, fps, Algorithmus Hough-Line vs. Bird-View
+% Kamera wurde im Verlauf der Arbeit irreparabel beschädigt
 
-\section{Optimierung der Regelung} \label{sec:OptimierungRegelung}
+\section{Verkehrszeichenerkennung} \label{sec:Verkehrszeichenerkennung}
+% Wie wurde Erkennung umgesetzt? Haar-Cascade-Classifier, gutes und schnelles Ergebnis auch bei nichtoptimalen Bedingungen. Optimierung: Verweis BA Tobias Busch und BA Chao Yu
 
-\section{Implementierung der optimierten Spurregelung} \label{sec:ImplementierungRegeleung}
-
-\section{Ergebnisbetrachtung} \label{sec:ErgebnisRegelung}
-\subsection{Test und Validierung} \label{subsec:TestValidierungRegelung}
-\subsection{Mehrwert der optimierten Spurregelung} \label{subsec:MehrwertRegelung}
+\section{Längs- und Querregelung im Fahralgorithmus} \label{sec:Fahralgorithmus}
+ % Wie ist die Regelung aktuell umgesetzt? Package pid in ROS, Längsregelung fährt/fäjhrt nicht mit PWM-Signal % Optimierung: An welchen Stellen kann verbesserten werden? Ist Regelalgoritmus zielführend? Vor/Nachteile PID-Regler oder Fuzzy-Regler
+ % Längsdynamik einfacher Zustandsregler

@@ -1,18 +1,20 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: biblatex.bst
 Database file #1: main-blx.bib
-Database file #2: 005_bib/literatur6.bib
-Warning--I'm ignoring Schaffer.2012's extra "file" field
---line 155 of file 005_bib/literatur6.bib
+Database file #2: 005_bib/literatur9.bib
 Warning--I'm ignoring Reif.2014's extra "file" field
---line 183 of file 005_bib/literatur6.bib
-Warning--I'm ignoring Quigley.2015's extra "file" field
---line 212 of file 005_bib/literatur6.bib
+--line 38 of file 005_bib/literatur9.bib
+Warning--I'm ignoring Schaffer.2012's extra "file" field
+--line 81 of file 005_bib/literatur9.bib
 Warning--I'm ignoring Wallentowitz.2011's extra "file" field
---line 442 of file 005_bib/literatur6.bib
+--line 234 of file 005_bib/literatur9.bib
+Warning--I'm ignoring Quigley.2015's extra "file" field
+--line 252 of file 005_bib/literatur9.bib
+Warning--I'm ignoring Winner.2015's extra "file" field
+--line 269 of file 005_bib/literatur9.bib
 Warning--I'm ignoring Zimmermann.2014's extra "file" field
---line 461 of file 005_bib/literatur6.bib
+--line 545 of file 005_bib/literatur9.bib
 Warning--I'm ignoring Zimmermann.2014's extra "file" field
---line 463 of file 005_bib/literatur6.bib
+--line 547 of file 005_bib/literatur9.bib
 Biblatex version: 3.8
-(There were 6 warnings)
+(There were 7 warnings)

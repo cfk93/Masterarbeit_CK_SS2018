@@ -1,0 +1,1173 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.9)  19 SEP 2018 13:39
+entering extended mode
+**./Tikz-Bild.tex
+(Tikz-Bild.tex
+LaTeX2e <2018-04-01> patch level 5
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrar
+tcl.cls"
+Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrkb
+ase.sty"
+Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrba
+se.sty"
+Package: scrbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlf
+ile.sty"
+Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\tocba
+sic.sty"
+Package: tocbasic 2018/03/30 v3.25 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip41
+\scr@dte@tocline@numbox=\box26
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 134.
+Package scrartcl Info: You've used standard option `11pt'.
+(scrartcl)             This is correct!
+(scrartcl)             Internally I'm using `fontsize=11pt'.
+(scrartcl)             If you'd like to set the option with \KOMAoptions,
+(scrartcl)             you'd have to use `fontsize=11pt' there
+(scrartcl)             instead of `11pt', too.
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
+ine 2114.
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrsi
+ze11pt.clo"
+File: scrsize11pt.clo 2018/03/30 v3.25 KOMA-Script font size class option (11pt
+)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\typea
+rea.sty"
+Package: typearea 2018/03/30 v3.25 KOMA-Script package (type area)
+\ta@bcor=\skip42
+\ta@div=\count80
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip43
+\ta@vblk=\skip44
+\ta@temp=\skip45
+\footheight=\skip46
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1706.
+)
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\scr@dte@part@maxnumwidth=\skip47
+\scr@dte@section@maxnumwidth=\skip48
+\scr@dte@subsection@maxnumwidth=\skip49
+\scr@dte@subsubsection@maxnumwidth=\skip50
+\scr@dte@paragraph@maxnumwidth=\skip51
+\scr@dte@subparagraph@maxnumwidth=\skip52
+\abovecaptionskip=\skip53
+\belowcaptionskip=\skip54
+\c@pti@nb@sid@b@x=\box27
+\scr@dte@figure@maxnumwidth=\skip55
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 5439.
+\c@figure=\count87
+\scr@dte@table@maxnumwidth=\skip56
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 5451.
+\c@table=\count88
+Class scrartcl Info: Redefining `\numberline' on input line 5615.
+\bibindent=\dimen102
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) ("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
+sty"
+Package: babel 2018/06/05 3.22 The Babel package
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.de
+f"
+File: switch.def 2018/06/05 3.22 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
+man.ldf"
+Language: ngerman 2018/03/29 v2.10 German support for babel (post-1996 orthogra
+phy)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
+manb.ldf"
+Language: ngermanb 2018/03/29 v2.10 German support for babel (post-1996 orthogr
+aphy)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+"
+File: babel.def 2018/06/05 3.22 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.
+def")
+\bbl@dirlevel=\count90
+)
+Package babel Info: Making " an active character on input line 121.
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+
+Class scrartcl Warning: Usage of package `parskip' together
+(scrartcl)              with a KOMA-Script class is not recommended.
+(scrartcl)              I'd suggest to use option
+(scrartcl)              `parskip' with one of it's several values.
+(scrartcl)              Nevertheless, using requested
+(scrartcl)              package `parskip' on input line 12.
+
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\parskip\parskip.s
+ty"
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
+sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex
+.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
+.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks17
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+.cfg"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer
+\tikz.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
+f.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
+rcs.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfutil-common.tex"
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen112
+\pgfutil@tempdimb=\dimen113
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfutil-common-lists.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfutil-latex.def"
+\pgfutil@abb=\box28
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
+fcore.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
+hics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
+ex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\p
+gfsys.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfkeys.code.tex"
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen116
+\pgf@y=\dimen117
+\pgf@xa=\dimen118
+\pgf@ya=\dimen119
+\pgf@xb=\dimen120
+\pgf@yb=\dimen121
+\pgf@xc=\dimen122
+\pgf@yc=\dimen123
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count94
+\c@pgf@countb=\count95
+\c@pgf@countc=\count96
+\c@pgf@countd=\count97
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count98
+\pgfsyssoftpath@bigbuffer@items=\count99
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+h.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hcalc.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hutil.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hparser.code.tex"
+\pgfmath@dimen=\dimen124
+\pgfmath@count=\count100
+\pgfmath@box=\box29
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.basic.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.trigonometric.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.random.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.comparison.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.base.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.round.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.misc.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfunctions.integerarithmetics.code.tex")))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+hfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count101
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen125
+\pgf@picmaxx=\dimen126
+\pgf@picminy=\dimen127
+\pgf@picmaxy=\dimen128
+\pgf@pathminx=\dimen129
+\pgf@pathmaxx=\dimen130
+\pgf@pathminy=\dimen131
+\pgf@pathmaxy=\dimen132
+\pgf@xx=\dimen133
+\pgf@xy=\dimen134
+\pgf@yx=\dimen135
+\pgf@yy=\dimen136
+\pgf@zx=\dimen137
+\pgf@zy=\dimen138
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen139
+\pgf@path@lasty=\dimen140
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen141
+\pgf@shorten@start@additional=\dimen142
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count102
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen143
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen144
+\pgf@pt@y=\dimen145
+\pgf@pt@temp=\dimen146
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen147
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen148
+\pgf@sys@shading@range@num=\count103
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box33
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+moduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box34
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+moduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
+\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen149
+\pgf@nodesepend=\dimen150
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
+\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
+for.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
+keys.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gfkeys.code.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.
+sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+h.code.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+gffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+h.code.tex")
+\pgffor@iter=\dimen151
+\pgffor@skip=\dimen152
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\p
+gflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count104
+\pgfplotmarksize=\dimen153
+)
+\tikz@lastx=\dimen154
+\tikz@lasty=\dimen155
+\tikz@lastxsaved=\dimen156
+\tikz@lastysaved=\dimen157
+\tikzleveldistance=\dimen158
+\tikzsiblingdistance=\dimen159
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count105
+\tikznumberofchildren=\count106
+\tikznumberofcurrentchild=\count107
+\tikz@fig@count=\count108
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+modulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count109
+\pgfmatrixcurrentcolumn=\count110
+\pgf@matrix@numberofcolumns=\count111
+)
+\tikz@expandcount=\count112
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.code.tex"
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.symbols.code.tex"
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.arrows.code.tex"
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.callouts.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.callouts.code.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box39
+\pgfnodeparttwobox=\box40
+\pgfnodepartthreebox=\box41
+\pgfnodepartfourbox=\box42
+\pgfnodeparttwentybox=\box43
+\pgfnodepartnineteenbox=\box44
+\pgfnodeparteighteenbox=\box45
+\pgfnodepartseventeenbox=\box46
+\pgfnodepartsixteenbox=\box47
+\pgfnodepartfifteenbox=\box48
+\pgfnodepartfourteenbox=\box49
+\pgfnodepartthirteenbox=\box50
+\pgfnodeparttwelvebox=\box51
+\pgfnodepartelevenbox=\box52
+\pgfnodeparttenbox=\box53
+\pgfnodepartninebox=\box54
+\pgfnodeparteightbox=\box55
+\pgfnodepartsevenbox=\box56
+\pgfnodepartsixbox=\box57
+\pgfnodepartfivebox=\box58
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\p
+gflibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen160
+))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+moduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen161
+\pgfdecoratedremainingdistance=\dimen162
+\pgfdecoratedinputsegmentcompleteddistance=\dimen163
+\pgfdecoratedinputsegmentremainingdistance=\dimen164
+\pgf@decorate@distancetomove=\dimen165
+\pgf@decorate@repeatstate=\count113
+\pgfdecorationsegmentamplitude=\dimen166
+\pgfdecorationsegmentlength=\dimen167
+)
+\tikz@lib@dec@box=\box59
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarydecorations.text.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\d
+ecorations\pgflibrarydecorations.text.code.tex"
+\pgf@lib@dec@text@box=\box60
+)
+\tikz@lib@dec@te@box=\box61
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\d
+ecorations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/localtexmf\tex/latex\tikz-u
+ml\tikz-uml.sty"
+Package: tikz-uml 2011/01/26
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.s
+ty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring
+.tex"
+\@xs@message=\write4
+\integerpart=\count114
+\decimalpart=\count115
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count116
+\calc@Bcount=\count117
+\calc@Adimen=\dimen168
+\calc@Bdimen=\dimen169
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count118
+\calc@Cskip=\skip59
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfopts\pgfopts.s
+ty"
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks30
+\pgfopts@list@add@b@toks=\toks31
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarybackgrounds.code.tex"
+File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
+\pgf@layerbox@background=\box62
+\pgf@layerboxsaved@background=\box63
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryfit.code.tex"
+File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshadows.code.tex"
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryfadings.code.tex"
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\p
+gflibraryfadings.code.tex"
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarydecorations.markings.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\d
+ecorations\pgflibrarydecorations.markings.code.tex"))
+\c@tikzumlPackageLayers=\count119
+\pgf@layerbox@package0=\box64
+\pgf@layerboxsaved@package0=\box65
+\pgf@layerbox@package1=\box66
+\pgf@layerboxsaved@package1=\box67
+\pgf@layerbox@package2=\box68
+\pgf@layerboxsaved@package2=\box69
+\pgf@layerbox@package3=\box70
+\pgf@layerboxsaved@package3=\box71
+\c@tikzumlFragmentLayers=\count120
+\pgf@layerbox@fragment0=\box72
+\pgf@layerboxsaved@fragment0=\box73
+\pgf@layerbox@fragment1=\box74
+\pgf@layerboxsaved@fragment1=\box75
+\pgf@layerbox@fragment2=\box76
+\pgf@layerboxsaved@fragment2=\box77
+\pgf@layerbox@fragment3=\box78
+\pgf@layerboxsaved@fragment3=\box79
+\c@tikzumlStateLayers=\count121
+\pgf@layerbox@state0=\box80
+\pgf@layerboxsaved@state0=\box81
+\pgf@layerbox@state1=\box82
+\pgf@layerboxsaved@state1=\box83
+\pgf@layerbox@state2=\box84
+\pgf@layerboxsaved@state2=\box85
+\pgf@layerbox@state3=\box86
+\pgf@layerboxsaved@state3=\box87
+\c@tikzumlComponentLayers=\count122
+\pgf@layerbox@component0=\box88
+\pgf@layerboxsaved@component0=\box89
+\pgf@layerbox@component1=\box90
+\pgf@layerboxsaved@component1=\box91
+\pgf@layerbox@component2=\box92
+\pgf@layerboxsaved@component2=\box93
+\pgf@layerbox@component3=\box94
+\pgf@layerboxsaved@component3=\box95
+\pgf@layerbox@lifelines=\box96
+\pgf@layerboxsaved@lifelines=\box97
+\pgf@layerbox@activity=\box98
+\pgf@layerboxsaved@activity=\box99
+\pgf@layerbox@connections=\box100
+\pgf@layerboxsaved@connections=\box101
+\c@tikzumlPackageClassNum=\count123
+\c@tikzumlPackageSubPackageNum=\count124
+\c@tikzumlRelationNum=\count125
+\c@tikzumlNoteNum=\count126
+\c@pos=\count127
+\c@posT=\count128
+\c@posStereo=\count129
+\c@tikzumlPackageLevel=\count130
+\tikzumlNestingSymbolSize=\dimen170
+\c@tikzumlSystemUseCaseNum=\count131
+\c@tikzumlSystemLevel=\count132
+\c@tikzumlUseCaseNum=\count133
+\c@tikzumlActorNum=\count134
+\c@tikzumlStateJoinNum=\count135
+\c@tikzumlStateDecisionNum=\count136
+\c@tikzumlStateInitialNum=\count137
+\c@tikzumlStateFinalNum=\count138
+\c@tikzumlStateEnterNum=\count139
+\c@tikzumlStateExitNum=\count140
+\c@tikzumlStateEndNum=\count141
+\c@tikzumlStateHistoryNum=\count142
+\c@tikzumlStateDeepHistoryNum=\count143
+\c@tikzumlStateLevel=\count144
+\c@tikzumlStateSubStateNum=\count145
+\c@tikzumlStateText=\count146
+\c@tikzumlObjectNum=\count147
+\c@tikzumlCallLevel=\count148
+\c@tikzumlCallNum=\count149
+\c@tikzumlFragmentLevel=\count150
+\c@tikzumlFragmentLevelNum=\count151
+\c@tikzumlFragmentNum=\count152
+\c@tikzumlFragmentPartNum=\count153
+\c@tikzumlCallStartFragmentNum=\count154
+\c@tikzumlCallEndFragmentNum=\count155
+\c@tikzumlSDNodeNum=\count156
+\tikzumlCall@xa=\skip60
+\tikzumlCall@xb=\skip61
+\c@tikzumlComponentLevel=\count157
+\c@tikzumlComponentSubComponentNum=\count158
+\c@tikzumlConnectorNum=\count159
+\tikzuml@AC@xa=\skip62
+\tikzuml@AC@ya=\skip63
+\tikzuml@AC@xb=\skip64
+\tikzuml@AC@yb=\skip65
+\tikzuml@AC@xi=\skip66
+\tikzuml@AC@yi=\skip67
+\tikzuml@AC@xic=\skip68
+\tikzuml@AC@yic=\skip69
+\tikzuml@AC@xio=\skip70
+\tikzuml@AC@yio=\skip71
+\tikzuml@AC@AB=\skip72
+\tikzuml@AC@lambda=\skip73
+\tikzuml@AC@xtrc=\skip74
+\tikzuml@AC@ytrc=\skip75
+\tikzuml@AC@xtlc=\skip76
+\tikzuml@AC@ytlc=\skip77
+\tikzuml@AC@xblc=\skip78
+\tikzuml@AC@yblc=\skip79
+\tikzuml@AC@xbrc=\skip80
+\tikzuml@AC@ybrc=\skip81
+\tikzuml@AC@middleArm=\skip82
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots
+.sty"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+ts.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+ts.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+tscore.code.tex"
+\t@pgfplots@toka=\toks32
+\t@pgfplots@tokb=\toks33
+\t@pgfplots@tokc=\toks34
+\pgfplots@tmpa=\dimen171
+\c@pgfplots@coordindex=\count160
+\c@pgfplots@scanlineindex=\count161
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pg
+fplotssysgeneric.code.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\p
+gfplotslibrary.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgf
+compatib\pgfplotsoldpgfsupp_loader.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\p
+gflibraryfpu.code.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgf
+compatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgf
+compatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count162
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgf
+compatib\pgfplotsoldpgfsupp_leq.code.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\p
+gfplotsutil.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\listst
+ructure\pgfplotsliststructure.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\listst
+ructure\pgfplotsliststructureext.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\listst
+ructure\pgfplotsarray.code.tex"
+\c@pgfplotsarray@tmp=\count163
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\listst
+ructure\pgfplotsmatrix.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtab
+le\pgfplotstableshared.code.tex"
+\c@pgfplotstable@counta=\count164
+\t@pgfplotstable@a=\toks35
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\listst
+ructure\pgfplotsdeque.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\p
+gfplotsbinary.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\p
+gfplotsbinary.data.code.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\p
+gfplotsutil.verb.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\p
+gflibrarypgfplots.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count165
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pg
+flibrarypgfplots.surfshading.pgfsys-pdftex.def")))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\p
+gfplotscolormap.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\p
+gfplotscolor.code.tex"))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+tsstackedplots.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+tsplothandlers.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+tsmeshplothandler.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+tsmeshplotimage.code.tex")))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+ts.scaling.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+tscoordprocessing.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+ts.errorbars.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+ts.markers.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+tsticks.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplo
+ts.paths.code.tex")
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\d
+ecorations\pgflibrarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count166
+\pgfplots@xmin@reg=\dimen172
+\pgfplots@xmax@reg=\dimen173
+\pgfplots@ymin@reg=\dimen174
+\pgfplots@ymax@reg=\dimen175
+\pgfplots@zmin@reg=\dimen176
+\pgfplots@zmax@reg=\dimen177
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\p
+gflibraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\comment\comment.s
+ty"
+\CommentStream=\write5
+ Excluding comment 'comment') (Tikz-Bild.aux)
+\openout1 = `Tikz-Bild.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 28.
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 28.45274pt
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 426.79137pt, 71.13188pt)
+* v-part:(T,H,B)=(99.58464pt, 631.65118pt, 113.81102pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79137pt
+* \textheight=631.65118pt
+* \oddsidemargin=27.31464pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-10.08536pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ABD: EveryShipout initializing macros
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+kii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count167
+\scratchdimen=\dimen178
+\scratchbox=\box102
+\nofMPsegments=\count168
+\nofMParguments=\count169
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count170
+\MPscratchDim=\dimen179
+\MPnumerator=\count171
+\makeMPintoPDFobject=\count172
+\everyMPtoPDFconversion=\toks37
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
+-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+err.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
+ty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefi
+nekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+s.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
+s.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
+eys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
+ds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
+ex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
+cmds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
+your preamble.
+ on input line 28.
+
+Excluding 'comment' comment.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 101.
+
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 101
+.
+
+("C:\Users\c.kary\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 101.
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+
+ []
+
+
+Overfull \hbox (5.58641pt too wide) in paragraph at lines 104--106
+\T1/lmr/m/n/10.95 Form aus-ge-tauscht wer-den. Da-zu ver-wen-det ROS ei-ne \T1/
+lmr/m/it/10.95 Pu-blis-her/Subscriber\T1/lmr/m/n/10.95 -Semantik.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
+
+ []
+
+[1
+
+{C:/Users/c.kary/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(Tikz-Bild.aux) ) 
+Here is how much of TeX's memory you used:
+ 29176 strings out of 492973
+ 757648 string characters out of 3126250
+ 1124382 words of memory out of 3000000
+ 32543 multiletter control sequences out of 15000+200000
+ 15260 words of font info for 20 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 64i,7n,100p,9090b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-ec.enc}{C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
+dvips/lm/lm-mathsy.enc}<C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmbx10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/lm/lmr10.pfb><C:/Users/c.kary/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/c.kary/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Tikz-Bild.pdf (1 page, 87945 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+

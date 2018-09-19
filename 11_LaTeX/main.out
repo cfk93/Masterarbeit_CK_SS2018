@@ -6,17 +6,17 @@
 \BOOKMARK [1][]{section.1.2}{Zielsetzung der Arbeit}{chapter.1}% 6
 \BOOKMARK [0][]{chapter.2}{Grundlagen}{}% 7
 \BOOKMARK [1][]{section.2.1}{Autonomes Fahren}{chapter.2}% 8
-\BOOKMARK [2][]{subsection.2.1.1}{\334berblick Fahrerassistenzsysteme}{section.2.1}% 9
-\BOOKMARK [2][]{subsection.2.1.2}{Autonomiestufen}{section.2.1}% 10
-\BOOKMARK [1][]{section.2.2}{Bussysteme}{chapter.2}% 11
-\BOOKMARK [2][]{subsection.2.2.1}{Kommunikationsmodell}{section.2.2}% 12
-\BOOKMARK [2][]{subsection.2.2.2}{Controller Area Network CAN}{section.2.2}% 13
-\BOOKMARK [2][]{subsection.2.2.3}{CAN-Protokoll: Physical Layer}{section.2.2}% 14
-\BOOKMARK [2][]{subsection.2.2.4}{CAN-Protokoll: Data Link Layer}{section.2.2}% 15
-\BOOKMARK [0][]{chapter.3}{Ausgangssituation}{}% 16
-\BOOKMARK [1][]{section.3.1}{Hardware}{chapter.3}% 17
-\BOOKMARK [1][]{section.3.2}{Software}{chapter.3}% 18
-\BOOKMARK [1][]{section.3.3}{Sensorik}{chapter.3}% 19
+\BOOKMARK [2][]{subsection.2.1.1}{Autonomiestufen}{section.2.1}% 9
+\BOOKMARK [1][]{section.2.2}{Bussysteme}{chapter.2}% 10
+\BOOKMARK [2][]{subsection.2.2.1}{Kommunikationsmodell}{section.2.2}% 11
+\BOOKMARK [2][]{subsection.2.2.2}{Controller Area Network CAN}{section.2.2}% 12
+\BOOKMARK [2][]{subsection.2.2.3}{CAN-Protokoll: Physical Layer}{section.2.2}% 13
+\BOOKMARK [2][]{subsection.2.2.4}{CAN-Protokoll: Data Link Layer}{section.2.2}% 14
+\BOOKMARK [0][]{chapter.3}{Das EVObot-Projekt}{}% 15
+\BOOKMARK [1][]{section.3.1}{Das Modellfahrzeug}{chapter.3}% 16
+\BOOKMARK [1][]{section.3.2}{Eingesetzte Sensorik}{chapter.3}% 17
+\BOOKMARK [1][]{section.3.3}{Electronic Control Units}{chapter.3}% 18
+\BOOKMARK [1][]{section.3.4}{ROS - Robot Operating System}{chapter.3}% 19
 \BOOKMARK [0][]{chapter.4}{Diagnosesystem}{}% 20
 \BOOKMARK [1][]{section.4.1}{Konzept der Fehlerdiagnose}{chapter.4}% 21
 \BOOKMARK [2][]{subsection.4.1.1}{Anforderungen an die Fehlerdiagnose}{section.4.1}% 22
@@ -32,20 +32,17 @@
 \BOOKMARK [1][]{section.4.4}{Ergebnisbetrachtung}{chapter.4}% 32
 \BOOKMARK [2][]{subsection.4.4.1}{Test und Validierung}{section.4.4}% 33
 \BOOKMARK [2][]{subsection.4.4.2}{Mehrwert der Diagnosefunktion}{section.4.4}% 34
-\BOOKMARK [0][]{chapter.5}{Dynamische L\344ngs- und Querregelung}{}% 35
-\BOOKMARK [1][]{section.5.1}{Umsetzung des Fahralgorithmus}{chapter.5}% 36
-\BOOKMARK [1][]{section.5.2}{Kritische Analyse der implementierten Algorithmen}{chapter.5}% 37
-\BOOKMARK [1][]{section.5.3}{Optimierung der Regelung}{chapter.5}% 38
-\BOOKMARK [1][]{section.5.4}{Implementierung der optimierten Spurregelung}{chapter.5}% 39
-\BOOKMARK [1][]{section.5.5}{Ergebnisbetrachtung}{chapter.5}% 40
-\BOOKMARK [2][]{subsection.5.5.1}{Test und Validierung}{section.5.5}% 41
-\BOOKMARK [2][]{subsection.5.5.2}{Mehrwert der optimierten Spurregelung}{section.5.5}% 42
-\BOOKMARK [0][]{chapter.6}{Zusammenfassung und Ausblick}{}% 43
-\BOOKMARK [1][]{section.6.1}{Zusammenfassung}{chapter.6}% 44
-\BOOKMARK [1][]{section.6.2}{Ausblick}{chapter.6}% 45
-\BOOKMARK [0][]{chapter*.7}{Tabellenverzeichnis}{}% 46
-\BOOKMARK [0][]{chapter*.8}{Abbildungsverzeichnis}{}% 47
-\BOOKMARK [0][]{chapter*.9}{Literaturverzeichnis}{}% 48
-\BOOKMARK [0][]{appendix.A}{Anhang}{}% 49
-\BOOKMARK [1][]{section.A.1}{Auszug aus dem Datenblatt SN65HVD230}{appendix.A}% 50
-\BOOKMARK [1][]{section.A.2}{Einarbeitungsleitfaden Projekt EVObot}{appendix.A}% 51
+\BOOKMARK [0][]{chapter.5}{Kritische Analyse der implementierten Algorithmen}{}% 35
+\BOOKMARK [1][]{section.5.1}{Zeitsynchronisation der Programmknoten}{chapter.5}% 36
+\BOOKMARK [1][]{section.5.2}{Fahrspurerkennung}{chapter.5}% 37
+\BOOKMARK [1][]{section.5.3}{Verkehrszeichenerkennung}{chapter.5}% 38
+\BOOKMARK [1][]{section.5.4}{L\344ngs- und Querregelung im Fahralgorithmus}{chapter.5}% 39
+\BOOKMARK [0][]{chapter.6}{Zusammenfassung und Ausblick}{}% 40
+\BOOKMARK [1][]{section.6.1}{Zusammenfassung}{chapter.6}% 41
+\BOOKMARK [1][]{section.6.2}{Ausblick}{chapter.6}% 42
+\BOOKMARK [0][]{chapter*.7}{Tabellenverzeichnis}{}% 43
+\BOOKMARK [0][]{chapter*.8}{Abbildungsverzeichnis}{}% 44
+\BOOKMARK [0][]{chapter*.9}{Literaturverzeichnis}{}% 45
+\BOOKMARK [0][]{appendix.A}{Anhang}{}% 46
+\BOOKMARK [1][]{section.A.1}{Auszug aus dem Datenblatt SN65HVD230}{appendix.A}% 47
+\BOOKMARK [1][]{section.A.2}{Einarbeitungsleitfaden Projekt EVObot}{appendix.A}% 48

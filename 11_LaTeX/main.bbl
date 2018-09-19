@@ -17,6 +17,82 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{DeutscherVerkehrssicherheitsrat.2018}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutscher Verkehrssicherheitsrat}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Unfallstatistik aktuell: Langfristige Entwicklung}}
+    \verb{url}
+    \verb https://www.dvr.de/unfallstatistik/de/jahre/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{16}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{TechnischeUniversitatBraunschweig.}{online}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Technische Universit{\"a}t Braunschweig}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {{Lehrstuhl f{\"u}r elektronische Fahrzeugsysteme}}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Carolo-Cup}}
+    \verb{url}
+    \verb https://wiki.ifr.ing.tu-bs.de/carolocup/carolo-cup
+    \endverb
+    \field{urlday}{16}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Fitzer.31.03.2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=FF}{%
+         family={Fitzer},
+         familyi={F\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FF1}
+    \strng{fullhash}{FF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{titleaddon}{Lehrstuhl Fahrzeugtechnik und --antriebe}
+    \field{title}{{Entwicklung eines Demonstrators f{\"u}r
+  Fahrerassistenzsysteme und Implementierung einer Querf{\"u}hrung}}
+    \list{location}{1}{%
+      {Cottbus}%
+    }
+    \list{institution}{1}{%
+      {{Brandenburgische Technische Universit{\"a}t Cottbus}}%
+    }
+    \verb{file}
+    \verb 24195726-3952-4ebf-9baa-9fe3fb9afd05:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\24195726-395
+    \verb 2-4ebf-9baa-9fe3fb9afd05.pdf:pdf
+    \endverb
+    \field{type}{{Masterarbeit}}
+    \field{year}{31.03.2018}
+  \endentry
+
   \entry{Kary.12.09.2016}{thesis}{}
     \name{author}{1}{}{%
       {{hash=KC}{%
@@ -30,7 +106,6 @@
     \strng{fullhash}{KC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{pagetotal}{96}
     \field{titleaddon}{Institut f{\"u}r Energieeffiziente Mobilit{\"a}t}
     \field{title}{{Ermittlung der Rekuperationsenergie und der
   Leistungsaufnahme von Nebenverbrauchern in einem Elektroauto}}
@@ -47,8 +122,143 @@
     \verb b-48f0-91f5-9b6d1bce613a.pdf:pdf
     \endverb
     \field{type}{{Bachelorarbeit}}
-    \field{year}{2016-09-12}
-    \field{urlday}{12}
+    \field{year}{12.09.2016}
+  \endentry
+
+  \entry{Winner.2015}{collection}{}
+    \name{editor}{4}{}{%
+      {{hash=WH}{%
+         family={Winner},
+         familyi={W\bibinitperiod},
+         given={Hermann},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hakuli},
+         familyi={H\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lotz},
+         familyi={L\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Singer},
+         familyi={S\bibinitperiod},
+         given={Christina},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Vieweg}}%
+    }
+    \keyw{Fahrerassistenzsystem}
+    \strng{namehash}{WH+1}
+    \strng{fullhash}{WHHSLFSC1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{edition}{3., {\"u}berarbeitete und erg{\"a}nzte Auflage}
+    \field{isbn}{9783658057343}
+    \field{series}{{ATZ / MTZ-Fachbuch}}
+    \field{subtitle}{{Grundlagen, Komponenten und Systeme f{\"u}r aktive
+  Sicherheit und Komfort}}
+    \field{title}{{Handbuch Fahrerassistenzsysteme}}
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \verb{file}
+    \verb http://deposit.d-nb.de/cgi-bin/dokserv?id=4894076&prov=M&dok_var=1&do
+    \verb k_ext=htm
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{SAEInternational.15.06.2018}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=S}{%
+         family={{SAE International}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {{SAE International}}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{number}{J3016}
+    \field{title}{{J3016 - Taxonomy and Definitions for Terms Related to
+  Driving Automation Systems for On-Road Motor Vehicles}}
+    \verb{url}
+    \verb https://saemobilus.sae.org/content/J3016_201806/
+    \endverb
+    \field{version}{201806}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{type}{SAE}
+    \field{day}{15}
+    \field{month}{06}
+    \field{year}{2018}
+    \field{urlday}{19}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{VerbandderAutomibilindustriee.V..2015}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Verband der Automibilindustrie e.V.}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{V2}
+    \strng{fullhash}{V2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{subtitle}{{Von Fahrerassistenzsystemen zum automatisierten Fahren}}
+    \field{title}{{Automatisierung}}
+    \verb{url}
+    \verb https://www.vda.de/de/services/Publikationen/automatisierung.html
+    \endverb
+    \verb{file}
+    \verb 91eb9d17-daca-45c1-9c5a-ef097abaf462:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\91eb9d17-dac
+    \verb a-45c1-9c5a-ef097abaf462.pdf:pdf
+    \endverb
+    \field{year}{2015}
+    \field{urlday}{19}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{ADACe.V..2018}{online}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{ADAC e.V.}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Assistiert, teilautomatisiert, hochautomatisiert, vollautomatisiert,
+  autonom: Das bedeuten die f{\"u}nf Stufen auf dem Weg zum autonomen Fahrzeug%
+    }
+    \field{title}{{Autonomes Fahren: Die 5 Stufen}}
+    \verb{url}
+    \verb https://www.adac.de/rund-ums-fahrzeug/autonomes-fahren/autonomes-fahr
+    \verb en-5-stufen/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{19}
     \field{urlmonth}{09}
     \field{urlyear}{2018}
   \endentry
@@ -62,9 +272,6 @@
          giveni={N\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {ger}%
-    }
     \list{publisher}{1}{%
       {H{\"u}thig}%
     }
@@ -77,7 +284,6 @@
     \field{labeltitlesource}{title}
     \field{edition}{2., erw. und aktualisierte Aufl.}
     \field{isbn}{3778539132}
-    \field{pagetotal}{871}
     \field{subtitle}{{Telekommunikation, Datenkommunikation, Multimedia,
   Internet}}
     \field{title}{{Lexikon der Kommunikations- und Informationstechnik}}
@@ -107,7 +313,6 @@
     \field{abstract}{%
     E-Learning-Angebot zur Einf{\"u}hrung in serielle Bussysteme%
     }
-    \field{note}{Copyright: 2018 Vector Informatik}
     \field{title}{{Einf{\"u}hrung in die Seriellen Bussysteme im Kfz}}
     \verb{url}
     \verb https://elearning.vector.com/vl_sbs_introduction_de.html
@@ -127,20 +332,18 @@
          familyi={V\bibinitperiod},
       }}%
     }
-    \keyw{CAN;CAN-Einf{\"u}hrung;CAN-Grundlagen;Controller Area
-  Network;Einf{\"u}hrung in CAN;Einf{\"u}hrung in das Controller Area
-  Network;E-Learning;online-Lernen}
+    \keyw{Einf{\"u}hrung in
+  FlexRay;E-Learning;FlexRay;FlexRay-Einf{\"u}hrung;FlexRay-Grundlagen;online-Lernen}
     \strng{namehash}{V1}
     \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    E-Learning-Angebot zur Einf{\"u}hrung in CAN%
+    E-Learning-Angebot zur Einf{\"u}hrung in FlexRay%
     }
-    \field{note}{Copyright: 2018 Vector Informatik}
-    \field{title}{{Einf{\"u}hrung in CAN}}
+    \field{title}{{Einf{\"u}hrung in FlexRay}}
     \verb{url}
-    \verb https://elearning.vector.com/vl_can_introduction_de.html
+    \verb https://elearning.vector.com/vl_flexray_introduction_de.html
     \endverb
     \list{location}{1}{%
       {Stuttgart}%
@@ -198,7 +401,6 @@
     \field{labelnamesource}{editor}
     \field{labeltitlesource}{title}
     \field{number}{7498-1}
-    \field{pagetotal}{68}
     \field{title}{{ISO/IEC 7498-1: Information technology - Open Systems
   Interconnection - Basic Reference Model: The Basic Model}}
     \verb{url}
@@ -238,9 +440,6 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {ger}%
-    }
     \list{publisher}{1}{%
       {{Vieweg + Teubner}}%
     }
@@ -251,7 +450,6 @@
     \field{labeltitlesource}{title}
     \field{edition}{2., verb. und aktualisierte Aufl.}
     \field{isbn}{9783834807007}
-    \field{pagetotal}{724}
     \field{series}{{ATZ/MTZ-Fachbuch}}
     \field{subtitle}{{Grundlagen - Komponenten - Systeme - Anwendungen}}
     \field{title}{{Handbuch Kraftfahrzeugelektronik}}
@@ -259,8 +457,7 @@
       {Wiesbaden}%
     }
     \verb{file}
-    \verb http://deposit.d-nb.de/cgi-bin/dokserv?id=3540038&prov=M&dok_var=1&do
-    \verb k_ext=htm
+    \verb http://d-nb.info/1007117141/04
     \endverb
     \field{year}{2011}
   \endentry
@@ -318,12 +515,8 @@
   der Daimler AG t{\"a}tig. Zuvor sammelte er Erfahrungen in der Entwicklung
   von Flash-Bootladern in der Kfz-Zulieferindustrie%
     }
-    \verb{doi}
-    \verb 10.1007/978-3-658-02419-2
-    \endverb
     \field{edition}{5., aktual. und erw. Aufl.}
     \field{isbn}{9783658024185}
-    \field{pagetotal}{507}
     \field{series}{{ATZ / MTZ-Fachbuch}}
     \field{subtitle}{{Protokolle, Standards und Softwarearchitektur}}
     \field{title}{{Bussysteme in der Fahrzeugtechnik}}
@@ -346,19 +539,19 @@
          familyi={V\bibinitperiod},
       }}%
     }
-    \keyw{Einf{\"u}hrung in
-  FlexRay;E-Learning;FlexRay;FlexRay-Einf{\"u}hrung;FlexRay-Grundlagen;online-Lernen}
+    \keyw{CAN;CAN-Einf{\"u}hrung;CAN-Grundlagen;Controller Area
+  Network;Einf{\"u}hrung in CAN;Einf{\"u}hrung in das Controller Area
+  Network;E-Learning;online-Lernen}
     \strng{namehash}{V1}
     \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    E-Learning-Angebot zur Einf{\"u}hrung in FlexRay%
+    E-Learning-Angebot zur Einf{\"u}hrung in CAN%
     }
-    \field{note}{Copyright: 2018 Vector Informatik}
-    \field{title}{{Einf{\"u}hrung in FlexRay}}
+    \field{title}{{Einf{\"u}hrung in CAN}}
     \verb{url}
-    \verb https://elearning.vector.com/vl_flexray_introduction_de.html
+    \verb https://elearning.vector.com/vl_can_introduction_de.html
     \endverb
     \list{location}{1}{%
       {Stuttgart}%
@@ -366,6 +559,58 @@
     \field{urlday}{08}
     \field{urlmonth}{06}
     \field{urlyear}{2018}
+  \endentry
+
+  \entry{Quigley.2015}{book}{}
+    \name{author}{3}{}{%
+      {{hash=QM}{%
+         family={Quigley},
+         familyi={Q\bibinitperiod},
+         given={Morgan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Gerkey},
+         familyi={G\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Bill},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {O´Reilly}%
+    }
+    \keyw{Operating systems (Computers);Programming;Robot Operating
+  System;Robotics;Robotik;Robots}
+    \strng{namehash}{QMGBSB1}
+    \strng{fullhash}{QMGBSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{First edition}
+    \field{isbn}{9781449323899}
+    \field{series}{{Safari Tech Books Online}}
+    \field{subtitle}{{A practical introduction to the Robot Operating System}}
+    \field{title}{{Programming robots with ROS}}
+    \verb{url}
+    \verb http://proquest.safaribooksonline.com/9781449325480
+    \endverb
+    \list{location}{5}{%
+      {Beijing}%
+      {Boston}%
+      {Farnham}%
+      {Sebastopol}%
+      {Tokyo}%
+    }
+    \verb{file}
+    \verb http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nleb
+    \verb k&AN=1100699
+    \endverb
+    \field{year}{2015}
   \endentry
 
   \entry{DINDeutschesInstitutfurNormunge.V..201511}{misc}{}
@@ -378,12 +623,11 @@
     \list{organization}{1}{%
       {{DIN Deutsches Institut f{\"u}r Normung e.V.}}%
     }
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
     \field{labelnamesource}{editor}
     \field{labeltitlesource}{title}
     \field{number}{9000}
-    \field{pagetotal}{104}
     \field{title}{{Qualit{\"a}tsmanagementsysteme}}
     \verb{url}
     \verb http://perinorm-fr.redi-bw.de/volltexte/CD21DE07/2325650/2325650.pdf?
@@ -418,12 +662,11 @@
     \list{organization}{1}{%
       {{DIN Deutsches Institut f{\"u}r Normung e.V.}}%
     }
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
     \field{labelnamesource}{editor}
     \field{labeltitlesource}{title}
     \field{number}{55350}
-    \field{pagetotal}{13}
     \field{title}{{Begriffe zum Qualit{\"a}tsmanagement}}
     \verb{url}
     \verb http://perinorm-fr.redi-bw.de/volltexte/CD21DE03/1415055/1415055.pdf?
@@ -468,7 +711,6 @@
     \field{labeltitlesource}{title}
     \field{edition}{2., {\"u}berarbeitete Auflage}
     \field{isbn}{9783778540213}
-    \field{pagetotal}{608}
     \field{series}{{Praxis}}
     \field{subtitle}{{Hardwarekonzepte, Modelle und Berechnung}}
     \field{title}{{Elektronische Sicherheitssysteme}}
@@ -568,9 +810,6 @@
     \strng{fullhash}{LSAM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1016/S0967-0661(97)00050-6
-    \endverb
     \field{title}{{Methods of fault diagnosis}}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/S0967066197000506
@@ -635,7 +874,6 @@
     \field{abstract}{%
     Jetson TX2 OEM Product Design Guide%
     }
-    \field{pagetotal}{98}
     \field{subtitle}{{OEM Product Design Guide}}
     \field{title}{{NVIDIA Jetson TX2}}
     \verb{url}
@@ -708,7 +946,6 @@
     \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{pagetotal}{40}
     \field{title}{{Handbuch CANcaseXL}}
     \verb{url}
     \verb https://vector.com/portal/medien/cmc/manuals/CANcaseXL_Manual_DE.pdf
@@ -737,7 +974,6 @@
     \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{pagetotal}{54}
     \field{subtitle}{{Produktinformation}}
     \field{title}{{CANoe}}
     \verb{url}
@@ -782,58 +1018,6 @@
     \field{urlday}{08}
     \field{urlmonth}{06}
     \field{urlyear}{2018}
-  \endentry
-
-  \entry{Quigley.2015}{book}{}
-    \name{author}{3}{}{%
-      {{hash=QM}{%
-         family={Quigley},
-         familyi={Q\bibinitperiod},
-         given={Morgan},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=GB}{%
-         family={Gerkey},
-         familyi={G\bibinitperiod},
-         given={Brian},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=SB}{%
-         family={Smart},
-         familyi={S\bibinitperiod},
-         given={Bill},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {O´Reilly}%
-    }
-    \keyw{Operating systems (Computers);Programming;Robot Operating
-  System;Robotics;Robotik;Robots}
-    \strng{namehash}{QMGBSB1}
-    \strng{fullhash}{QMGBSB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{edition}{First edition}
-    \field{isbn}{9781449323899}
-    \field{series}{{Safari Tech Books Online}}
-    \field{subtitle}{{A practical introduction to the Robot Operating System}}
-    \field{title}{{Programming robots with ROS}}
-    \verb{url}
-    \verb http://proquest.safaribooksonline.com/9781449325480
-    \endverb
-    \list{location}{5}{%
-      {Beijing}%
-      {Boston}%
-      {Farnham}%
-      {Sebastopol}%
-      {Tokyo}%
-    }
-    \verb{file}
-    \verb http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nleb
-    \verb k&AN=1100699
-    \endverb
-    \field{year}{2015}
   \endentry
 
   \entry{PythonSoftwareFoundation.2018}{online}{}
@@ -928,6 +1112,55 @@
     \endverb
     \field{year}{2014}
     \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Blackman.2013}{online}{}
+    \name{author}{2}{}{%
+      {{hash=BJ}{%
+         family={Blackman},
+         familyi={B\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Monroe},
+         familyi={M\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=T}{%
+         family={{Texas Instruments Incorporated}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \keyw{SLLA337;VERSION 3.1}
+    \strng{namehash}{BJMS1}
+    \strng{fullhash}{BJMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Application Reports%
+    }
+    \field{title}{{Overview of 3.3V CAN (Controller Area Network)
+  Transceivers}}
+    \verb{url}
+    \verb http://www.ti.com/lit/an/slla337/slla337.pdf
+    \endverb
+    \list{location}{1}{%
+      {Dallas, Texas}%
+    }
+    \verb{file}
+    \verb dd4bd34b-254e-4c3d-be1f-1664428a73e0:C\:\\Users\\c.kary\\AppData\\Loc
+    \verb al\\Swiss Academic Software\\Citavi 6\\ProjectCache\\j8x0ro3icur1sl3p
+    \verb 764vf4zcubrj4hxy0i5xkhrupfohybdpedt\\Citavi Attachments\\dd4bd34b-254
+    \verb e-4c3d-be1f-1664428a73e0.pdf:pdf
+    \endverb
+    \field{year}{2013}
+    \field{urlday}{15}
     \field{urlmonth}{09}
     \field{urlyear}{2018}
   \endentry

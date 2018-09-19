@@ -1,0 +1,111 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+\usepackage[utf8]{inputenc} % Eingabecoidierung der Umlaute nach UTF-8
+
+\usepackage[T1]{fontenc}	% Schriftcodierung der Umlaute in westeuropäischer Form
+
+\usepackage[ngerman]{babel}	% Neue deutsche Rechtschreibung
+
+\usepackage{lmodern}		% Standard-Schriftfamilie Latin Modern
+
+\usepackage{parskip}		% Absatztrennung nach europäischer Norm
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, decorations, decorations.text, decorations.pathmorphing}
+\usepackage{tikz-uml} % Für UML-Diagramme
+\usepackage{pgfplots} % zur Erstellung von Diagrammen
+
+\usepackage{comment}
+
+\geometry{
+	left = 25mm,
+	right = 25mm,
+	top = 35mm,
+	bottom = 40mm,
+	bindingoffset=10mm,
+}
+
+\begin{document}
+	Hallo das ist ein Test.
+
+\begin{comment}
+	\begin{figure}[!htbp]
+		\centering
+		\footnotesize
+		\begin{tikzpicture}
+		
+		%Application Layer
+		\node (application) [rectangle, dashed, draw, minimum width=10cm, minimum height=3cm] at (0,0) {};
+		%\node (f1)  [rectangle, minimum width=10cm, minimum height=1ex, fill=white] at (0,-1.5) {};
+		\node[below left, xshift=-1ex, yshift=-1ex] at (application.north east) {Application Layer}; 
+		\node (python) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=4cm, minimum height=1cm] at (application.north west) {Python 2.7};
+		\node (opencv) [right, minimum height=1cm, minimum width=2cm, xshift=4cm, cylinder, fill=gray!10, shape border rotate=90, aspect=0.1, draw] at (python) {OpenCV};
+		
+		%Middleware Layer
+		\node (middleware) [rectangle, dashed, draw, fill=white, minimum width=10cm, minimum height=3cm] at (0,-3) {};
+		%\node (f2)  [rectangle, minimum width=10cm, minimum height=1ex, fill=white] at (0,-4.5) {};
+		\node[below left, xshift=-1ex, yshift=-1ex] at (middleware.north east) {Middleware Layer};
+		\node (ros) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=8cm, minimum height=1cm] at (middleware.north west) {ROS - Robot Operating System \emph{Kinetic}};
+		
+		%Operating Network Layer
+		\node (network) [rectangle, dashed, draw, fill=white, minimum width=10cm, minimum height=3cm] at (0,-6) {};
+		%\node (f3)  [rectangle, minimum width=10cm, minimum height=1ex, fill=orange!10] at (0,-7.5) {};
+		\node[below left, xshift=-1ex, yshift=-1ex] at (network.north east) {Operating Network Layer}; 
+		\node (linux) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=8cm, minimum height=1cm] at (network.north west) {Linux Ubuntu \emph{16.04 LTS}};
+		
+		%Hardware Layer
+		\node (hardware) [rectangle, dashed, draw, fill=white, minimum width=10cm, minimum height=3.5cm] at (0,-9.25) {};
+		\node[below left, xshift=-1ex, yshift=-1ex] at (hardware.north east) {Hardware Layer};
+		\node (jetson) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=4cm, minimum height=1cm] at (hardware.north west) {NVIDIA Jetson TX2};
+		\node (kamera) [below, xshift=1cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (jetson.south west) {Kamera};
+		\node (wlan) [below, xshift=-1cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (jetson.south east) {WLAN};
+		\node (arduino) [below, yshift=-1cm, xshift=2.5cm, rectangle, draw, fill=gray!10, minimum width=3cm, minimum height=1cm] at (hardware.north) {Arduino UNO};
+		\node (sensorik) [below, xshift=0.5cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (arduino.south west) {Sensorik};
+		\node (aktorik) [below, xshift=-0.5cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (arduino.south east) {Aktorik};		
+		
+		%Verbindungen
+		\node (a1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-1.5,-1.5) {};
+		\node (a1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-2.5,-1.5) {};
+		
+		\node (b1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-0.5,-4.5) {};
+		\node (b2)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (0.5,-4.5) {};
+		
+		\node (c1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-1.5,-7.5) {};
+		\node (c1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-2.5,-7.5) {};
+
+		\draw [<-,>=stealth] (python) -- (opencv);
+		\draw [->,>=stealth] (-1.5,-0.5) -- (-1.5,-2.5);
+		\draw [<-,>=stealth] (-2.5,-0.5) -- (-2.5,-2.5);
+		\draw [<-,>=stealth] (-0.5,-3.5) -- (-0.5,-5.5);
+		\draw [->,>=stealth] (0.5,-3.5) -- (0.5,-5.5);
+		\draw [->,>=stealth] (-1.5,-6.5) -- (-1.5,-8.5);
+		\draw [<-,>=stealth] (-2.5,-6.5) -- (-2.5,-8.5);
+		
+		\draw [<-,>=stealth] ([yshift=0.1cm]arduino.west) -- ([yshift=0.1cm]jetson.east);
+		\draw [->,>=stealth] ([yshift=-0.1cm]arduino.west) -- ([yshift=-0.1cm]jetson.east);
+		
+		\draw [->,>=stealth] (kamera) -- ([xshift=-1cm]jetson.south);
+		\draw [<->,>=stealth] (wlan)  -- ([xshift=1cm]jetson.south);
+		
+		\draw [->,>=stealth] (sensorik) -- ([xshift=-1cm]arduino.south);
+		\draw [<-,>=stealth] (aktorik)  -- ([xshift=1cm]arduino.south);
+
+		\end{tikzpicture}
+		
+		\caption{Systemarchitektur der Komponenten des EVObots im angepassten Schichtenmodell}
+		\label{abb:SystemarchitekturGesamt}
+	\end{figure}
+\end{comment}
+
+\begin{itemize}
+	\item \textbf{Packages:}\\ Die Softwareprojekte werden in ROS in \emph{Packages} verwaltet und organisiert. Ein Paket enthält alle Laufzeitprozesse eines Projektes, die Programmbibliothek, Datensets, Konfigurationsdateien und gegebenenfalls Softwarekomponenten von Drittanbietern. Die Verwaltung eines Projektes in Paketen ermöglicht eine einfache Modularität der Funktionalitäten. \\
+	\item \textbf{Nodes:}\\ \emph{Nodes} stellen in ROS ausführbare Prozesse dar. Diese Instanzen sind verteilt über die Kommunikationsinfrastruktur, können aber durch verschiedene Mechanismen zur Laufzeit miteinander kommunizieren oder Daten austauschen. Typischerweise werden die thematisch entkoppelten Funktionen eines Projektes in einzelne Knoten verteilt.
+	\\
+	\item \textbf{Topic:}\\ \emph{Topics} sind Datenbussysteme, über die zur Laufzeit Nachrichten in asynchroner Form ausgetauscht werden. Dazu verwendet ROS eine \emph{Publisher/Subscriber}-Semantik. Die Knoten publizieren dabei Informationen auf verschiedene Topics, während andere Knoten diese Topics beliebig abonnieren können, um die Informationen auf dem Datenbus einzulesen. Diese Funktionsweise ermöglicht es, einzelne Softwarekomponenten unabhängig entwickeln und in bestehende Projekte integrieren zu können. 
+	\\
+	\item \textbf{Messages:}\\ Die Informationen auf den Datenbussen der Topics werden in Form von \emph{Messages} in standardisierten Datenstrukturen versendet. Es existiert eine Vielzahl von nativen Datenformaten einzelner Botschaften (boolean, integer, floating point, usw.), es lassen sich aber auch eigene Messages aus Arrays der definierten Datenformate generieren.
+	\\
+	\item \textbf{Services:}\\ Gegenüber dem Broadcast-Prinzip der Subscriber und Publisher lassen sich mit \emph{Services} in ROS Informationen auch auf explizite Requests erhalten. Dabei wird von einem Knoten eine definierte Informationen durch einen Service von einem einzelnen Knoten angefordert. Der Client-Node antwortet dann auf diese Anfrage mit dem Senden der entsprechenden Message an den anderen Knoten.
+\end{itemize}
+
+\end{document}

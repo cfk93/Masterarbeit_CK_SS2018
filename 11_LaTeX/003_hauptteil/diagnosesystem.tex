@@ -3,7 +3,8 @@ TODO:
 --> Bildquellen überprüfen
 --> Referenzen zu Bilder, Tabellen und Quellen im Text prüfen
 --> Einarbeitungleitfaden ergänzen: neuer Knoten anlegen, Directory builden usw aus Fabis Anleitung
---> Einarbeitungleitfaden ergänzen: Midnight Commander 
+--> Einarbeitungleitfaden ergänzen: Midnight Commander
+--> Bild und Text zu Diagnose-Panel ergänzen
 
 --> Kapitel zur Fernsteuerung des EVObots: zuerst via VNC Client Desktop gespiegelt, um mobil ohne Bildschirm und Maus/Tastatur auf Gerät arbeiten zu können. Später hat sich aber gezeigt, dass Grafikberechnung und Übertragung des Desktops zu viel Rechenleistung benötigt, wodurch Rechenleistung von ROS reduziert wird, demnach kamen Algorithmen zum Spurhalten dem realen Verhalten nicht hinterher, deshalb Zeitverzug und keine Spurregelung möglich! Umstieg auf SSH zugriff via Terminal auf PC, grafische Benutzeroberfläche auf Ubuntu deaktiviert, um sämtliche Ressourcen für ROS zu generieren. Ergebnis zeigt echtzeitgetreue Spurerfassung und Regelung!
 
@@ -31,7 +32,7 @@ Zunächst wird die Bedeutung der Diagnose eines komplexen Fahrzeugsystems mit ve
 \section{Konzept der Fehlerdiagnose} \label{sec:KonzeptDiagnose} % Allgemeines zur Diagnose im Fzg usw., Methodenauswahl: Warum CAN, Alternativen beschreiben (kabellos?), Use-Case-Diagramm
 
 Aktuelle Fahrzeugsystemen sollten selbstredend stets fehlerfrei und ohne Probleme agieren und die vom Fahrer gewünschten Funktionen vollständig umsetzten. Trotzdem kann es unter gewissen Umständen und äußeren Voraussetzung zu einem Fehlverhalten kommen. Ein Fehler kann im Betrieb eines mechatronischen Systemverbund sowohl mechanisch, elektronisch, als auch softwareseitig auftreten. Durch den stetigen Anstieg des Softwareanteils und der sicherheitskritischen Prozesse im automotiven Bereich steigt die Gefahr eines Softwarefehlers oder einer Software-Anomalie. Ein Fehler wird dabei allgemein nach \emph{EN ISO 9000:2005} \cite{DINDeutschesInstitutfurNormunge.V..201511} als \glqq Nichterfüllung einer Anforderung\grqq{} oder nach \emph{DIN 55350} \cite{DINDeutschesInstitutfurNormunge.V..200805} genauer als \glqq eine unzulässige Abweichung eines Merkmals von einer vorgegebenen Forderung\grqq{} beschrieben. \\
-Ein Softwarefehler lässt sich allgemeingültig entweder durch physikalische beziehungsweise chemische Effekte oder durch menschliche Fehlermechanismen wie Denkfehler, Verständnisfehler, Interpretationsfehler oder simple Tippfehler beschreiben. Dabei kann man diese Beschreibung eines Fehlers grundsätzlich in zwei Kategorien einordnen: Man spricht von einem physikalischen Fehler, wenn einzelne Komponenten oder Teilsysteme ausfallen, oder von einem funktionalen Fehler, wenn ein System ausführbar ist, seine Funktion aber nicht korrekt umgesetzt wird \cite{Borcsok.2007}. Ein funktionaler Fehler ist offenbar in den meisten Fällen das Ergebnis von Design-Mängeln und demnach auf eine menschliche Ursache zurückzuführen. Eine Fehlhandlung in der Umsetzung einer Softwareanwendung führt in aller Regel zu einem Fehlerzustand bei der Programmausführung. Dieser Fehlerzustand kann unter Umständen auch unerkannt bleiben. Tritt der Fehlerzustand jedoch aus Programmsicht nach Außen auf, spricht man von der Fehlerwirkung, die für den Anwender wahrnehmbar ist. Diese Fehlerwirkung kann sich je nach Schwere des Fehlers als ein abweichender Rückgabewert einer Berechnung oder bis hin zum Totalausfall des Systems äußern \cite{ISTQBAISBLGermanTestingBoarde.V.2017}. \\
+Ein Softwarefehler lässt sich allgemeingültig entweder durch physikalische beziehungsweise chemische Effekte oder durch menschliche Fehlermechanismen wie Denkfehler, Verständnisfehler, Interpretationsfehler oder simple Tippfehler beschreiben. Dabei kann man diese Beschreibung eines Fehlers grundsätzlich in zwei Kategorien einordnen: Man spricht von einem physikalischen Fehler, wenn einzelne Komponenten oder Teilsysteme ausfallen, oder von einem funktionalen Fehler, wenn ein System ausführbar ist, seine Funktion aber nicht korrekt umgesetzt wird \cite{Borcsok.2007}. Ein funktionaler Fehler ist offenbar in den meisten Fällen das Ergebnis von Design-Mängeln und demnach auf eine menschliche Ursache zurückzuführen. Eine Fehlhandlung in der Umsetzung einer Softwareanwendung führt in aller Regel zu einem Fehlerzustand bei der Programmausführung. Dieser Fehlerzustand kann unter Umständen auch unerkannt bleiben. Tritt der Fehlerzustand jedoch aus Programmsicht nach außen auf, spricht man von der Fehlerwirkung, die für den Anwender wahrnehmbar ist. Diese Fehlerwirkung kann sich je nach Schwere des Fehlers als ein abweichender Rückgabewert einer Berechnung oder bis hin zum Totalausfall des Systems äußern \cite{ISTQBAISBLGermanTestingBoarde.V.2017}. \\
 Im Sinne der Zuverlässigkeit gilt es also, das Auftreten eines Fehlerzustandes in einem sicherheitskritischen System zu vermeiden oder besser einen sicheren Zustand im Fehlerfall einzunehmen. Ein übergeordnetes Beispiel eines \emph{Fail-Safe}-Zustandes kann aus der Technologie des hochautomatisierten Fahrens gegeben werden: Fällt das Kamerasystem zur Fahrspurerkennung unerwartet aus, soll ein automatisiert fahrendes Fahrzeug nicht unkontrolliert weiterfahren, sondern die Fahrgeschwindigkeit reduzieren und auf Basis der verfügbaren Streckendaten am rechten Fahrbahnrand zum Stehen kommen, um einen potentiellen Schaden zu minimieren.
  
 Die Komplexität der vernetzten Funktionen und Systeme erfordert eine umfassende Kommunikation der Softwarekomponenten und ebenso ausgereifte Methoden zur Diagnose möglicher Fehler. Der Begriff \emph{Diagnose} stammt eigentlich aus der Medizin, lässt sich aber \cite{Reif.2014} nach im Bezug auf Fahrzeuge wie folgt definieren: \glqq Aus konkreten und diffusen Symptomen, die der Fahrer schildert, wird im Service unter Zuhilfenahme der Diagnosesysteme ein exaktes Fehlerbild erstellt und es werden geeignete Reparaturmaßnahmen eingeleitet.\grqq{} Der Ablauf einer klassischen Fehlerdiagnose lässt sich anhand dem Modell \ref{abb:AblaufDiagnose} veranschaulichen. 
@@ -57,7 +58,7 @@ Ein Diagnosesystem, welches mittels Symptome Fehlerursachen diagnostiziert, kann
 	\{S_1 ~...~ S_t\} \rightarrow \{F_1 ~...~ F_T\}.
 \end{displaymath}
 
-Kommt es zu einem Fehlerfall oder Systemausfall, ist die Ursache in einem komplexen und verteilten Systemnetzwerk meist schwer auszumachen. Aufgrund dessen wurden bereits früh in der Entwicklung elektronischer Datenkommunikation Diagnosesysteme als Analysewerkzeug eingeführt. Mit einem aus Hard- und Software bestehenden Diagnosesystem kann die Datenbuskommunikation aufgezeichnet und diagnoserelevante Informationen über den Zustand der Teilkomponenten zu einem externen Testgerät übertragen und ausgewertet werden. Ein Diagnosesystem gilt damit als umfangreiches Werkzeug zur schnellen Fehlererkennung und Fehleranalyse. Während dem Entwicklungsprozess lässt sich ein Diagnosesystem auch nutzen, um über die Diagnosekommunikation die Steuergeräte-Applikation durchzuführen. Dabei ist es nicht nur nötig die reine Datenübertragung einheitlich zu standardisieren, sondern ebenfalls die Applikationsschicht der Protokolle (Vgl. Tabelle \ref{tab:OSI-Schichtenmodell}) zu normieren. Dies bietet die Möglichkeit, den Aufwand und die Pflege der Diagnoseschnittstellen und den Diagnosetestern zu begrenzen. \\
+Kommt es zu einem Fehlerfall oder Systemausfall, ist die Ursache in einem komplexen und verteilten Systemnetzwerk meist schwer auszumachen. Aufgrund dessen wurden bereits früh in der Entwicklung elektronischer Datenkommunikation Diagnosesysteme als Analysewerkzeug eingeführt. Mit einem aus Hard- und Software bestehenden Diagnosesystem kann die Datenbuskommunikation aufgezeichnet und diagnoserelevante Informationen über den Zustand der Teilkomponenten zu einem externen Testgerät übertragen und ausgewertet werden. Ein Diagnosesystem gilt damit als umfangreiches Werkzeug zur schnellen Fehlererkennung und Fehleranalyse. Während dem Entwicklungsprozess lässt sich ein Diagnosesystem auch nutzen, um über die Diagnosekommunikation die Steuergeräte-Applikation durchzuführen. Dabei ist es nicht nur nötig die reine Datenübertragung einheitlich zu standardisieren, sondern ebenfalls die Applikationsschicht der Protokolle (vgl. Tabelle \ref{tab:OSI-Schichtenmodell}) zu normieren. Dies bietet die Möglichkeit, den Aufwand und die Pflege der Diagnoseschnittstellen und den Diagnosetestern zu begrenzen. \\
 Um eine einheitliche Diagnosekommunikation zu schaffen, wurden seit den 1990er Jahren diverse \emph{Diagnoseprotokolle} entwickelt, die zunächst teils proprietär und inkompatibel zueinander umgesetzt waren, inzwischen jedoch meist herstellerübergreifend genormt sind. Als heute gängige Diagnoseprotokolle sind das \emph{Keyword 2000 Protokoll} \acs{KWP} 2000, die \emph{Unified Diagnostic Services} \acs{UDS} oder die \emph{On-Board-Diagnose} \acs{OBD} zu nennen. Für weiterführende Informationen der genannten Standards sei auf \cite{Zimmermann.2014} und \cite{Schaffer.2012} verwiesen. Die verschiedenen Protokolle einer Diagnosekommunikation lassen sich auf die einzelnen Schichten des bekannten ISO/OSI-Referenzmodells anwenden. Das eigentliche Diagnoseprotokoll umfasst dabei abhängig von seiner Ausprägung und dem expliziten Anwendungsfall die Schichten fünf bis sieben. Die Übertragung der Diagnosedaten erfolgt durch entsprechende Protokolle für das angewendete physikalische Kommunikationsmedium in den Schichten eins bis vier. 
 
 
@@ -102,26 +103,27 @@ Dazu ist in Abbildung \ref{abb:UseCaseDiagnose} ein Use-Case-Diagramm in der gra
 	
 Das Gesamtsystem besteht aus Fahrzeug, Diagnosewerkzeug und Anwender. Aus dem Use-Case-Diagramm ergeben sich die funktionalen Anforderungen wie folgt:
 
-\begin{itemize}
+\begin{compactitem}
 	\item Das Diagnosesystem muss die Diagnosedaten innerhalb der Programmlaufzeit an ein Ausgabegerät übermitteln.
 	\item Das Diagnosesystem muss die Diagnosedaten auf einem externen Ausgabegerät darstellen.
 	\item Das Diagnosesystem muss die Daten sowohl in Klartext ausgeben, als auch die einzelnen Signalverläufe grafisch darstellen. 
+	\item Das Diagnosesystem muss ein echtzeitnahes Daten-Monitoring ermöglichen.
 	\item Die Diagnosefunktion muss vom Anwender gestartet und gestoppt werden können.
 	\item Das Diagnosesystem darf im inaktiven Zustand keine Daten vom Fahrzeug übertragen, um die Systemauslastung gering zu halten.\\
-\end{itemize}
+\end{compactitem}
 
 
 Weiterhin lassen sich folgende, nichtfunktionale Anforderungen stellen:
-\begin{itemize}
+\begin{compactitem}
 	\item Die Umsetzung der Datenkommunikation soll dem Vorbild eines realen und aktuellen Kraftfahrzeuges entsprechen.
 	\item Die Datenkommunikation darf kabelgebunden oder kabellos stattfinden.
-	\item Das Diagnosesystem muss ein echtzeitnahes Daten-Monitoring ermöglichen.
+	
 	\item Das Diagnosesystem soll eine übersichtliche Visualisierung für den Anwender bieten. 
-	\item Die Einbindung in das bestehende System soll ohne grundlegende Modifikationen in den implementierten Algorithmen möglich sein.
+	\item Die Einbindung in das bestehende System soll ohne grundlegende Modifikationen in den implementierten Programmteilen möglich sein.
 	\item Die Datenkonsistenz und Datensicherung bei der externen Kommunikation muss gewährleistet sein.
 	\item Die Diagnosefunktion muss für spätere Ergänzungen erweiterbar sein.
 	\item Die Programmierschnittstelle muss offen und modular sein. 
-\end{itemize}
+\end{compactitem}
 
 % Echtzeitnah, Livebeurteilung und Aufzeichnung möglich, visuell gut umsetzbar, Aufwand überschaubar, Einbindung in bestehendes System nur durch Erweiterung, vergleichbare Umsetzung wie im Kfz, Datenkonsistenz und Zuverlässigkeit (Sicherheitsaspekte von CAN), kabellos oder kabelgebunden (keine langen Fahrwege), leichte Erweiterung 
 
@@ -129,12 +131,12 @@ Weiterhin lassen sich folgende, nichtfunktionale Anforderungen stellen:
 \label{subsec:MöglichkeitenDiagnose}
 
 Die Umsetzung einer Diagnosefunktion und die Einbindung dieser Funktion in das Gesamtsystem auf dem Betriebssystem des Demonstratorfahrzeuges lässt sich grundsätzlich mit verschiedenen Mitteln und Möglichkeiten erzielen. Die bedingt voneinander entkoppelten Teilfunktionen umfassen:
-\begin{itemize}
+\begin{compactitem}
 	\item Sammeln der Sensordaten und Nutzinformationen im Gesamtsystem von ROS.
 	\item Bereitstellung dieser Daten in einer zur Übertragung geeigneten Form.
 	\item Echtzeitnahe Übermittlung der Diagnosedaten an ein externes Ausgabegerät.
 	\item Analyse und Visualisierung der Daten auf dem Ausgabegerät. 
-\end{itemize}
+\end{compactitem}
 
 Ein Ansatz zur möglichen Umsetzung besteht darin, sämtliche im bereits implementierten Quelltext des Software-Framework ROS berechneten und vorhandenen Wertevariablen und Sensordaten während der Programmlaufzeit drahtlos durch ein lokales Netzwerk zu übermitteln. Hierzu eignen sich diverse Industriestandards für Funknetzwerke nach \emph{\acs{IEEE} 802} wie Bluetooth oder WLAN. Ein großer Vorteil der Bluetooth-Technologie liegt in dem Verbindungsaufbau der Kommunikationspartner. Die Bluetooth-Knoten müssen sich lediglich in Reichweite befinden, um eine automatische Verbindung aufzubauen, ohne, dass eine Anwenderinteraktion nötig wird. Damit eignet sich Bluetooth für einen Datenaustausch mit autonomen Systemen. Um eine mögliche Bluetooth-Verbindung mit dem \emph{NVIDIA Jetson}-Modul aufzubauen, ist lediglich ein geeigneter Bluetooth-Adapter nötig. Die Bluetooth-Technologie eignet sich zwar für eine einfache, drahtlose Punkt-zu-Punkt-Datenkommunikation und weist eine allgemeine Reichweite von circa 10 Metern auf, die Reichweite ist jedoch stark abhängig von der Sendeleistung und der Empfindlichkeit des eingesetzten Transceivers. Zusätzlich können die Eigenschaften der Umgebung die erzielbare Sende- und Empfangsreichweite negativ beeinflussen, wodurch eine konsistente Datenverbindung je nach Einsatzumgebung des Fahrdemonstrators nicht gewährleistet ist.
 Kommt es bei einer Datenverbindung auf hohe Übertragungsraten und erhöhte Sicherheit an, eignet sich eher die Verbindung durch WLAN in einem drahtlosen lokalen Netzwerk. Diese Übertragung ist jedoch explizit an einen stationären Ort gebunden. Fällt das Netzwerk aus, kann also keine Datenkommunikation stattfinden. Zudem ist die Latenz bei einer WLAN-Verbindung nicht kontrollierbar und kann unter Umständen so hoch sein, dass eine Echtzeitanwendung nur mit erhöhtem Aufwand umsetzbar ist. \\
@@ -230,7 +232,7 @@ Nachdem die Busanbindung aufgebaut und getestet wurde, muss nun der Laptop an di
 	\node (jetson)      [block2] at (0,0) {NVIDIA Jetson TX2};
 	\node (ROS) 	    [block1] at (0,0) {ROS - Robot \\ Operating System};
 	\node (transceiver) [block3] at (0,4) {CAN-Transceiver};
-	\node (interface)   [block3] at (\textwidth-6cm,4) {CAN2USB-Interface};
+	\node (interface)   [block3] at (\textwidth-6cm,4) {CANcaseXL Interface};
 	\node (laptop)      [block2] at (\textwidth-6cm,0) {Lenovo Laptop};
 	\node (CANoe) 	    [block1] at (\textwidth-6cm,0) {Vector CANoe};
 	\node (bus) at (4.5, 3) {CAN-Busleitung};
@@ -254,7 +256,7 @@ Das Softwaretool liefert zusätzlich die integrierte und firmeneigene Programmie
 
 \section{Implementierung der Diagnosefunktion} \label{sec:ImplementierungDiagnose} % SW-seitige Umsetzung inkl. kompletter Programmablaufplan, Funktionen erklären, Gesamtfunktion in ROS, ... 
 
-Nachdem nun alle hardwareseitigen Voraussetzungen erfüllt und sowohl der EVObot, als auch der Diagnoselaptop für eine Buskommunikation konfiguriert sind, kann die vollständige Diagnosefunktion implementiert werden. Es soll das Vorgehen bei der softwareseitigen Umsetzung beschrieben und relevante Auszüge aus Programmcode näher betrachtet werden.\\
+Nachdem nun alle hardwareseitigen Voraussetzungen erfüllt und sowohl der EVObot, als auch der Diagnoselaptop für eine Buskommunikation konfiguriert sind, kann die vollständige Diagnosefunktion implementiert werden. Es soll das Vorgehen bei der softwareseitigen Umsetzung beschrieben und relevante Auszüge aus Programmcode näher betrachtet werden. Besonderes Augenmerk liegt dabei auf dem umgesetzten Datenverarbeitungsprozess.\\
 Wie bereits in Abschnitt \ref{sec:EVObotSoftware} beschrieben, stellt das Framework Robot Operating System die zentrale Entwicklungsumgebung des Projektes dar. Daher kann auch aus den definierten Anforderungen der Anspruch entnommen werden, die Diagnose ebenfalls in ROS einzubinden. Dazu wird ein neuer Knoten\footnote{Der Begriff Knoten beschreibt in ROS in den meisten Fällen entkoppelt ausführbare Skripte, in denen diverse Funktionen umgesetzt werden. Daher wird nachfolgend im direkten Bezug zur ROS-Umgebung nicht zwischen den Begrifflichkeiten Diagnosefunktion und Diagnoseknoten unterschieden.} erstellt, der sich in die Knotenstruktur des ROS Entwicklungsprojektes eingliedert. Der bisherige Programmgraph wird aus Abbildung \ref{abb:rosgraphOhneDiagnose} ersichtlich.
 
 \begin{figure}[!htbp]
@@ -265,7 +267,7 @@ Wie bereits in Abschnitt \ref{sec:EVObotSoftware} beschrieben, stellt das Framew
 \end{figure} 
 
 Wie zuvor in Abschnitt \ref{sec:EVObotSoftware} erwähnt, werden Knoten in der ROS-Umgebung als ovale Felder dargestellt. Tauschen einzelne Knoten Informationen in Form von Messages aus, wird dies über die Topics genannten Datenstreams realisiert. Topics werden im Schaubild als Rechtecke dargestellt. Es sei an dieser Stelle angemerkt, dass die Darstellung in Abbildung \ref{abb:rosgraphOhneDiagnose} für eine angenehme Übersicht auf zwei Zeilen aufgeteilt wurde. Auf die expliziten Funktionsumfänge der einzelnen Knoten wird an späterer Stelle eingegangen.\\
-ROS lässt sich sowohl in der sehr effiziente und maschinennahe Programmiersprache C++, als auch in der benutzerfreundlichen und universellen Skriptsprache Python betreiben. Python bietet den entscheidenden Vorteil, eine große Anzahl von Standardbibliotheken verwenden zu können, die sich zusätzlich simpel durch das Laden von Paketen erweitern lässt. Sämtliche im EVObot bereits implementierte Funktionen wurden zuvor in Python umgesetzt. Um eine generische Projektfunktionalität zu gewährleisten, wird die Umsetzung der Diagnose in der ROS-Umgebung ebenfalls in Python in der Version 2.7 realisiert.
+ROS lässt sich sowohl in der maschinennahen Programmiersprache C++, als auch in der benutzerfreundlichen und universellen Skriptsprache Python betreiben. Python bietet den entscheidenden Vorteil, eine große Anzahl von Standardbibliotheken verwenden zu können, die sich zusätzlich simpel durch das Laden von Paketen erweitern lässt. Sämtliche im EVObot bereits implementierte Funktionen wurden zuvor in Python umgesetzt. Um eine generische Projektfunktionalität zu gewährleisten, wird die Umsetzung der Diagnose in der ROS-Umgebung ebenfalls in Python in der Version 2.7 realisiert.
 
 
 \subsection{Einlesen der Sensor- und Signaldaten} \label{subsec:EinlesenDatenInROS}
@@ -315,8 +317,8 @@ Nachfolgend in Tabelle \ref{tab:ROSmessagesDynamischBeschreibung} werden die abo
 		             &              & uint8 hoehe\_px    & Höhe in px des erkannten Stoppschildes               \\ \midrule
 		car\_control & carcontrol   & uint16 servo       & Lenkwinkel als Stellwert für den Servomotor     \\
 		             &              & uint16 esc         & PWM-Signal als Stellwert für den Antriebsmotor         \\ \midrule
-		ultrasoundf1 & Range        & float32 min\_range & minimaler Abstand in m                               \\
-		             &              & float32 max\_range & maximaler Abstand in m                               \\
+		ultrasoundf1 & Range        & int16 min\_range & minimaler Abstand in m                               \\
+		             &              & int16 max\_range & maximaler Abstand in m                               \\
 		             &              & float32 range      & momentaner Abstand in m, ungefiltert                               \\
 		             \midrule
  		us\_abstand & std\_msgs		& float32 			 &  momentaner Abstand in m, gefiltert 								\\
@@ -332,7 +334,7 @@ Gegenüber diesen dynamischen Parametern, werden zusätzlich noch statische Para
 	\caption{Beschreibung der im Diagnoseknoten eingelesenen Topics mit statischen Variablenwerten}
 	\footnotesize
 	\renewcommand{\arraystretch}{1.3}
-	\begin{tabular}{l l l p{5.2cm}}
+	\begin{tabular}{l l l p{5.5cm}}
 		\toprule
 		Topic        & Message Type & Value              & Beschreibung                                         \\ \midrule
 		uvc\_camera  & Image        & char device      & Pfad zur Kamera-Konfigdatei \\
@@ -378,7 +380,7 @@ Der Output des Codebeispiels ist
 
 Demzufolge liegt das Ergebnis nun in einer Byte-Zeichenfolge vor, die hier in hexadezimaler Form dargestellt wird. Auf die einzelnen Elemente des Array kann nun wie gewohnt zugegriffen werden. Die eingelesenen Signal- und Sensordaten liegen damit nun in einer für den CAN-Bus geeigneten Form als Nutzbytes vor. 
 
-Bei der Verwendung der gezeigten Methode ist darauf zu achten, eine einheitliche Byte-Reihenfolge bei der Interpretation zu verwenden. Bedingt durch die Prozessorarchitektur werden die einzelnen Bytes einer gesamten Botschaft in unterschiedlicher Reihenfolge versendet und eingelesen. Diese Byte-Reihenfolge wird als Endianness bezeichnet. Die Endianness bestimmt, welches Byte innerhalb einer Busbotschaft das nullte und welches das höchste Byte darstellt \cite{FordMotorCompany.2017}. Man unterscheidet grundlegend zwischen den beiden Formaten \emph{Big-Endian}, also das große Ende und \emph{Little-Endian}, das kleine Ende. Bei Big-Endian wird der signifikanteste Wert in einer Sequenz zuerst abgelegt, also in der niedrigsten Speicheradresse der Sequenz. Bei Little-Endian hingegen, wird der am wenigsten signifikante Wert zuerst gespeichert. Umgänglich wird das Big-Endian-Format auch als Motorola-Format bezeichnet. Das Little-Endian-Format ist hingegen als Intel-Format bekannt. Diese Bezeichnungen entstanden durch die grundsätzlich differenzierte Umsetzung der Prozessorarchitekturen beider Hersteller \cite{Rouse.2014}. In automotiven Netzwerken wird in den häufigsten Fällen Big-Endian – das Motorola-Übertragungsformat – verwendet. CAN ist jedoch lediglich ein Kommunikationsprotokoll, die Endianness kommt mit der gewählten Prozessorarchitektur. Die Basis CAN-Spezifikation und die \emph{ISO 11898} definieren den Informationstransport ohne eine explizite Byte-Reihenfolge.
+Bei der Verwendung der gezeigten Methode ist darauf zu achten, eine einheitliche Byte-Reihenfolge bei der Interpretation zu verwenden. Bedingt durch die Prozessorarchitektur werden die einzelnen Bytes einer gesamten Botschaft in unterschiedlicher Reihenfolge versendet und eingelesen. Diese Byte-Reihenfolge wird als \emph{Endianness} bezeichnet. Die Endianness bestimmt, welches Byte innerhalb einer Busbotschaft das nullte und welches das höchste Byte darstellt \cite{FordMotorCompany.2017}. Man unterscheidet grundlegend zwischen den beiden Formaten \emph{Big-Endian}, also das große Ende und \emph{Little-Endian}, das kleine Ende. Bei Big-Endian wird der signifikanteste Wert in einer Sequenz zuerst abgelegt, also in der niedrigsten Speicheradresse der Sequenz. Bei Little-Endian hingegen, wird der am wenigsten signifikante Wert zuerst gespeichert. Umgänglich wird das Big-Endian-Format auch als Motorola-Format bezeichnet. Das Little-Endian-Format ist hingegen als Intel-Format bekannt. Diese Bezeichnungen entstanden durch die grundsätzlich differenzierte Umsetzung der Prozessorarchitekturen beider Hersteller \cite{Rouse.2014}. In automotiven Netzwerken wird in den häufigsten Fällen Big-Endian – das Motorola-Übertragungsformat – verwendet. CAN ist jedoch lediglich ein Kommunikationsprotokoll, die Endianness kommt mit der gewählten Prozessorarchitektur. Die Basis CAN-Spezifikation und die \emph{ISO 11898} definieren den Informationstransport ohne eine explizite Byte-Reihenfolge.
 
 
 \subsection{Versenden der CAN-Botschaften} \label{subsec:VersendenCAN-Botschaten}
@@ -401,7 +403,7 @@ Nachdem alle nötigen Komponenten initialisiert sind, wird in der Hauptroutine d
 	\end{verbatim}
 \end{addmargin}
 eine Reset-Botschaft auf den Bus gesendet. Dieses einmalige Senden einer Botschaft mit definiertem, aber irrelevantem Inhalt dient lediglich der Absicherung, dass keine falschen Informationen versendet werden und soll eine spätere Analyse der Buskommunikation erleichtern.\\
-Im Anschluss werden zunächst die statischen Informationen wie zuvor aufgezeigt in den Diagnoseknoten eingelesen, die Datentypen in Byte-Arrays gewandelt und im Motorola-Format dem Nutzdatenfeld der Botschaften mit definierten Identifiern zugewiesen. Dabei muss die Breite der Nutzbytes beachtet werden. Werden mehrere Signalinformationen in einer Botschaft zusammengelegt, darf eine maximale Anzahl von 8\,Bytes, respektive 64\,Bits nicht überschritten werden, ansonsten kommt es zu einem Überlauf der Busbotschaft und es gehen Teile der Signalinformationen verloren. Die statischen Parameter der Kamera werden beispielsweise wie folgt an die Busbotschaft \texttt{stat\_img\_info\_msg} übergeben:
+Im Anschluss werden zunächst die statischen Informationen wie zuvor aufgezeigt in den Diagnoseknoten eingelesen, die Datentypen in Byte-Arrays gewandelt und im Motorola-Format dem Nutzdatenfeld der Botschaften mit definierten Identifiern zugewiesen. Dabei muss die Breite der Nutzbytes beachtet werden. Werden mehrere Signalinformationen in einer Botschaft zusammengelegt, darf eine maximale Anzahl von 8\,Bytes, respektive 64\,Bit nicht überschritten werden, ansonsten kommt es zu einem Überlauf der Busbotschaft und es gehen Teile der Signalinformationen verloren. Die statischen Parameter der Kamera werden beispielsweise wie folgt an die Busbotschaft \texttt{stat\_img\_info\_msg} übergeben:
 \begin{addmargin}[1cm]{0cm} 
 	\begin{verbatim}
 	for i in reversed(range(0, len(camera_width))):
@@ -417,26 +419,90 @@ Da es sich hierbei jeweils um ursprünglich 2\,Byte breite integer-Werte handelt
 	\end{verbatim}
 \end{addmargin}
 
-Wurde die Routine der statischen Parameter durchlaufen, werden sämtliche Topics mit dynamischen Parametern abonniert und dem Anwender eine Information ausgegeben, dass der Diagnosemodus aktiv ist. Nun werden bei eintreffen einer neuen Message wie zuvor erläutert die Callback-Funktionen der Topics aufgerufen, die dynamischen Parameter nach gleichem Schema in das Datenfeld der Busbotschaften gelegt und die CAN-Nachrichten versendet. Das Eintreffen einer neuen Message ist zeitlich abhängig von dem Rechenaufwand der implementierten Prozesse in den Topics. Weitere Abhängigkeiten ergeben sich durch das Betriebssystem, die CPU-Taktrate, die Größe des Hauptspeichers und die rechnerinterne Übertragungsrate. Da der CAN-Bus ereignisgesteuert ist, wurde auf ein explizites Time-Scheduling in der Diagnosefunktion verzichtet. Die Busbotschaften werden also nicht zyklisch, sukzessiv nach einem vorgegebenen Ablauf ausgegeben, sondern werden abhängig vom Eintreffen einer neuen Message unverzüglich versendet. Zudem wird ein Senden redundanter Signalinformationen vermieden und somit die Busauslastung auf ein Minimum gesenkt. 
+Wurde die Routine der statischen Parameter durchlaufen, werden sämtliche Topics mit dynamischen Parametern abonniert und dem Anwender eine Information ausgegeben, dass der Diagnosemodus aktiv ist. Nun werden bei Eintreffen einer neuen Message wie zuvor erläutert die Callback-Funktionen der Topics aufgerufen, die dynamischen Parameter nach gleichem Schema in das Datenfeld der Busbotschaften gelegt und die CAN-Nachrichten versendet. Das Eintreffen einer neuen Message ist zeitlich abhängig von dem Rechenaufwand der implementierten Prozesse in den Topics. Weitere Abhängigkeiten ergeben sich durch das Betriebssystem, die CPU-Taktrate, die Größe des Hauptspeichers und die rechnerinterne Übertragungsrate. Da der CAN-Bus ereignisgesteuert ist, wurde auf ein explizites Time-Scheduling in der Diagnosefunktion verzichtet. Die Busbotschaften werden also nicht zyklisch, sukzessiv nach einem vorgegebenen Ablauf ausgegeben, sondern werden abhängig vom Eintreffen einer neuen Message unverzüglich versendet. Zudem wird ein Senden redundanter Signalinformationen vermieden und somit die Busauslastung auf ein Minimum gesenkt. 
 
 Parallel zum dauerhaften Senden der aktualisierten Signaldaten in Busbotschaften wird der CAN-Bus auf eingehende Nachrichten gefiltert. Wie den Diagnosemodus durch eine Startanweisung zu aktivieren, kann dieser auch wieder ausgeschaltet werden. Dazu wird die Nachricht \texttt{diagnostic\_status\_message} mit dem Identifier 0x\,01 und dem Nachrichteninhalt 0x\,00 vom externen Netzwerkknoten, also dem Laptop, erwartet. Wird diese Botschaft auf dem CAN-Bus erkannt, wird das Statusflag gekippt und sämtliche Topics deabonniert. Somit wird das gesamte Diagnoseskript in einen passiven Modus gesetzt und das Senden der Busbotschaften wird unterbunden. Durch das explizite Deabonnieren wird verhindert, dass die Prozesslaufzeiten der weiterhin aktiven ROS-Knoten unnötigerweise ansteigen und damit die verfügbare Rechenleistung eingeschränkt wird. Durch nochmaliges Senden der Statusnachricht kann der Prozess der Diagnosefunktion wieder angestoßen und damit die Buskommunikation erneut gestartet werden. Somit ist ohne die Verwendung eines normierten Diagnoseprotokolls auf der Anwendungsschicht ein ähnliches Vorgehen umgesetzt: Durch das Senden einer \emph{Diagnostic Service Request} von dem Ausgabegerät an das Demonstratorfahrzeug wird eine \emph{Diagnostic Session} gestartet und die diagnoserelevanten Parameter an den externen CAN-Knoten versendet (vgl. \cite{Kary.12.09.2016} S. 18 ff.).
 
+\begin{comment}
+	Botschaftsrahmen, Datenbytes
+	Python Package can:
+	Initialisierung des physischen Bus
+	Definition der Messages
+	"Dies entspricht der in der Datenbasis angelegten Identifiern, die im nächsten Abschnitt näher erläutert werden."
+	Senden der Busbotschaft innerhalb callback
+	Deabonnieren, wenn Diagnose passiv ist
+\end{comment}
 
-Botschaftsrahmen, Datenbytes
-Python Package can:
-Initialisierung des physischen Bus
-Definition der Messages
-"Dies entspricht der in der Datenbasis angelegten Identifiern, die im nächsten Abschnitt näher erläutert werden."
-Senden der Busbotschaft innerhalb callback
-Deabonnieren, wenn Diagnose passiv ist
 
 
 \subsection{Interpretation und Visualisierung der CAN-Botschaften}\label{subsec:ImplementierungCANoe}
-Konfiguration der CANoe-Umgebung
-Erstellung Datenbasis als dbc
-Kommunikationsmatrix Amann
-Visualisierung im Panel
 
+Die empfangenen Busbotschaften im hexadezimalen Rohformat können nun mit dem Software-Werkzeug CANoe wieder interpretiert und zur Darstellung der Signale in ihrer physikalischen Einheit gebracht werden. Hierzu ist eine vollständige Kommunikationsbeschreibung des gesamten vernetzten CAN-Bussystem notwendig. In einer solchen Kommunikationsdatenbasis werden die Eigenschaften des CAN Netzwerks, die an den Bus angeschlossenen \acs{ECU} sowie die CAN-Botschaften und Signale beschrieben. Hierzu wurde zunächst die proprietäre Dateibeschreibung \emph{Data Base CAN} \acs{DBC} der Firma \emph{Vektor Informatik GmbH} entwickelt. Dieses Dateiformat hat sich inzwischen aber herstellerübergreifend als Quasi-Standard etabliert. CAN-Datenbanken definieren für jedes Signal Regeln zur Umwandlung in physikalische Einheiten. Vector bietet zum Editieren einer solchen Kommunikationsbeschreibung das Erweiterungswerkzeug \emph{CANdb++} an. Innerhalb einer DBC-Datei werden folgende Daten eines einzelnen Signals definiert und gespeichert:
+
+\begin{compactitem}
+	\item Signalname
+	\item Position (Start-Bit) und Größe (Anzahl der Bits) innerhalb einer Botschaft
+	\item Byte-Reihenfolge (Motorola oder Intel)
+	\item Skalierungsfaktor und Offset
+	\item Wertebereich
+	\item Initialwert
+	\item physikalische Einheit
+	\item Kommentar mit Informationen zum Signal in Klartext
+\end{compactitem}
+
+Darüber hinaus werden diese definierten Signale den Botschaften mit eindeutigen Identifiern zugeordnet. Da in der Datenbasis die genauen Bitpositionen der Signale niedergeschrieben sind, kann eine aus bis zu 8 Byte Nutzdaten bestehende Botschaft nach Erhalt wieder in seine einzelnen Signale zerlegt und vollständig interpretiert werden. Eine Zuordnung der Signale wird in Abbildung \ref{abb:DBCultraschall_data} exemplarisch anhand der Botschaft \texttt{ultraschall\_data} aufgezeigt.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=\textwidth]{./DBC_Beispiel_ultraschall_data}
+	\caption{Signalzuweisung innerhalb der Botschaft \texttt{ultraschall\_data} mit dem Editierungstool CANdb++}
+	\label{abb:DBCultraschall_data}
+\end{figure} 
+
+Die farbliche Aufteilung macht ersichtlich, dass diese Botschaft drei Signale beinhaltet. In Byte 7\,...\,4\footnote{Das Motorola-Dateiformat (Big-Endian) wird \glqq von hinten nach vorne\grqq{}, also von Least Significant Bit nach Most Significant Bit gelesen.} liegt das Signal \texttt{ultraschall\_front\_entfernung} das ursprünglich eine Variable mit Datentyp float32 beinhaltet, also 32 Bit in dieser Botschaft einnimmt. Es folgen in Byte 3\,...\,2 die minimale und in Byte 1\,...\,0 die maximale Entfernung des Ultraschallsensors als Byte Arrays gewandelt aus einem int16 Datentypen.\\
+An dieser Stelle gilt zu erwähnen, dass in der gesamten Umsetzung sämtliche Signale jeweils nur auf ganze Bytes gelegt wurden. Auch wenn der technisch maximal mögliche Wertebereich eines Parameters mit weniger als 8 Bit (respektive 16, 32, ... Bit) abbildbar ist, wurden immer nur ganze Bytes in den Botschaften zugewiesen. Dies ist zwar nicht speichersparend und widerspricht dem Paradigma einer niedrigen Busauslastung zur Steigerung der Effizienz, war jedoch durch die aufwendige Wandlung der Speichervariablen in Abschnitt \ref{subsec:WandlungSpeichervariblen} technisch nicht anders umsetzbar. Die erhöhte Speichernutzung ist allerdings aufgrund der geringen Anzahl der Busbotschaften und den nicht sicherheitskritischen Daten vertretbar.
+
+Neben der Beschreibung der Signale wird in der Datenbasis ebenfalls die Kommunikationsmatrix, oder kurz K-Matrix, definiert. In dieser K-Matrix ist festgelegt, welche \acs{ECU} welche Botschaften sendet und wiederum welche Botschaften von welchem Knoten eingelesen werden. Die einfache Kommunikationsmatrix ist auf Botschaftsebene definiert, die Signalinhalte und damit die Nutzdaten der CAN-Frames sind damit zunächst unrelevant. Lediglich die \acs{ID}s werden festgelegt, um zwischen hoch- und niederprioren Nachrichten unterscheiden zu können. Die Akzeptanzfilterung einer Botschaft wird hardwareseitig auf dem CAN-Controller durchgeführt. Sobald ein CAN-Frame von einem Knoten empfangen wird, wird zunächst die formale Korrektheit der Botschaft geprüft, anschließend wird der Identifier mit den Strukturen der eingepflegten K-Matrix verglichen. Stimmt der Identifier mit den \acs{ID}s überein, die für diesen Knoten als relevant angegeben sind, werden die Nutzdaten in den Empfangspuffer übergeben. Andernfalls wird die Nachricht im Controller verworfen, da die erhaltene Botschaft keine Relevanz für die entsprechende \acs{ECU} aufweist.\\
+Neben dieser Definition einer K-Matrix existiert eine erweiterte Kommunikationsmatrix, die konkrete Informationen über die Sendebedingungen, den \acs{DLC}, die Zykluszeit und eine genaue Beschreibung der übermittelten Signale beinhaltet. Tabelle \ref{tab:KMatrixEVObot} zeigt in der einfachen K-Matrix den Kommunikationsablauf des CAN-Netzwerkes. Es ist ersichtlich, dass das gesamte Netzwerk aus lediglich zwei Knoten besteht. Diese sind zum einen der EVObot selbst und zum anderen der Laptop mit der aktiven CANoe-Umgebung als Ausgabegerät der empfangenen CAN-Botschaften. Alle elf Botschaften sind der Priorisierung der Identifier nach geordnet. Es fällt auf, dass die CAN-Frames zum Busreset und Starten/Stoppen der Diagnosekommunikation die niedrigsten Identifier aufweisen und damit eine hohe Priorität besitzen. Dies soll garantieren, dass diese Botschaft die Busarbitrierung stets gewinnen und verhindert damit, dass die Nachrichten ohne Verzug durch Zwischenspeichern im Sendepuffer auf den Bus gesendet werden. Die Identifier wurden bei der Beschreibung je um den Wert 10 inkrementiert. Dies ermöglicht eine komfortable und übersichtliche Erweiterung der gesamten Datenbasis. Das gesamte Kommunikationsnetzwerk besteht damit nun aus zwei Netzknoten, elf Botschaften und 28 definierten Signalen. 
+
+\begin{table}[!htb]
+	\centering
+	\caption{K-Matrix des CAN-Netzwerkes für die Buskommunikation zwischen dem EVObot und dem externen Ausgabegerät}
+	\footnotesize
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{l |l l}
+		\toprule
+		Botschaft / Knoten & EVObot & CANoe \\
+		\midrule
+		reset\_bus\_message (0x\,00) & Sender & Empfänger \\
+		diagnostic\_status\_message (0x\,01) & Empfänger & Sender \\
+		lane\_data\_1 (0x\,10) & Sender & Empfänger \\
+		lane\_data\_2 (0x\,11) & Sender & Empfänger \\
+		stop\_data (0x\,20) & Sender & Empfänger \\
+		eng\_data (0x\,30) & Sender & Empfänger \\
+		ultraschall\_data (0x40) & Sender & Empfänger \\
+		ultraschall\_data\_gefiltert (0x\,41) & Sender & Empfänger \\
+		static\_camera\_info (0x\,50) & Sender & Empfänger \\
+		static\_pid\_info\_1 (0x\,51) & Sender & Empfänger \\
+		static\_pid\_info\_2 (0x\,52) & Sender & Empfänger \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:KMatrixEVObot}
+\end{table}
+
+In CANoe lassen sich nun die generierten Signale ausgeben und umfangreich analysieren. Im Trace Fenster wird bei aktiver Diagnosekommunikation die gesamte Busaktivität aufgelistet. Bei Eintreffen einer neuen Botschaft wird diese mit ihrem Zeitstempel, der ID, dem Botschaftsnamen und den Nutzdaten in hexadezimaler Form ausgegeben. Es lassen sich hier ebenfalls die Signalwerte der Botschaften in Klartext und in ihrer physikalischen Einheit darstellen. Zur Analyse des Busverkehrs lassen sich Botschaftsfilter einfügen und diverse Marker setzen. Der Inhalt des Trace-Fensters lässt sich bequem aufzeichnen und exportieren, um eine Offline-Analyse durchzuführen. \\
+In einem Grafik-Fenster lassen sich nun die Signalwerte und Umgebungsdaten grafisch als Kurve über der Zeit darstellen. Zum Messen und Auswerten des Signalverlaufs stehen in CANoe diverse Werkzeuge zur Verfügung.
+
+Die ermittelten Signaldaten sollen dem Anwender in Echtzeit ausgegeben und in ihrer physikalischen Form dargestellt werden. Dazu bietet CANoe die Möglichkeit, eine individuelle grafische Benutzeroberfläche zu erstellen, die als Benutzerschnittstelle zur Ein- und Ausgabe von Daten dient. Im Panel wird jedem individuell anpassbarem Steuerelement ein Signal oder eine Systemvariable zugewiesen. Sobald eine Busbotschaft mit dem entsprechenden Signal eingegangen ist, wird das Steuerelement in der grafischen Benutzeroberfläche aktualisiert. Abbildung \ref{abb:DiagnosePanel} zeigt das fertige Panel bei aktiver Netzwerkverbindung zum Modellfahrzeug.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=\textwidth]{./Diagnose_Panel}
+	\caption{Nutzerinterface der Diagnosefunktion. Es werden dem Anwender alle relevanten Informationen in Echtzeit ausgegeben.}
+	\label{abb:DiagnosePanel}
+\end{figure} 
+
+Ist der Laptop über das CAN-Interface und die physische Busleitung mit dem Modellfahrzeug verbunden und ist die Fahrroutine in ROS aktiv, lässt sich die Diagnosefunktion und damit der Diagnoseknoten in ROS starten und stoppen. Dem Anwender werden während der Programmlaufzeit so alle Parameter in textueller und visualisierter Form zyklisch aktualisiert ausgegeben. Es ist gut ersichtlich, dass in der Momentaufnahme von Abbildung \ref{abb:DiagnosePanel} ein Stoppschild durch die Objekterkennungsalgorithmus erkannt wird, daher wird der Antriebsmotor nicht betrieben und das Fahrzeug befindet sich in einem stehenden Zustand vor dem Stoppschild. Der Ultraschallsensor meldet einen Abstand zum nächsten Objekt, der größer als der minimale Abstand ist. Zudem wird eine Abweichung zur Fahrspurmitte nach rechts erkannt, weshalb dem Servomotor ein Lenksignal kleiner 90° und damit eine Korrektur nach links vorgegeben wird.
 
 \begin{comment}
 	Dummy-Botschaften über Python, ...
@@ -464,9 +530,7 @@ Visualisierung im Panel
 
 
 
-
-
-\section{Ergebnisbetrachtung} \label{sec:ErgebnisDiagnose} % Zeitkritisch? Echtzeit? Dauer der Verarbeitung, Wiederholungsrate der Sensorsignale, Rechenleistung, Synchronisation, Berechnung Größe aller Variablen und Summe Bytes der CAN-Frames, Vergleich mit Datenrate CAN um auf Echtzeitfähigkeit zu kommen. Busauslastung? Erst ohne Timing und dann Vorteil von Timing: Unnötige Datenübertragung reduzieren, Busauslastung senken, Mehr Zustandsüberwachungssystem als Diagnosesystem
+\section{Ergebnisbetrachtung} \label{sec:ErgebnisDiagnose}
 
 Wie eingangs erläutert, war es die Intention, eine Diagnosefunktion  vollständig in der ROS-Umgebung einzubinden und als einen neuen Programmknoten umzusetzen, ohne die bereits implementierten Skripte editieren zu müssen. Abbildung \ref{abb:rosgraphMitDiagnose} zeigt, dass dies anhand dem beschriebenen Vorgehen gelungen ist. Der \texttt{diagnostic\_node} reiht sich in dem initialen Programmgraphen ein und hat sämtliche Topics abonniert, die innerhalb ROS publiziert werden. Der Diagnoseknoten selbst veröffentlicht keine Informationen in der Programmumgebung und agiert damit lediglich passiv im ROS-Framework. Die eigentliche Fahrroutine und sämtliche Algorithmen zur Bildverarbeitung und der Fahrzeugregelung werden durch die Diagnosefunktion nicht beeinträchtigt.
 
@@ -477,9 +541,81 @@ Wie eingangs erläutert, war es die Intention, eine Diagnosefunktion  vollständ
 	\label{abb:rosgraphMitDiagnose}
 \end{figure} 
 
+Der Anwender kann nun jederzeit mit Hilfe eines CAN-Interfaces sein Laptop über die Bananenstecker der physikalischen CAN-Leitung mit dem EVObot verbinden und die Diagnosefunktion über das Ausgabepanel in CANoe starten und steuern.
+
+
 \subsection{Test und Validierung} \label{subsec:TestValidierungDiagnose}
+% Zeitkritisch? Echtzeit? Dauer der Verarbeitung, Wiederholungsrate der Sensorsignale, Rechenleistung, Synchronisation, Berechnung Größe aller Variablen und Summe Bytes der CAN-Frames, Vergleich mit Datenrate CAN um auf Echtzeitfähigkeit zu kommen. Busauslastung? Erst ohne Timing und dann Vorteil von Timing: Unnötige Datenübertragung reduzieren, Busauslastung senken
+
+Nachdem die Datenübertragung und Ausgabe der Signale umgesetzt wurde, soll das angewandte Verfahren getestet und auf seine Tauglichkeit geprüft werden.\\
+Dazu wurden mehrere Testfahrten mit dem automatisiert fahrenden Roboter unter variierenden Bedingungen durchgeführt. Dabei konnte die korrekte und vollständige Funktionsweise des Diagnosesystems sichergestellt werden. Die Diagnosefunktion arbeitet bei aktivem ROS-Core zuverlässig. Eine Analyse der Prozesse und der Systemlast des Jetson TX2 während der Laufzeit der Fahrroutine in ROS zeigt, dass die CPU-Auslastung bei aktivem Diagnoseknoten kurzzeitig um circa 12 Prozent gegenüber deaktiviertem Diagnoseknoten ansteigt. Dieser Lastanstieg des Prozessors bei Zuschalten des Diagnoseknotens ist in Anbetracht der hohen Leistungswerte des Jetson TX2 absolut vertretbar. \\
+Nach der Beseitigung einiger kleiner Logikfehler in der Implementierung kann nun der \texttt{diagnostic\_node} in der ROS-Umgebung über das extern ausgegebene Diagnosepanel gestartet und gestoppt werden. Dem Anwender werden bei aktivem Diagnoseknoten in jedem Betriebszustand alle relevanten Parameter durchgängig aktualisiert ausgegeben. Bei einer Unterbrechung oder einem Defekt in der Busverbindung, wird eine Fehlermeldung sowohl auf der Sender-, als auch auf der Empfängerseite ausgegeben.\\
+
+\begin{figure}[!htbp]
+	\centering
+	%\missingfigure[figwidth=\textwidth, figheight=0.4\textheight]{Trace-Fenster}
+	\includegraphics[width=\textwidth]{./CANoe_Trace}
+	\caption{Ausschnitt des Trace-Fensters in CANoe bei aktiver Diagnosekommunikation mit dem EVObot}
+	\label{abb:CANoe_Trace}
+\end{figure}
+
+Abbildung \ref{abb:CANoe_Trace} zeigt exemplarisch einen Ausschnitt der in CANoe empfangenen Busbotschaften bei aktiver Diagnosefunktion. Zu sehen ist, dass in der ersten Zeile zunächst die \texttt{diagnostic\_status\_message} von dem Laptop an das Fahrzeug versendet wird. Daraufhin sendet der Diagnoseknoten zunächst je einmalig die Botschaften, die die statischen Parameter des Fahrzeuges beinhalten und beginnt dann, die dynamischen Botschaften wiederholt an den Laptop zu senden. Dabei folgen die Botschaften keinem geregelten zyklischen Zeitplan, wie aus der ersten Spalte den Differenzzeiten entnommen werden kann. Dies ist auf die Aktualisierungsrate der eingelesenen Messages und damit auf den differenzierten Rechenaufwand der implementierten Prozesse in den Topics zurückzuführen. Wie bereits erläutert, weist der CAN-Bus ein nicht deterministisches, ereignisgesteuertes Verhalten auf, somit wird eine Busbotschaft immer direkt mit dem Erhalt einer aktualisierten Message und dem Aufruf der entsprechenden Callback-Funktion versendet. Sollten mehrere Botschaften zeitgleich übermittelt werden, greift das Arbitrierungsverfahren, sodass sich der Identifier mit der höchstwertigen Priorität durchsetzt. Niederpriore CAN-Frames verharren im Sendepuffer und werden im Anschluss versendet. Das ereignisgesteuerte Sendeverfahren führt dazu, dass die Gesamtzahl der gesendeten Botschaften pro Identifier je nach Prozesszeit bei einer langen Messdauer auseinanderdriftet. Daher wird es empfohlen, die Prozesszeiten der einzelnen Programmknoten in ROS global anzugleichen. Diese Erkenntnis wird in Abschnitt \ref{sec:Zeitsynchronisation} noch einmal aufgegriffen.\\ 
+
+
+Das Zeitverhalten und die Wiederholungsrate eines Signals setzt sich grundsätzlich aus der Verarbeitungszeit im \texttt{diagnostic\_node} ab dem Zeitpunkt des Erhalts einer neuen Message, der Übertragungsdauer auf dem Bus und der Verarbeitungszeit auf dem Empfangsrechner bis zur Ausgabe in CANoe zusammen. \\
+Die benötigte Zeit zum physischen Versenden einer CAN-Botschaft ergibt sich allgemein aus
+\begin{equation}
+	t_{Sende} = n_{Frame} * t_{Bit}.
+	\label{math:Formel1}
+\end{equation}
+Dabei ist $n_{Frame}$ die Gesamtlänge einer Botschaft in Bit. Bei einem CAN Standard Data Frame mit einem 11\,Bit großen Identifier beträgt die Gesamtlänge 108\,Bit. Wird nun noch im Worst Case ein maximales Bit-Stuffing hinzugenommen, erhöht sich die maximale Botschaftslänge auf bis zu 132\,Bit. Hinzu kommt das 3\,Bit breite Intermission-Feld, das ein Ende einer Busbotschaft signalisiert. $t_{Bit}$ ist die Sendezeit eines Bits, womit sich eine Datenrate zu $1/T_{Bit}$ ergibt. Die Datenrate wird in der gesamten Konfiguration mit 500 kBit/s gewählt. Damit ergibt sich die maximale Sendedauer einer Botschaft zu
+\begin{equation}
+	t_{Sende} = 135\,Bit * \frac{1\,s}{500\,kBit} = 270\,\mu s.
+	\label{math:Formel2}
+\end{equation}
+Betrachtet man nun lediglich die variablen Parameter, werden während der Laufzeit wiederholt insgesamt sieben Botschaften versendet. Somit ließen sich im Extremfall sämtliche variablen Sensor- und Signaldaten in einer Zeit von 1,89\,Millisekunden auf dem Bus übertragen. Dies entspricht einer theoretischen Wiederholungsfrequenz von circa 530\,Hz. Diese Rechnung soll jedoch nur das theoretisch maximal Mögliche aufzeigen. Die reale Wiederholungsrate liegt aufgrund der variierenden Prozesszeiten der ROS-Knoten und der Übermittlung der Messages in den Topics deutlich darunter. Zudem wird für die Umrechnung und Zuweisung der Daten in CAN-Frames ebenfalls je eine gewisse variierende Prozesszeit benötigt. Die durchschnittliche effektive Zykluszeit, also der tatsächlich beobachtete zeitliche Abstand, der periodischen Botschaften liegt bei der realen Datenkommunikation bei 33,3 Millisekunden mit einer empirischen Standardabweichung von etwas 3 Millisekunden. Dies führt bei wiederholten Messungen zu einer durchschnittlichen Buslast von 4,54\,\%. Geht man davon aus, dass die Summe der Botschaften pro Zeiteinheit deutlich geringer als die maximale Übertragungskapazität ausfallen sollte, liegt dieser Wert deutlich unterhalb von 50\,\% Buslast, die nach einer Faustregel als Maximalwert anzunehmen sind, um eine konsistente Datenübertragung zu gewährleisten. Somit bietet das umgesetzte Kommunikationsnetzwerk erheblichen Spielraum für künftige Erweiterungen des Bussystems.\\
+In der Praxis kommt durch das nichtdeterministische Verhalten des CAN-Bus zusätzlich eine Latenz bei der Datenübertragung hinzu. Diese Latenzzeit ist Abhängig von der Anzahl der Busteilnehmer und der Busauslastung und kann daher stark schwanken. Die Latenz kann allerdings im konkreten Anwendungsfall durch die geringe Anzahl der Busbotschaften und die niedrige Buslast als sehr gering angenommen werden. Damit lässt sich nun die Güte der Echtzeitfähigkeit des Systems bewerten. Die Literatur definiert keine konkreten Grenzen, wann ein System als echtzeitfähig gilt, die Verarbeitung der Daten muss lediglich garantiert schnell genug für die jeweilige Anwendung erfolgen. Da es sich bei der Buskommunikation um die Übertragung von nicht sicherheitskritischen Daten handelt und die Ausgabe der Sensor- und Signaldaten lediglich passiv stattfindet, kann die Echtzeitfähigkeit der umgesetzten Diagnosekommunikation als durchaus geeignet bewertet werden. Nimmt man die Trägheit der mechanischen Wirkungskette des Gesamtsystems im Fahrroboters hinzu, ist das Zeitverhalten der gesamten CAN-Übertragung vollkommen vertretbar. Mit der Anforderung einer echtzeitnahen Überwachung der Systemzustände kann diese durch die Verwendung eines Bussystems als erfüllt betrachtet werden. Ein Abgleich der umgesetzten Funktionalitäten zeigt, dass sämtliche zu Beginn gestellten Anforderungen eingehalten werden, somit ist das Diagnosesystem vollständig verifiziert, entspricht also den spezifizierten Funktionseigenschaften.
+
+Zuletzt soll zur Vollständigkeit das physikalische Übertragungsverhalten der Bitübertragungsschicht geprüft werden. Dazu wird das Differenzspannungssignal der beiden Busleitungen mit einem Oszilloskop gemessen. Abbildung \ref{abb:CAN_Scope_Datenreihe} zeigt exemplarisch das Ergebnis dieser Messung.\\
+Hier ist das Differenzspannungssignal der CAN-Botschaft \texttt{lane\_data\_1} dargestellt. Zu sehen sind die CANH-Leitung in blau und die CANL-Leitung in rot. Zunächst fällt das asymmetrische Spannungsverhalten der beiden Leitungen auf. Hierbei handelt es sich jedoch nicht wie vermuten lässt um einen Übertragungsfehler in der CANH-Leitung, sondern dies ist auf den CAN-Transceiver mit einer rezessiven Spannungsversorgung von 3,3\,V zurückzuführen. Typischerweise liegt die Gleichtaktspannung bei 5\,V Transceivern bei $V_{cc}/2$, somit sind die Spannungspegel der CAN-Leitungen symmetrisch. Um ein ähnlich hohes Differenzspannungssignal zu erhalten, liegt die rezessive Gleichtaktspannung bei Transceivern mit geringerer Versorgungsspannung etwas unterhalb dieses Wertes. Dadurch lässt sich eine gleiche Differenzspannung bei geringerem Spannungsniveau erzeugen. Durch diese asymmetrische Verschiebung der Busspannung lassen sich Transceiver mit unterschiedlichen Versorgungsspannungen in einem Netzwerk betreiben, ohne dass die Transceivern aufeinander abgestimmt sein müssen. Schließlich ist für das Einlesen eines CAN-Signals lediglich die tatsächliche Differenzspannung und nicht das Spannungsniveau von Bedeutung. Somit kann der Stromverbrauch eines Transceivers bei gleicher Funktionsweise gesenkt werden \cite{Blackman.2013}.\\
+
+\begin{figure}[!htbp]
+	\centering
+	%\missingfigure[figwidth=\textwidth, figheight=0.4\textheight]{An dieser Stelle wird der Plot des CAN Differenzsignals geplottet.}
+
+	\begin{tikzpicture}
+	\footnotesize
+	\begin{axis}[
+	width = 1\textwidth,
+	height = 0.4\textheight,
+	xmin=85,xmax=330,
+	ymin=0,ymax=4,
+	ytick distance=0.5,
+	xlabel={Zeit \emph{t} in $\mu$s},
+	ylabel={Spannung \emph{U} in V},
+	legend entries = {CAN-High,CAN-Low},
+	legend pos=south east, legend cell align={left},
+	grid = major,
+	grid style={dashed, gray!30},
+	]
+	\addplot+[mark=none,each nth point=2]
+	table[x=Zeit,y=KanalA, y expr=\thisrow{KanalA}*0.1] {007_data/Scope_ID10.txt};
+	\addplot+[mark=none,each nth point=2]
+	table[x=Zeit,y=KanalB, y expr=\thisrow{KanalB}*0.1] {007_data/Scope_ID10.txt};
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Aufzeichnung des Differenzspannungssignal der CAN-Botschaft \texttt{lane\_data\_1} auf der physikalischen Busleitung}
+	\label{abb:CAN_Scope_Datenreihe}
+\end{figure}
+
+Eine genauere Betrachtung der übertragenen Daten zeigt, dass die Sendedauer der exemplarischen Busbotschaft 234,8\,$\mu s$ beträgt. Aufgrund der Zustände der Signaldaten traten in der Botschaft 9 Stuff-Bits auf. Korrigiert man nun die Rechnung in Formel \ref{math:Formel1}, erhält man exakt die theoretische Sendedauer von 234\,Mikrosekunden. Dies zeigt, dass die Botschaft auch zeitlich korrekt und ohne Latenz übertragen wurde. 
+
 \subsection{Mehrwert der Diagnosefunktion} \label{subsec:MehrwertDiagnose}
 % Alternative: UDP Das User Datagram Protocol, kurz UDP, ist ein minimales, verbindungsloses Netzwerkprotokoll, das zur Transportschicht der Internetprotokollfamilie gehört. UDP ermöglicht Anwendungen den Versand von Datagrammen in IP-basierten Rechnernetzen. --> Kabellos!
 
+Bei der Umsetzung der gesamten Buskommunikation wurde mehr ein Zustandsüberwachungssystem als ein vollumfängliches Diagnosetool im klassischen Sinne entwickelt. Wie zuvor aufgezeigt, stand eine strikte Einhaltung der diversen Standards einer Diagnosekommunikation nicht im Fokus. Die vollständige Umsetzung der Diagnose nach dem standardisierten \acs{ODX} Datenmodell zur Beschreibung der Diagnose- und Programmierdaten würde den Umfang der Arbeit in einem begrenzten Zeitrahmen deutlich übersteigen. Dies wäre auch für das vergleichsweise kleine Kommunikationsnetzwerk mit der stark begrenzten Anzahl an Signalen und Busbotschaften nicht verhältnismäßig. Eine Umsetzung nach dem Diagnosestandard würde jedoch auch einen Austauschprozess ermöglichen. Während der Applikation kann so von dem externen Ausgabegerät aus der Datenbestand des Fahrzeuges über die Diagnosekommunikation geändert und somit Parameter extern angepasst werden. Dies setzt allerdings grundlegende und umfangreiche Änderungen im Aufbau sämtlicher Programmteile voraus, um eine Modularität zu gewährleisten. Um Parameter nicht nur passiv auszugeben, sondern auch aktiv in den Algorithmen ändern zu können, müssen eigens Konfigurationsdateien erstellt werden, die dann von den einzelnen Programmknoten gelesen und beschrieben werden können. Dies war jedoch von Beginn an nicht die Anforderung an das Projekt, weshalb das Diagnosesystem als eine rein passive Zustandsüberwachung und -darstellung aufgebaut wurde. 
 
+Die Diagnosefunktion bietet trotzdem einen erheblichen Mehrwert für das gesamte Projekt des automatisiert fahrenden Roboters. So hat sich gezeigt, dass die echtzeitnahe Ausgabe der Systemparameter den Applikationsprozess deutlich erleichtert hat. Zuvor war es nicht möglich, die Fahrzustände auch während der Programmlaufzeit der Fahrroutine zu überprüfen, somit war der Applikationsprozess auf eine rein heuristische und aufwändige \emph{Trial and Error} Methode beschränkt. Inzwischen lässt sich durch die echtzeitnahe Visualisierung der Fahrdaten das Fahrverhalten auch ohne eine Probefahrt des Fahrzeuges prüfen. Darüber hinaus können die Fahrdaten bequem aufgezeichnet und im Anschluss unter Einbezug sämtlicher Signale und deren zeitlichem Verlauf umfangreich analysiert werden.\\
+Durch die Einbindung einer Datenbasis lassen sich je nach künftigen Erweiterungen und Funktionen des Fahrzeuges später mühelos und unbedenklich weitere Signale in die Diagnosefunktion mitaufnehmen. Damit sind Flexibilität und Modularität der Diagnosekommunikation sichergestellt. Durch die Datenübertragung über die CAN-Busleitung und die Einhaltung des CAN-Protokolls wird eine Datenkonsistenz und Datensicherung über das gesamte Kommunikationsnetzwerk sichergestellt.\\
+Es gilt zu erwähnen, dass durch die umgesetzte Diagnose nicht direkt auf eine mögliche Fehlerursache in der Implementierung der Fahralgorithmen geschlossen werden kann. Jedoch wird hierdurch nicht nur die Fehlerwirkung sichtbar, sondern auch der Fehlerzustand der einzelnen Signalparameter dargestellt. Damit kann die tatsächliche Fehlerursache leicht auf ein Minimum eingeschränkt und so in dem Programmcode gefunden werden. Nach diesem Vorgehen konnten diverse Softwarebugs und Logikfehler im Programmcode aufgedeckt und beseitigt werden. Bei künftigen Erweiterungen der Fahrfunktionen können die neu implementierten Funktionen umgehend mit dem Diagnosesystem geprüft und damit eine Fehlerfortpflanzung verhindert werden. 
 

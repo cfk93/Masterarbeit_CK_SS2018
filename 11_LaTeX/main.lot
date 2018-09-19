@@ -1,32 +1,19 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 2.1}{\ignorespaces Klassifikation serieller Bussysteme \cite {VectorInformatikGmbH.b}}}{5}{table.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 2.2}{\ignorespaces Zusammenfassung des OSI-Schichtenmodells aufgeteilt in Layer, Schicht und Funktionen \cite {InternationalOrganizationforStandardization.15.11.1994}}}{6}{table.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 2.3}{\ignorespaces Funktionen der einzelnen Felder im Data-Frame \cite {Wallentowitz.2011, Zimmermann.2014}.}}{10}{table.2.3}
-\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\relax 2.1}{\ignorespaces Sechs Stufen der Autonomie f\IeC {\"u}r stra\IeC {\ss }engebundene Kraftfahrzeuge nach \emph {SAE\tmspace +\thinmuskip {.1667em}J3016} \cite {VerbandderAutomibilindustriee.V..2015}.}}{7}{table.2.1}
+\contentsline {table}{\numberline {\relax 2.2}{\ignorespaces Klassifikation serieller Bussysteme \cite {VectorInformatikGmbH.b}}}{9}{table.2.2}
+\contentsline {table}{\numberline {\relax 2.3}{\ignorespaces Zusammenfassung des OSI-Schichtenmodells aufgeteilt in Layer, Schicht und Funktionen \cite {InternationalOrganizationforStandardization.15.11.1994}}}{10}{table.2.3}
+\contentsline {table}{\numberline {\relax 2.4}{\ignorespaces Funktionen der einzelnen Felder im Data-Frame \cite {Wallentowitz.2011, Zimmermann.2014}.}}{13}{table.2.4}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 4.1}{\ignorespaces Beschreibung der im Diagnoseknoten abonnierten Topics mit ver\IeC {\"a}nderlichen Variablen und den damit eingelesenen Variablenwerte}}{29}{table.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 4.2}{\ignorespaces Beschreibung der im Diagnoseknoten eingelesenen Topics mit statischen Variablenwerten}}{30}{table.4.2}
-\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\relax 4.1}{\ignorespaces Beschreibung der im Diagnoseknoten abonnierten Topics mit ver\IeC {\"a}nderlichen Variablen und den damit eingelesenen Variablenwerte}}{36}{table.4.1}
+\contentsline {table}{\numberline {\relax 4.2}{\ignorespaces Beschreibung der im Diagnoseknoten eingelesenen Topics mit statischen Variablenwerten}}{37}{table.4.2}
+\contentsline {table}{\numberline {\relax 4.3}{\ignorespaces K-Matrix des CAN-Netzwerkes f\IeC {\"u}r die Buskommunikation zwischen dem EVObot und dem externen Ausgabeger\IeC {\"a}t}}{44}{table.4.3}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

@@ -1,7 +1,103 @@
-\chapter{Ausgangssituation} 	\label{cha:Ausgangssituation}
-\section{Hardware}				\label{sec:EVObotHardware}
-\lipsum[1-1]	
-\section{Software}				\label{sec:EVObotSoftware}
-\lipsum[1-1]
-\section{Sensorik}				\label{sec:EVObotSensorik}
-\lipsum[1-1]
+\chapter{Das EVObot-Projekt} 	\label{cha:Ausgangssituation}
+Wie eingangs erläutert ist das erklärte Ziel des Firmenprojektes, ein Modellfahrzeug als Demonstrator für moderne Antriebs- und Fahrerassistenzfunktionen zu entwickeln. Hauptziel ist es, autonome Fahrfunktionen real abbilden zu können. Daneben stehen Ziele wie die Weiterbildung von Studierenden und Absolventen in der Programmierung eingebetteter und vernetzter Systeme, sowie in innovativen Datenkommunikationstechnologien.\\
+Um einen Überblick über das Gesamtsystem zu erhalten, sollen zunächst das Fahrzeug, die Komponenten und die eingesetzten Softwareelemente in ihrer Ausgangssituation beschrieben werden.
+
+\section{Das Modellfahrzeug}	\label{sec:EVObotFahrzeug}
+
+Die mechanische Basis bildet das Modellfahrzeug X10E der Firma \emph{Tamiya-Carson Modellbau GmbH \& Co. KG}. Das Chassis des RC-Fahrzeuges hat den Maßstab 1:10 und bietet ein umfangreich einstellbares Fahrwerk. Auf dem Chassis ist eine Acrylglasplatte montiert, auf dem die gesamte Steuereinheit, die Elektronik und die verwendeten Sensoren verbaut sind. Im Fahrgestell sind ein Lithium-Polymer-Akkumulator, eine Motorregeleinheit, ein Lenkservomotor und der Antriebsmotor verbaut. Das Antriebsstrang ist mit einem anpassbaren Übersetzungsgetriebe und einem Achsausgleichsgetriebe ausgestattet.
+
+Als Antriebsmotor wird der originale bürstenlose Gleichstrommotor mit dem mitgelieferten Fahrregler verwendet. Der für den erhöhte Leistungsbereiche ausgelegte Antriebsmotor wird jedoch nicht über einen Drehzahlwert, sondern über den Leistungsbedarf geregelt. Abhängig vom Fahrzeuggewicht und der Haftreibung beim Anfahren kann dieser Regelwert variieren, was eine Herausforderung in der zuverlässigen Längsregelung bei geringen Fahrgeschwindigkeiten zur Folge hat. Der Antriebsmotor weist mit je 10 Spulenwicklungen einen \emph{kV}-Wert\footnote{Der kV-Wert beschreibt die Leerlaufdrehzahl eines Elektromotors pro \SI{1}{\volt} angelegter Spannung. Die Bezeichnung sollte in diesem Zusammenhang nicht mit der Einheit \emph{Kilovolt} verwechselt werden.} von \SI{3600}{\kilo\volt} auf. Bei einer maximalen Spannungsversorgung von \SI{7,4}{\volt} kann der Motor an der Ausgangswelle also eine theoretische Drehzahl von \SI{26640}{\per\minute} erreichen.\\
+Als Aktor zur Querregelung kommt ebenfalls ein mitgelieferter Servomotor zum Einsatz. Dieser wird mit einer Betriebsspannung von \SI{5}{\volt} versorgt und kann einen Lenkwinkel von circa $\pm$\,\SI{35}{\degree} ausgeben.
+
+\section{Eingesetzte Sensorik}				\label{sec:EVObotSensorik}
+Zur Umsetzung der autonomen Fahrfunktion und weiterer Teilfunktionen ist rund um das Modellfahrzeug verschiedene Sensorik verbaut. Zentrales Element der Sensorkomponenten bildet das Kamerasystem. Auf der Grundplatte des Fahrzeuges ist eine handelsübliche USB-Webcam der Firma \emph{Logitech Europe S.A}. Das Kamerasystem dient zur zuverlässigen Erkennung einer Fahrspur und wird für eine Verkehrszeichenerkennung verwendet. Die Kamera wurde im Laufe der Arbeit ausgetauscht, hierzu sei auf Kapitel \ref{cha:AnalyseAlgorithmen} verwiesen.\\
+An der Front des Fahrzeuges ist ein Ultraschallsensor \emph{HC-SR04} verbaut. Dieser wird für eine Objekterkennung und Abstandsbestimmung verwendet. Es lassen sich Entfernungen in einem Bereich zwischen \SI{2}{\centi\meter} und \SI{3}{\meter} mit einer ungefähren Auflösung von \SI{3}{\milli\meter} bei einer maximalen Messfrequenz von \SI{50}{\hertz} bestimmen. Ein weiterer Ultraschallsensor ist auf der rechten Fahrzeugseite verbaut und dient zu einer Parklückenerkennung. Diese Funktion ist aber aktuell nicht im Fahrzeug umsetzt.\\
+Zentral auf der Grundplatte montiert befindet sich zusätzlich eine Inertiale
+Messeinheit der Firma \emph{Bosch Sensortec GmbH}. Auf einem Breakout Board sind Beschleunigungs- und Drehratensensor zu einer Einheit zusammengefasst. Somit können lineare Beschleunigungen, Winkelgeschwindigkeiten und die magnetische Orientierung in allen Raumrichtungen erfasst werden. Dieser Sensor war gedacht, um eine umfangreiche Querregelung auf Basis der Fahrgeschwindigkeit, dem Kurvenverhalten und der Gierrate zu realisieren. Dies ist jedoch in der aktuellen Konfiguration nicht umgesetzt, weshalb die Inertiale Messeinheit keine Verwendung findet. Sie lässt sich jedoch leicht in die Systemumgebung einbinden. 
+  
+
+\section{Electronic Control Units}				\label{sec:EVObotSoftware}
+Auf dem EVObot befinden sich im Wesentlichen zwei Komponenten, die die gesamten Steuer- und Regelungsaufgaben des Fahrzeuges übernehmen. Zum Einen wird ein \emph{Arduino UNO} eingesetzt. Dieses Mikrocontrollerboard dient einzig als Schnittstelle zwischen den Sensoren, Aktoren und dem Hauptrechner. Der Arduino liest lediglich die Sensorik in Form von Ultraschallsensoren ein und steuert die Aktorik der Längs- und Querregelung an. Somit findet auf dem Arduino keinerlei Datenverarbeitung im eigentlichen Sinne statt. Er kommuniziert jedoch dauerhaft über eine serielle Schnittstelle mit der Hauptrecheneinheit.\\
+Die zentrale Entwicklungsplattform des gesamten Projektes stellt hingegen das Entwicklerkit \emph{NVIDIA Jetson TX2} dar. Dieser kompakte aber äußerst effiziente Computer wurde speziell für Anwendungen der Künstlichen Intelligenz und Computer Vision entwickelt. Das leistungsstarke Modul verfügt über sechs Prozessorkerne und acht Gigabyte internem Arbeitsspeicher und eignet sich damit sowohl für die parallele Signalverarbeitung, als auch für rechenintensive Grafikanwendungen zur Bildverarbeitung. Auf der Adapterplatte des Computers befinden sich zahlreiche Anschlüsse für umfangreiche Erweiterungen und Systemanbindungen. Auf dem Hardwareboard selbst läuft das Betriebssystem Ubuntu als eine Linux-Distribution. Damit ist das Jetson TX2 als vollwertiger Computer mit einer gewohnten grafischen Benutzeroberfläche zu nutzen. Auf dem Betriebssystem des Jetson TX2 läuft das Software-Framework \emph{Robot Operating System} \acs{ROS}. Da \acs{ROS} einen gesonderten Stellenwert in dieser Arbeit einnimmt, wird im folgenden Abschnitt \ref{sec:ROSErklärung} noch einmal ausführlich auf diese Umgebung eingegangen. Zur Verarbeitung der eingelesenen Rohdaten des Kamerasystems wird die freie Programmbibliothek \emph{OpenCV} verwendet. Die umfangreiche Bibliothek liefert diverse Algorithmen und Programmfunktionen speziell für die Bildverarbeitung und maschinelles Sehen. Sämtliche umgesetzten Teilfunktionen und Algorithmen zur Bildvorverarbeitung, Spurerkennung, Verkehrszeichenerkennung, Hinderniserkennung und Längs- bzw. Querreglung sind in der universellen Programmiersprache \emph{Python} mit Hilfe der integrierten Entwicklungsumgebung \emph{PyCharm} verfasst.\\
+Zum besseren Verständnis sind in Abbildung \ref{abb:SystemarchitekturGesamt} noch einmal alle Systemkomponenten entsprechend ihren Layern des Schichtenmodells software- und hardwareseitig als gesamte Systemarchitektur aufgezeigt. Eine Sonderstellung nimmt hierbei der Middleware Layer durch das zusätzliche Software-Framework ROS ein. 
+
+\begin{figure}[!htbp]
+\centering
+\footnotesize
+\begin{tikzpicture}
+	
+	%Application Layer
+	\node (application) [rectangle, dashed, draw, minimum width=10cm, minimum height=3cm] at (0,0) {};
+	\node (f1)  [rectangle, minimum width=10cm, minimum height=1ex, fill=white] at (0,-1.5) {};
+	\node[below left, xshift=-1ex, yshift=-1ex] at (application.north east) {Application Layer}; 
+	\node (python) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=4cm, minimum height=1cm] at (application.north west) {Python 2.7};
+	\node (opencv) [right, minimum height=1cm, minimum width=2cm, xshift=4cm, cylinder, fill=gray!10, shape border rotate=90, aspect=0.1, draw] at (python) {OpenCV};
+	
+	%Middleware Layer
+	\node (middleware) [rectangle, dashed, draw, fill=white, minimum width=10cm, minimum height=3cm] at (0,-3) {};
+	\node (f2)  [rectangle, minimum width=10cm, minimum height=1ex, fill=white] at (0,-4.5) {};
+	\node[below left, xshift=-1ex, yshift=-1ex] at (middleware.north east) {Middleware Layer};
+	\node (ros) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=8cm, minimum height=1cm] at (middleware.north west) {ROS - Robot Operating System \emph{Kinetic}};
+	
+	%Operating Network Layer
+	\node (network) [rectangle, dashed, draw, fill=white, minimum width=10cm, minimum height=3cm] at (0,-6) {};
+	\node (f3)  [rectangle, minimum width=10cm, minimum height=1ex, fill=orange!10] at (0,-7.5) {};
+	\node[below left, xshift=-1ex, yshift=-1ex] at (network.north east) {Operating Network Layer}; 
+	\node (linux) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=8cm, minimum height=1cm] at (network.north west) {Linux Ubuntu \emph{16.04 LTS}};
+	
+	%Hardware Layer
+	\node (hardware) [rectangle, dashed, draw, fill=white, minimum width=10cm, minimum height=3.5cm] at (0,-9.25) {};
+	\node[below left, xshift=-1ex, yshift=-1ex] at (hardware.north east) {Hardware Layer};
+	\node (jetson) [below right, xshift=1cm, yshift=-1cm, rectangle, draw, fill=gray!10, minimum width=4cm, minimum height=1cm] at (hardware.north west) {NVIDIA Jetson TX2};
+	\node (kamera) [below, xshift=1cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (jetson.south west) {Kamera};
+	\node (wlan) [below, xshift=-1cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (jetson.south east) {WLAN};
+	\node (arduino) [below, yshift=-1cm, xshift=2.5cm, rectangle, draw, fill=gray!10, minimum width=3cm, minimum height=1cm] at (hardware.north) {Arduino UNO};
+	\node (sensorik) [below, xshift=0.5cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (arduino.south west) {Sensorik};
+	\node (aktorik) [below, xshift=-0.5cm, yshift=-0.5cm, rectangle, minimum height=0.7cm] at (arduino.south east) {Aktorik};		
+	
+	%Verbindungen
+	\node (a1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-1.5,-1.5) {};
+	\node (a1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-2.5,-1.5) {};
+	
+	\node (b1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-0.5,-4.5) {};
+	\node (b2)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (0.5,-4.5) {};
+	
+	\node (c1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-1.5,-7.5) {};
+	\node (c1)  [rectangle, text width=0.2ex, minimum height=1ex, draw=white, fill=white] at (-2.5,-7.5) {};
+	
+	\draw [<-,>=stealth] (python) -- (opencv);
+	\draw [->,>=stealth] (-1.5,-0.5) -- (-1.5,-2.5);
+	\draw [<-,>=stealth] (-2.5,-0.5) -- (-2.5,-2.5);
+	\draw [<-,>=stealth] (-0.5,-3.5) -- (-0.5,-5.5);
+	\draw [->,>=stealth] (0.5,-3.5) -- (0.5,-5.5);
+	\draw [->,>=stealth] (-1.5,-6.5) -- (-1.5,-8.5);
+	\draw [<-,>=stealth] (-2.5,-6.5) -- (-2.5,-8.5);
+	
+	\draw [<-,>=stealth] ([yshift=0.1cm]arduino.west) -- ([yshift=0.1cm]jetson.east);
+	\draw [->,>=stealth] ([yshift=-0.1cm]arduino.west) -- ([yshift=-0.1cm]jetson.east);
+	
+	\draw [->,>=stealth] (kamera) -- ([xshift=-1cm]jetson.south);
+	\draw [<->,>=stealth] (wlan)  -- ([xshift=1cm]jetson.south);
+	
+	\draw [->,>=stealth] (sensorik) -- ([xshift=-1cm]arduino.south);
+	\draw [<-,>=stealth] (aktorik)  -- ([xshift=1cm]arduino.south);
+	
+\end{tikzpicture}
+\caption{Systemarchitektur der Komponenten des EVObots im angepassten Schichtenmodell}
+\label{abb:SystemarchitekturGesamt}
+\end{figure}
+
+\section{ROS - Robot Operating System} \label{sec:ROSErklärung}
+\acs{ROS} ist eine Open Source Middleware, die speziell für Robotikanwendungen entwickelt wurde. Das umfangreiche Framework stellt zahlreiche Programmbibliotheken, Werkzeuge, Gerätetreiber, Visualisierungstools und Möglichkeiten zum Nachrichtenaustausch. Aufgrund dieser weitreichenden Funktionen wurde ROS als Meta-Betriebssystem zur Realisierung der Fahrfunktionen in diesem Projekt gewählt. Dabei ist \acs{ROS} nicht als eine eigenständige Anwendung zu betrachten, sondern stellt eine komplex angelegte Middleware für eine anwendundungsneutrale Prozesskommunikation mit flexiblen und simplen Datenstrukturen dar. \acs{ROS} bietet Systemdienste wie die Integration einer  Hardwareabstraktionsschicht oder Low-Level-Gerätesteuerungen. Da das Arbeiten mit \acs{ROS} in dieser Arbeit einen essenziellen Aspekt darstellt, werden im Folgenden einige wichtige Begriffe und das fundamentale Konzept von \acs{ROS} kurz erläutert \cite{Quigley.2015}. 
+
+\begin{itemize}
+	\item \textbf{\textsf{Packages:}}\\ Die Softwareprojekte werden in \acs{ROS} in \emph{Packages} verwaltet und organisiert. Ein Paket enthält alle Laufzeitprozesse eines Projektes, die Programmbibliothek, Datensets, Konfigurationsdateien und gegebenenfalls Softwarekomponenten von Drittanbietern. Die Verwaltung eines Projektes in Paketen ermöglicht eine einfache Modularität der Funktionalitäten.
+	
+	\item \textbf{\textsf{Nodes:}}\\ \emph{Nodes} stellen in \acs{ROS} ausführbare Prozesse dar. Diese Instanzen sind verteilt über die Kommunikationsinfrastruktur, können aber durch verschiedene Mechanismen zur Laufzeit miteinander kommunizieren oder Daten austauschen. Typischerweise werden die thematisch entkoppelten Funktionen eines Projektes in einzelne Knoten verteilt.
+	
+	\item \textbf{\textsf{Topic:}}\\ \emph{Topics} sind Datenbussysteme, über die zur Laufzeit Nachrichten in asynchroner Form ausgetauscht werden. Dazu verwendet \acs{ROS} eine \emph{Publisher/Subscriber}-Semantik. Die Knoten publizieren dabei Informationen auf verschiedene Topics, während andere Knoten diese Topics beliebig abonnieren können, um die Informationen auf dem Datenbus einzulesen. Diese Funktionsweise ermöglicht es, einzelne Softwarekomponenten unabhängig entwickeln und in bestehende Projekte integrieren zu können. 
+	
+	\item \textbf{\textsf{Messages:}}\\ Die Informationen auf den Datenbussen der Topics werden in Form von \emph{Messages} in standardisierten Datenstrukturen versendet. Es existiert eine Vielzahl von nativen Datenformaten einzelner Botschaften (boolean, integer, floating point, usw.), es lassen sich aber auch eigene Messages aus Arrays der definierten Datenformate generieren.
+	
+	\item \textbf{\textsf{Services:}}\\ Gegenüber dem Broadcast-Prinzip der Subscriber und Publisher lassen sich mit \emph{Services} in \acs{ROS} Informationen auch auf explizite Requests erhalten. Dabei wird von einem Knoten eine definierte Informationen durch einen Service von einem einzelnen Knoten angefordert. Der Client-Node antwortet dann auf diese Anfrage mit dem Senden der entsprechenden Message an den anderen Knoten.
+\end{itemize}
